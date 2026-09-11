@@ -1,0 +1,472 @@
+{
+  "timestamp": "2026-09-11T18:42:46.520907+00:00",
+  "vault": "D:\\obsidian file",
+  "tier": "all",
+  "total_tests": 54,
+  "passed": 54,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "wall_clock_seconds": 0.136,
+  "verdict": "PASS",
+  "tier_breakdown": {
+    "1": {
+      "PASS": 27,
+      "FAIL": 0,
+      "ERROR": 0,
+      "SKIP": 0
+    },
+    "2": {
+      "PASS": 15,
+      "FAIL": 0,
+      "ERROR": 0,
+      "SKIP": 0
+    },
+    "3": {
+      "PASS": 7,
+      "FAIL": 0,
+      "ERROR": 0,
+      "SKIP": 0
+    },
+    "4": {
+      "PASS": 5,
+      "FAIL": 0,
+      "ERROR": 0,
+      "SKIP": 0
+    }
+  },
+  "test_details": [
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1MasterBrainEntrypoint.test_tc101_master_brain_exists_and_substantial",
+      "name": "test_tc101_master_brain_exists_and_substantial",
+      "doc": "TC1.01: AI Sozlangan Miyyasi.md must exist at vault root and exceed 1,000 bytes.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1MasterBrainEntrypoint.test_tc102_master_brain_yaml_frontmatter",
+      "name": "test_tc102_master_brain_yaml_frontmatter",
+      "doc": "TC1.02: Verify valid YAML frontmatter with mandatory metadata fields.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1MasterBrainEntrypoint.test_tc103_master_brain_user_identity_and_language_policy",
+      "name": "test_tc103_master_brain_user_identity_and_language_policy",
+      "doc": "TC1.03: Verify user identity anchor and natural language policy.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1MasterBrainEntrypoint.test_tc104_master_brain_startup_and_writeback_directives",
+      "name": "test_tc104_master_brain_startup_and_writeback_directives",
+      "doc": "TC1.04: Verify presence of 5-step Startup Protocol and 4-step Write-Back Protocol.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1MasterBrainEntrypoint.test_tc105_master_brain_agent_fleet_index",
+      "name": "test_tc105_master_brain_agent_fleet_index",
+      "doc": "TC1.05: Verify Master Brain indexes all 4 agent fleet profiles.",
+      "status": "PASS",
+      "duration_ms": 0.78,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1MasterBrainEntrypoint.test_tc106_master_brain_active_projects_hub",
+      "name": "test_tc106_master_brain_active_projects_hub",
+      "doc": "TC1.06: Verify Master Brain indexes all 5 active project notes.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1GitRulesAndToolchain.test_tc107_verbatim_git_rules_tag",
+      "name": "test_tc107_verbatim_git_rules_tag",
+      "doc": "TC1.07: RULE[user_global] block must appear verbatim in Master Brain.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1GitRulesAndToolchain.test_tc108_git_lifecycle_operations_specified",
+      "name": "test_tc108_git_lifecycle_operations_specified",
+      "doc": "TC1.08: Verify mandatory lifecycle commands: init, status, add, commit, pull, push.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1GitRulesAndToolchain.test_tc109_git_automatic_branching_rule",
+      "name": "test_tc109_git_automatic_branching_rule",
+      "doc": "TC1.09: Verify automatic branching for major changes (feature/... or fix/...).",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1GitRulesAndToolchain.test_tc110_local_toolchain_node_documented",
+      "name": "test_tc110_local_toolchain_node_documented",
+      "doc": "TC1.10: Verify Node.js v22 and npm are documented with paths.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1GitRulesAndToolchain.test_tc111_local_toolchain_python_documented",
+      "name": "test_tc111_local_toolchain_python_documented",
+      "doc": "TC1.11: Verify Python 3.12 is documented with paths.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1GitRulesAndToolchain.test_tc112_local_toolchain_powershell_git_codex",
+      "name": "test_tc112_local_toolchain_powershell_git_codex",
+      "doc": "TC1.12: Verify PowerShell 5.1, Git 2.54, and Codex CLI binaries are documented.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1AgentProfilesAndConcurrency.test_tc113_antigravity1_spec_present",
+      "name": "test_tc113_antigravity1_spec_present",
+      "doc": "TC1.13: Antigravity 1 defined as primary Google session and chief architect.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1AgentProfilesAndConcurrency.test_tc114_antigravity2_spec_present",
+      "name": "test_tc114_antigravity2_spec_present",
+      "doc": "TC1.14: Antigravity 2 defined as secondary isolated session / sandbox researcher.",
+      "status": "PASS",
+      "duration_ms": 0.67,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1AgentProfilesAndConcurrency.test_tc115_codex_profile_spec_present",
+      "name": "test_tc115_codex_profile_spec_present",
+      "doc": "TC1.15: Codex Assistant defined for autonomous code synthesis and refactoring.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1AgentProfilesAndConcurrency.test_tc116_concurrency_locking_protocol_specified",
+      "name": "test_tc116_concurrency_locking_protocol_specified",
+      "doc": "TC1.16: Verify concurrency protocol specifies lockfile path and 300s TTL.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1AgentProfilesAndConcurrency.test_tc117_two_stage_atomic_write_specified",
+      "name": "test_tc117_two_stage_atomic_write_specified",
+      "doc": "TC1.17: Verify two-stage atomic write (temp file -> validate -> rename) protocol.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1GeminiTopicsMemoryAndProjects.test_tc118_all_five_projects_indexed",
+      "name": "test_tc118_all_five_projects_indexed",
+      "doc": "TC1.18: Verify all 5 target projects are indexed in the Projects Hub.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1GeminiTopicsMemoryAndProjects.test_tc119_communication_styles_referenced",
+      "name": "test_tc119_communication_styles_referenced",
+      "doc": "TC1.19: Verify reference to the 10 defined communication styles.",
+      "status": "PASS",
+      "duration_ms": 0.45,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1GeminiTopicsMemoryAndProjects.test_tc120_latest_state_summary_requirement",
+      "name": "test_tc120_latest_state_summary_requirement",
+      "doc": "TC1.20: Verify requirement for Latest State Summary (1-2 sentences).",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1GeminiTopicsMemoryAndProjects.test_tc121_goals_and_decisions_log_requirement",
+      "name": "test_tc121_goals_and_decisions_log_requirement",
+      "doc": "TC1.21: Verify requirement for Goals & Decisions Log (ADRs).",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1GeminiTopicsMemoryAndProjects.test_tc122_suggested_next_steps_rules_referenced",
+      "name": "test_tc122_suggested_next_steps_rules_referenced",
+      "doc": "TC1.22: Verify Suggested Next Steps rules (action verb, ~75 chars, 2-4 items).",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1ObsidianParamocsAndSkills.test_tc123_para_mocs_indexed_in_master",
+      "name": "test_tc123_para_mocs_indexed_in_master",
+      "doc": "TC1.23: Master Brain contains links to all 5 PARA directories.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1ObsidianParamocsAndSkills.test_tc124_dashboard_prominently_links_master_brain",
+      "name": "test_tc124_dashboard_prominently_links_master_brain",
+      "doc": "TC1.24: Dashboard.md prominently links to AI Sozlangan Miyyasi.md.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1ObsidianParamocsAndSkills.test_tc125_skills_dashboard_referenced",
+      "name": "test_tc125_skills_dashboard_referenced",
+      "doc": "TC1.25: Skills Dashboard is referenced in both Master Brain and Dashboard.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1ObsidianParamocsAndSkills.test_tc126_agent_skills_directory_populated",
+      "name": "test_tc126_agent_skills_directory_populated",
+      "doc": "TC1.26: 30 Resources/Agent Skills contains core skill documentation notes.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1ObsidianParamocsAndSkills.test_tc127_templates_infrastructure_exists",
+      "name": "test_tc127_templates_infrastructure_exists",
+      "doc": "TC1.27: 50 Templates directory contains standard note templates.",
+      "status": "PASS",
+      "duration_ms": 0.68,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2WikilinksAndUnicodeBoundaries.test_tc201_wikilink_with_whitespace_and_folders",
+      "name": "test_tc201_wikilink_with_whitespace_and_folders",
+      "doc": "TC2.01: Resolves wikilinks containing spaces and subfolder slashes.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2WikilinksAndUnicodeBoundaries.test_tc202_wikilink_alias_piping",
+      "name": "test_tc202_wikilink_alias_piping",
+      "doc": "TC2.02: Resolves wikilinks with alias pipe [[Target|Display Name]].",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2WikilinksAndUnicodeBoundaries.test_tc203_wikilink_heading_anchors",
+      "name": "test_tc203_wikilink_heading_anchors",
+      "doc": "TC2.03: Resolves wikilinks with section heading anchors [[Note#Heading]].",
+      "status": "PASS",
+      "duration_ms": 0.58,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2WikilinksAndUnicodeBoundaries.test_tc204_empty_and_corrupt_wikilink_handling",
+      "name": "test_tc204_empty_and_corrupt_wikilink_handling",
+      "doc": "TC2.04: Empty target or non-existent link safely returns None.",
+      "status": "PASS",
+      "duration_ms": 12.49,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2WikilinksAndUnicodeBoundaries.test_tc205_utf8_clean_no_bom_in_vault",
+      "name": "test_tc205_utf8_clean_no_bom_in_vault",
+      "doc": "TC2.05: Core markdown notes must be valid UTF-8 without BOM.",
+      "status": "PASS",
+      "duration_ms": 0.81,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2WikilinksAndUnicodeBoundaries.test_tc206_uzbek_latin_characters_fidelity",
+      "name": "test_tc206_uzbek_latin_characters_fidelity",
+      "doc": "TC2.06: Uzbek Latin specific characters (o?, g?, sh, ch) preserve correctly.",
+      "status": "PASS",
+      "duration_ms": 0.51,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2SuggestedNextStepsBoundaries.test_tc207_valid_action_verbs_pass",
+      "name": "test_tc207_valid_action_verbs_pass",
+      "doc": "TC2.07: Valid imperative action verbs pass validation.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2SuggestedNextStepsBoundaries.test_tc208_disallowed_prefixes_fail",
+      "name": "test_tc208_disallowed_prefixes_fail",
+      "doc": "TC2.08: Suggestions starting with passive or conversational prefixes fail.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2SuggestedNextStepsBoundaries.test_tc209_character_count_boundaries",
+      "name": "test_tc209_character_count_boundaries",
+      "doc": "TC2.09: Strict 60-85 characters limit boundary testing.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2SuggestedNextStepsBoundaries.test_tc210_visual_separation_boundary",
+      "name": "test_tc210_visual_separation_boundary",
+      "doc": "TC2.10: Exactly 5 blank lines (>=6 newline characters) preceding code block.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2ConcurrencyAndLockingBoundaries.test_tc211_active_lock_collision_blocked",
+      "name": "test_tc211_active_lock_collision_blocked",
+      "doc": "TC2.11: Second agent cannot acquire an active lock within TTL.",
+      "status": "PASS",
+      "duration_ms": 6.21,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2ConcurrencyAndLockingBoundaries.test_tc212_stale_lock_expiration_and_recovery",
+      "name": "test_tc212_stale_lock_expiration_and_recovery",
+      "doc": "TC2.12: Lock older than TTL (300s) is recognized as stale, broken, and acquired.",
+      "status": "PASS",
+      "duration_ms": 20.43,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2ConcurrencyAndLockingBoundaries.test_tc213_corrupt_lockfile_recovery",
+      "name": "test_tc213_corrupt_lockfile_recovery",
+      "doc": "TC2.13: Corrupt or 0-byte lockfile is detected, recovered, and logged.",
+      "status": "PASS",
+      "duration_ms": 13.4,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2ConcurrencyAndLockingBoundaries.test_tc214_atomic_write_rollback_on_validation_failure",
+      "name": "test_tc214_atomic_write_rollback_on_validation_failure",
+      "doc": "TC2.14: Atomic write rolls back and cleans up temp file if validator fails.",
+      "status": "PASS",
+      "duration_ms": 4.39,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier2_boundaries.TestTier2ConcurrencyAndLockingBoundaries.test_tc215_atomic_write_success_and_cleanup",
+      "name": "test_tc215_atomic_write_success_and_cleanup",
+      "doc": "TC2.15: Atomic write successfully updates destination when valid.",
+      "status": "PASS",
+      "duration_ms": 2.58,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier3_combinations.TestTier3CrossFeatureCombinations.test_tc301_master_brain_to_dashboard_mutual_linking",
+      "name": "test_tc301_master_brain_to_dashboard_mutual_linking",
+      "doc": "TC3.01: Master Brain and Dashboard.md have reciprocal cross-linking.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier3_combinations.TestTier3CrossFeatureCombinations.test_tc302_master_brain_agent_fleet_contract_consistency",
+      "name": "test_tc302_master_brain_agent_fleet_contract_consistency",
+      "doc": "TC3.02: Master Brain links all 4 agent profiles and cites Concurrency & Sync Protocol.",
+      "status": "PASS",
+      "duration_ms": 0.71,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier3_combinations.TestTier3CrossFeatureCombinations.test_tc303_master_brain_active_projects_contract_consistency",
+      "name": "test_tc303_master_brain_active_projects_contract_consistency",
+      "doc": "TC3.03: Master Brain links all 5 active projects with technology stacks.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier3_combinations.TestTier3CrossFeatureCombinations.test_tc304_skills_dashboard_to_git_workflow_pairwise",
+      "name": "test_tc304_skills_dashboard_to_git_workflow_pairwise",
+      "doc": "TC3.04: Skills Dashboard links to git-workflow.md and Obsidian skills.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier3_combinations.TestTier3CrossFeatureCombinations.test_tc305_agent_profile_notes_backlink_check",
+      "name": "test_tc305_agent_profile_notes_backlink_check",
+      "doc": "TC3.05: If agent profile notes exist on disk (M2), verify they link back to Master Brain.",
+      "status": "PASS",
+      "duration_ms": 0.55,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier3_combinations.TestTier3CrossFeatureCombinations.test_tc306_active_projects_topic_memory_backlink_check",
+      "name": "test_tc306_active_projects_topic_memory_backlink_check",
+      "doc": "TC3.06: If project notes exist on disk (M3), verify they link back to Master Brain.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier3_combinations.TestTier3CrossFeatureCombinations.test_tc307_vault_graph_existing_nodes_resolution",
+      "name": "test_tc307_vault_graph_existing_nodes_resolution",
+      "doc": "TC3.07: Verify all wikilinks in Master Brain and Dashboard point to valid targets or established contracts.",
+      "status": "PASS",
+      "duration_ms": 0.56,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier4_workloads.TestTier4RealWorldWorkloads.test_tc401_ai_assistant_cold_boot_workload",
+      "name": "test_tc401_ai_assistant_cold_boot_workload",
+      "doc": "TC4.01: Simulate AI Assistant cold startup reading Master Brain directives.",
+      "status": "PASS",
+      "duration_ms": 1.61,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier4_workloads.TestTier4RealWorldWorkloads.test_tc402_project_context_and_greeting_styles_selection",
+      "name": "test_tc402_project_context_and_greeting_styles_selection",
+      "doc": "TC4.02: Simulate selecting 1 of the 10 Communication Styles based on project state.",
+      "status": "PASS",
+      "duration_ms": 1.18,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier4_workloads.TestTier4RealWorldWorkloads.test_tc403_full_agent_session_atomic_writeback_cycle",
+      "name": "test_tc403_full_agent_session_atomic_writeback_cycle",
+      "doc": "TC4.03: Simulate a complete agent write-back cycle with file lock and atomic rename.",
+      "status": "PASS",
+      "duration_ms": 20.34,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier4_workloads.TestTier4RealWorldWorkloads.test_tc404_multi_agent_collision_and_backoff",
+      "name": "test_tc404_multi_agent_collision_and_backoff",
+      "doc": "TC4.04: Simulate Agent 1 holding lock while Agent 2 attempts write and backs off.",
+      "status": "PASS",
+      "duration_ms": 26.64,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier4_workloads.TestTier4RealWorldWorkloads.test_tc405_crashed_agent_stale_lock_recovery_workload",
+      "name": "test_tc405_crashed_agent_stale_lock_recovery_workload",
+      "doc": "TC4.05: Simulate crashed agent leaving stale lock (>300s) recovered by next agent.",
+      "status": "PASS",
+      "duration_ms": 17.0,
+      "error": null
+    }
+  ]
+}

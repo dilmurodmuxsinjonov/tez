@@ -59,7 +59,6 @@ PARA_MOCS = [
 
 
 def parse_frontmatter(content: str) -> Tuple[Optional[Dict[str, Any]], str]:
-    """Extracts YAML frontmatter from markdown content if present."""
     if not content.startswith("---"):
         return None, content
     
@@ -80,7 +79,7 @@ def parse_frontmatter(content: str) -> Tuple[Optional[Dict[str, Any]], str]:
         
         list_match = re.match(r"^[\s]*[-*]\s+(.*)$", line)
         if list_match and current_list_key:
-            val = list_match.group(1).strip().strip(""'")
+            val = list_match.group(1).strip().strip(chr(34) + chr(39))
             data[current_list_key].append(val)
             continue
         
@@ -93,18 +92,15 @@ def parse_frontmatter(content: str) -> Tuple[Optional[Dict[str, Any]], str]:
                 current_list_key = k
             else:
                 current_list_key = None
-                v_clean = v.strip(""'")
+                v_clean = v.strip(chr(34) + chr(39))
                 data[k] = v_clean
     
     return data, body
 
 
 def extract_wikilinks(content: str) -> List[Dict[str, str]]:
-    """Extracts all [[...]] wikilinks from text, parsing target, heading, and alias."""
     links = []
-    # Pattern matches [[target]] and ![[target]]
-    pattern = re.compile(r"(!?)\[\[([^\]
-]+)\]\]")
+    pattern = re.compile(r"(!?)\[\[([^\]\r\n]+)\]\]")
     for match in pattern.finditer(content):
         is_embed = bool(match.group(1))
         inner = match.group(2).strip()
@@ -137,35 +133,29 @@ def extract_wikilinks(content: str) -> List[Dict[str, str]]:
 
 
 def resolve_wikilink(vault_path: Path, current_file: Optional[Path], target: str) -> Optional[Path]:
-    """Resolves a wikilink target to an actual path in the vault according to Obsidian rules."""
     if not target:
         return None
     
-    norm_target = target.replace("\", "/").strip()
+    norm_target = target.replace(chr(92), "/").strip()
     
-    # 1. Exact path with extension
     p1 = vault_path / norm_target
     if p1.is_file():
         return p1
         
-    # 2. Path with .md added
     p2 = vault_path / f"{norm_target}.md"
     if p2.is_file():
         return p2
         
-    # 3. Path with .base or .canvas
     for ext in [".base", ".canvas", ".png", ".jpg", ".jpeg", ".svg"]:
         p_ext = vault_path / f"{norm_target}{ext}"
         if p_ext.is_file():
             return p_ext
             
-    # 4. Folder MOC convention: if target is "Folder/" or "Folder", check for "Folder/Folder.md"
     folder_trimmed = norm_target.rstrip("/")
     p_folder_moc = vault_path / folder_trimmed / f"{Path(folder_trimmed).name}.md"
     if p_folder_moc.is_file():
         return p_folder_moc
         
-    # 5. Shortest path matching (scan all files for matching basename)
     target_name = Path(norm_target).name.lower()
     for root, _, files in os.walk(vault_path):
         if ".git" in root:
@@ -179,16 +169,12 @@ def resolve_wikilink(vault_path: Path, current_file: Optional[Path], target: str
 
 
 def validate_suggested_next_step(step: str) -> Dict[str, Any]:
-    """Validates a single suggested next step against the formal Gemini Topics specification."""
     s = step.strip()
-    # Strip list markers like "- ", "* ", "1. "
     clean_step = re.sub(r"^([0-9]+\.|\*|-)\s+", "", s).strip()
     
     length = len(clean_step)
     words = clean_step.split()
     first_word = words[0] if words else ""
-    
-    # Clean punctuation from first word
     first_word_clean = re.sub(r"[^a-zA-Z]", "", first_word)
     
     is_action_verb = first_word_clean in APPROVED_ACTION_VERBS
@@ -212,26 +198,19 @@ def validate_suggested_next_step(step: str) -> Dict[str, Any]:
 
 
 def check_visual_separation(text: str) -> Tuple[bool, int]:
-    """
-    Checks whether exactly 5 blank lines precede the topic memory code block.
-    5 blank lines = 6 newline characters between non-whitespace text.
-    """
-    # Look for code block fence after suggestions
-    match = re.search(r"(
-[ 	]*){6,}```", text)
+    pattern = re.compile(r"(\r?\n[ \t]*){6,}```")
+    match = pattern.search(text)
     if match:
-        blank_line_count = len(re.findall(r"
-", match.group(0))) - 1
+        blank_line_count = len(re.findall(r"\n", match.group(0))) - 1
         return (blank_line_count >= 5, blank_line_count)
     return (False, 0)
 
 
 def check_file_utf8_clean(file_path: Path) -> Tuple[bool, Optional[str]]:
-    """Checks that a file is valid UTF-8 and does NOT contain a UTF-8 BOM."""
     try:
         with open(file_path, "rb") as f:
             raw = f.read()
-        if raw.startswith(b"ï»¿"):
+        if raw.startswith(b"\xef\xbb\xbf"):
             return False, "Contains UTF-8 BOM"
         raw.decode("utf-8")
         return True, None
