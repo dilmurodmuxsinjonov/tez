@@ -84,3 +84,6 @@ Ushbu MOC foydalanuvchining barcha ma'lumot resurslari, o'quv qo'llanmalari va A
 
 - **PARA Metodologiyasi**: Tiago Forte tomonidan yaratilgan Ikkinchi Miya tashkiliy modeli.
 - **Gemini Topics Arxitekturasi**: Shaxsiylashtirilgan, kontekstual xotira va 10 xil muloqot dinamikasi tizimi.
+
+| 📖 **Learning & Knowledge Base** | Texnologiyalar darajasi, kitoblar, o'rganilgan darslar | [[30 Resources/Learning & Knowledge Base\|Learning & Knowledge Base]] |
+| 🔧 **Troubleshooting & Fixes** | PowerShell escaping, test xatolari, stale lock'lar | [[30 Resources/Troubleshooting & Common Fixes\|Troubleshooting & Fixes]] |

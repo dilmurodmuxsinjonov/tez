@@ -171,6 +171,14 @@ Ushbu vault Tiago Fortening **PARA** (Projects, Areas, Resources, Archives) meto
 | 📅 **Daily Template** | Kunlik rejalar va sarhisoblar uchun rasmiy shablon | [[50 Templates/Daily Note Template\|Daily Note Template]] |
 | 📋 **Project Template** | Yangi loyihalar ochish uchun standart shablon | [[50 Templates/Project Template\|Project Template]] |
 | 📑 **Resource Template** | Yangi resurslar va o'rganilgan mavzular uchun shablon | [[50 Templates/Resource Template\|Resource Template]] |
+| 🤖 **Agent Profile Template** | Yangi AI agent profili ochish uchun standart shablon | [[50 Templates/Agent Profile Template\|Agent Profile Template]] |
+| 🛡️ **Area Template** | Yangi mas'uliyat sohasi yaratish uchun standart shablon | [[50 Templates/Area Template\|Area Template]] |
+
+---
+
+| **Development Workflow & CI/CD** | Git branching strategiyasi, testing pyramid va conventional commits standarti | [[20 Areas/Development Workflow & CI-CD Standards\|Dev Workflow & CI/CD]] |
+| **Learning & Knowledge Base** | O'rganilgan texnologiyalar ro'yxati, kitoblar va amaliy darslar | [[30 Resources/Learning & Knowledge Base\|Learning & Knowledge Base]] |
+| **Troubleshooting & Common Fixes** | PowerShell escaping, test xatolari va vault validatsiya yechimlari | [[30 Resources/Troubleshooting & Common Fixes\|Troubleshooting & Fixes]] |
 
 ---
 

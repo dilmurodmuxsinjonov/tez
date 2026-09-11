@@ -78,3 +78,8 @@ Obsidian va tizimli muhitda ishlash uchun rasmiy ko'nikmalar:
 - 🤖 **[[30 Resources/External AI Integrations/External AI Fleet Integration|External AI Fleet Integration]]** — Ko'p modelli floti hamkorligi.
 - ⚡ **[[30 Resources/External AI Integrations/OpenAI Codex & OpenCode Manual|OpenAI Codex Manual]]** — Terminal orqali avtonom kod yozish.
 - 🔄 **[[30 Resources/External AI Integrations/LLM Interoperability & Handoff Format|LLM Handoff Format]]** — Modellararo kontekst almashish formati.
+
+
+### 📖 Learning & Troubleshooting
+- [[30 Resources/Learning & Knowledge Base|Learning & Knowledge Base]]
+- [[30 Resources/Troubleshooting & Common Fixes|Troubleshooting & Common Fixes]]

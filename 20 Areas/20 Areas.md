@@ -52,3 +52,5 @@ Ushbu MOC foydalanuvchining shaxsiy va texnologik mas'uliyat sohalarini, xususan
 - **Me'moriy standartlar**: Toza kod, tiplashtirish, xavfsizlik va mustahkam modulli tuzilma.
 - **Versiyalar nazorati**: Har bir faoliyat `RULE[user_global]` asosida avtomatik Git boshqaruvi bilan himoyalangan.
 - **Xotira yaxlitligi**: Barcha o'zgarishlar atomik yangilanadi, feyk yoki soxta ma'lumotlarga yo'l qo'yilmaydi.
+
+| 🔄 **Development Workflow & CI/CD** | Git branching, testing pyramid, conventional commits | [[20 Areas/Development Workflow & CI-CD Standards\|Dev Workflow & CI/CD]] |

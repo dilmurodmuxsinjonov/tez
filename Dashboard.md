@@ -66,4 +66,5 @@ tags:
 
 ## 📝 So'nggi Yozuvlar (Quick Links)
 
+- [[00 Inbox/2026-09-12|📅 2026-09-12 — Kunlik Qayd]]
 - [[Salom|👋 Salomlashish Qaydi]]

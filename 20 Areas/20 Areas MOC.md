@@ -58,3 +58,7 @@ Ushbu MOC foydalanuvchi **Dilmurod Muhsinjanov**ning shaxsiy va texnologik mas'u
 1. Har bir AI agenti o'z profili va ruxsat berilgan vakolatlari chegarasida ish olib boradi.
 2. Yangi operatsion standartlar paydo bo'lganda, ular ushbu MOC va **[[20 Areas/20 Areas|20 Areas.md]]** da muhrlanadi.
 3. Barcha agentlar bir-birining qulflarini hurmat qiladi va to'qnashuvsiz sinxronizatsiyani ta'minlaydi.
+
+
+### 🔄 Development Workflow & CI/CD
+- [[20 Areas/Development Workflow & CI-CD Standards|Development Workflow & CI/CD Standards]] — Git branching, testing pyramid, commit standarti
