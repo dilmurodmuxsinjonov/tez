@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-09-11T18:42:46.520907+00:00",
+  "timestamp": "2026-09-11T21:42:23.690368+00:00",
   "vault": "D:\\obsidian file",
   "tier": "all",
-  "total_tests": 54,
-  "passed": 54,
+  "total_tests": 94,
+  "passed": 94,
   "failed": 0,
   "errors": 0,
   "skipped": 0,
-  "wall_clock_seconds": 0.136,
+  "wall_clock_seconds": 0.474,
   "verdict": "PASS",
   "tier_breakdown": {
     "1": {
-      "PASS": 27,
+      "PASS": 29,
       "FAIL": 0,
       "ERROR": 0,
       "SKIP": 0
@@ -30,6 +30,12 @@
     },
     "4": {
       "PASS": 5,
+      "FAIL": 0,
+      "ERROR": 0,
+      "SKIP": 0
+    },
+    "5": {
+      "PASS": 38,
       "FAIL": 0,
       "ERROR": 0,
       "SKIP": 0
@@ -73,7 +79,7 @@
       "name": "test_tc105_master_brain_agent_fleet_index",
       "doc": "TC1.05: Verify Master Brain indexes all 4 agent fleet profiles.",
       "status": "PASS",
-      "duration_ms": 0.78,
+      "duration_ms": 1.42,
       "error": null
     },
     {
@@ -145,7 +151,7 @@
       "name": "test_tc114_antigravity2_spec_present",
       "doc": "TC1.14: Antigravity 2 defined as secondary isolated session / sandbox researcher.",
       "status": "PASS",
-      "duration_ms": 0.67,
+      "duration_ms": 0.0,
       "error": null
     },
     {
@@ -185,7 +191,7 @@
       "name": "test_tc119_communication_styles_referenced",
       "doc": "TC1.19: Verify reference to the 10 defined communication styles.",
       "status": "PASS",
-      "duration_ms": 0.45,
+      "duration_ms": 0.0,
       "error": null
     },
     {
@@ -241,7 +247,7 @@
       "name": "test_tc126_agent_skills_directory_populated",
       "doc": "TC1.26: 30 Resources/Agent Skills contains core skill documentation notes.",
       "status": "PASS",
-      "duration_ms": 0.0,
+      "duration_ms": 0.88,
       "error": null
     },
     {
@@ -249,7 +255,23 @@
       "name": "test_tc127_templates_infrastructure_exists",
       "doc": "TC1.27: 50 Templates directory contains standard note templates.",
       "status": "PASS",
-      "duration_ms": 0.68,
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1ObsidianParamocsAndSkills.test_tc128_frontier_research_and_playbooks_exist",
+      "name": "test_tc128_frontier_research_and_playbooks_exist",
+      "doc": "TC1.28: Frontier research dossiers, browser playbook, and multimodal workflows exist and link cleanly.",
+      "status": "PASS",
+      "duration_ms": 1.31,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier1_features.TestTier1ObsidianParamocsAndSkills.test_tc129_all_para_moc_files_exist_and_crosslinked",
+      "name": "test_tc129_all_para_moc_files_exist_and_crosslinked",
+      "doc": "TC1.29: All five companion PARA MOC notes exist, have type: moc, and cross-link with Skills Dashboard.",
+      "status": "PASS",
+      "duration_ms": 0.64,
       "error": null
     },
     {
@@ -257,7 +279,7 @@
       "name": "test_tc201_wikilink_with_whitespace_and_folders",
       "doc": "TC2.01: Resolves wikilinks containing spaces and subfolder slashes.",
       "status": "PASS",
-      "duration_ms": 0.0,
+      "duration_ms": 0.62,
       "error": null
     },
     {
@@ -273,7 +295,7 @@
       "name": "test_tc203_wikilink_heading_anchors",
       "doc": "TC2.03: Resolves wikilinks with section heading anchors [[Note#Heading]].",
       "status": "PASS",
-      "duration_ms": 0.58,
+      "duration_ms": 0.0,
       "error": null
     },
     {
@@ -281,7 +303,7 @@
       "name": "test_tc204_empty_and_corrupt_wikilink_handling",
       "doc": "TC2.04: Empty target or non-existent link safely returns None.",
       "status": "PASS",
-      "duration_ms": 12.49,
+      "duration_ms": 23.53,
       "error": null
     },
     {
@@ -289,7 +311,7 @@
       "name": "test_tc205_utf8_clean_no_bom_in_vault",
       "doc": "TC2.05: Core markdown notes must be valid UTF-8 without BOM.",
       "status": "PASS",
-      "duration_ms": 0.81,
+      "duration_ms": 0.61,
       "error": null
     },
     {
@@ -297,7 +319,7 @@
       "name": "test_tc206_uzbek_latin_characters_fidelity",
       "doc": "TC2.06: Uzbek Latin specific characters (o?, g?, sh, ch) preserve correctly.",
       "status": "PASS",
-      "duration_ms": 0.51,
+      "duration_ms": 0.66,
       "error": null
     },
     {
@@ -305,7 +327,7 @@
       "name": "test_tc207_valid_action_verbs_pass",
       "doc": "TC2.07: Valid imperative action verbs pass validation.",
       "status": "PASS",
-      "duration_ms": 0.0,
+      "duration_ms": 0.63,
       "error": null
     },
     {
@@ -337,7 +359,7 @@
       "name": "test_tc211_active_lock_collision_blocked",
       "doc": "TC2.11: Second agent cannot acquire an active lock within TTL.",
       "status": "PASS",
-      "duration_ms": 6.21,
+      "duration_ms": 5.5,
       "error": null
     },
     {
@@ -345,7 +367,7 @@
       "name": "test_tc212_stale_lock_expiration_and_recovery",
       "doc": "TC2.12: Lock older than TTL (300s) is recognized as stale, broken, and acquired.",
       "status": "PASS",
-      "duration_ms": 20.43,
+      "duration_ms": 13.91,
       "error": null
     },
     {
@@ -353,7 +375,7 @@
       "name": "test_tc213_corrupt_lockfile_recovery",
       "doc": "TC2.13: Corrupt or 0-byte lockfile is detected, recovered, and logged.",
       "status": "PASS",
-      "duration_ms": 13.4,
+      "duration_ms": 15.28,
       "error": null
     },
     {
@@ -361,7 +383,7 @@
       "name": "test_tc214_atomic_write_rollback_on_validation_failure",
       "doc": "TC2.14: Atomic write rolls back and cleans up temp file if validator fails.",
       "status": "PASS",
-      "duration_ms": 4.39,
+      "duration_ms": 2.92,
       "error": null
     },
     {
@@ -369,7 +391,7 @@
       "name": "test_tc215_atomic_write_success_and_cleanup",
       "doc": "TC2.15: Atomic write successfully updates destination when valid.",
       "status": "PASS",
-      "duration_ms": 2.58,
+      "duration_ms": 3.79,
       "error": null
     },
     {
@@ -377,7 +399,7 @@
       "name": "test_tc301_master_brain_to_dashboard_mutual_linking",
       "doc": "TC3.01: Master Brain and Dashboard.md have reciprocal cross-linking.",
       "status": "PASS",
-      "duration_ms": 0.0,
+      "duration_ms": 0.56,
       "error": null
     },
     {
@@ -385,7 +407,7 @@
       "name": "test_tc302_master_brain_agent_fleet_contract_consistency",
       "doc": "TC3.02: Master Brain links all 4 agent profiles and cites Concurrency & Sync Protocol.",
       "status": "PASS",
-      "duration_ms": 0.71,
+      "duration_ms": 0.58,
       "error": null
     },
     {
@@ -393,7 +415,7 @@
       "name": "test_tc303_master_brain_active_projects_contract_consistency",
       "doc": "TC3.03: Master Brain links all 5 active projects with technology stacks.",
       "status": "PASS",
-      "duration_ms": 0.0,
+      "duration_ms": 0.54,
       "error": null
     },
     {
@@ -409,7 +431,7 @@
       "name": "test_tc305_agent_profile_notes_backlink_check",
       "doc": "TC3.05: If agent profile notes exist on disk (M2), verify they link back to Master Brain.",
       "status": "PASS",
-      "duration_ms": 0.55,
+      "duration_ms": 1.7,
       "error": null
     },
     {
@@ -417,7 +439,7 @@
       "name": "test_tc306_active_projects_topic_memory_backlink_check",
       "doc": "TC3.06: If project notes exist on disk (M3), verify they link back to Master Brain.",
       "status": "PASS",
-      "duration_ms": 0.0,
+      "duration_ms": 1.68,
       "error": null
     },
     {
@@ -425,7 +447,7 @@
       "name": "test_tc307_vault_graph_existing_nodes_resolution",
       "doc": "TC3.07: Verify all wikilinks in Master Brain and Dashboard point to valid targets or established contracts.",
       "status": "PASS",
-      "duration_ms": 0.56,
+      "duration_ms": 0.62,
       "error": null
     },
     {
@@ -433,7 +455,7 @@
       "name": "test_tc401_ai_assistant_cold_boot_workload",
       "doc": "TC4.01: Simulate AI Assistant cold startup reading Master Brain directives.",
       "status": "PASS",
-      "duration_ms": 1.61,
+      "duration_ms": 1.08,
       "error": null
     },
     {
@@ -441,7 +463,7 @@
       "name": "test_tc402_project_context_and_greeting_styles_selection",
       "doc": "TC4.02: Simulate selecting 1 of the 10 Communication Styles based on project state.",
       "status": "PASS",
-      "duration_ms": 1.18,
+      "duration_ms": 1.14,
       "error": null
     },
     {
@@ -449,7 +471,7 @@
       "name": "test_tc403_full_agent_session_atomic_writeback_cycle",
       "doc": "TC4.03: Simulate a complete agent write-back cycle with file lock and atomic rename.",
       "status": "PASS",
-      "duration_ms": 20.34,
+      "duration_ms": 19.48,
       "error": null
     },
     {
@@ -457,7 +479,7 @@
       "name": "test_tc404_multi_agent_collision_and_backoff",
       "doc": "TC4.04: Simulate Agent 1 holding lock while Agent 2 attempts write and backs off.",
       "status": "PASS",
-      "duration_ms": 26.64,
+      "duration_ms": 28.42,
       "error": null
     },
     {
@@ -465,7 +487,311 @@
       "name": "test_tc405_crashed_agent_stale_lock_recovery_workload",
       "doc": "TC4.05: Simulate crashed agent leaving stale lock (>300s) recovered by next agent.",
       "status": "PASS",
-      "duration_ms": 17.0,
+      "duration_ms": 17.76,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestTier5ParaMocs.test_tc501_all_five_mocs_exist",
+      "name": "test_tc501_all_five_mocs_exist",
+      "doc": "TC5.01: All 5 PARA MOC files must exist in their respective directories.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestTier5ParaMocs.test_tc502_mocs_valid_frontmatter",
+      "name": "test_tc502_mocs_valid_frontmatter",
+      "doc": "TC5.02: All MOCs must have valid YAML frontmatter with type: moc.",
+      "status": "PASS",
+      "duration_ms": 1.27,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestTier5ParaMocs.test_tc503_mocs_link_to_master_brain",
+      "name": "test_tc503_mocs_link_to_master_brain",
+      "doc": "TC5.03: Every MOC note must link back to AI Sozlangan Miyyasi.",
+      "status": "PASS",
+      "duration_ms": 1.09,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestTier5ParaMocs.test_tc504_projects_moc_indexes_all_active_projects",
+      "name": "test_tc504_projects_moc_indexes_all_active_projects",
+      "doc": "TC5.04: 10 Projects.md must index all 5 active project notes.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestTier5ParaMocs.test_tc505_areas_moc_indexes_all_agent_profiles",
+      "name": "test_tc505_areas_moc_indexes_all_agent_profiles",
+      "doc": "TC5.05: 20 Areas.md must index all 4 agent profiles and concurrency protocol.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestTier5GeminiTopicsProjectsFidelity.test_tc506_all_five_project_notes_exist",
+      "name": "test_tc506_all_five_project_notes_exist",
+      "doc": "TC5.06: All 5 active project notes must exist in 10 Projects/.",
+      "status": "PASS",
+      "duration_ms": 0.56,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestTier5GeminiTopicsProjectsFidelity.test_tc507_project_notes_frontmatter_schema",
+      "name": "test_tc507_project_notes_frontmatter_schema",
+      "doc": "TC5.07: Each project note must have type: project-memory and full schema.",
+      "status": "PASS",
+      "duration_ms": 0.54,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestTier5GeminiTopicsProjectsFidelity.test_tc508_suggested_next_steps_strict_validation",
+      "name": "test_tc508_suggested_next_steps_strict_validation",
+      "doc": "TC5.08: Suggested Next Steps must use approved action verbs and satisfy 60-85 chars.",
+      "status": "PASS",
+      "duration_ms": 1.09,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestTier5GeminiTopicsProjectsFidelity.test_tc509_visual_separation_and_topic_memory_block",
+      "name": "test_tc509_visual_separation_and_topic_memory_block",
+      "doc": "TC5.09: Visual separation must have >= 5 blank lines followed by ```text topic memory.",
+      "status": "PASS",
+      "duration_ms": 1.72,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestTier5VaultGraphHygiene.test_tc510_utf8_clean_without_bom",
+      "name": "test_tc510_utf8_clean_without_bom",
+      "doc": "TC5.10: All newly created notes must be clean UTF-8 without BOM.",
+      "status": "PASS",
+      "duration_ms": 2.19,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialVaultGraphConnectivity.test_adv101_vault_contains_at_least_65_markdown_files",
+      "name": "test_adv101_vault_contains_at_least_65_markdown_files",
+      "doc": "ADV1.01: Vault must contain >= 65 active markdown files across all PARA folders.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialVaultGraphConnectivity.test_adv102_zero_broken_wikilinks_in_active_project_and_profile_notes",
+      "name": "test_adv102_zero_broken_wikilinks_in_active_project_and_profile_notes",
+      "doc": "ADV1.02: Core active project notes and agent profiles must have ZERO broken wikilinks.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialVaultGraphConnectivity.test_adv103_vault_wide_broken_wikilink_audit",
+      "name": "test_adv103_vault_wide_broken_wikilink_audit",
+      "doc": "ADV1.03: Vault-wide broken link audit. Discovers any invalid wikilink across all 65 files.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialVaultGraphConnectivity.test_adv104_zero_orphan_incoming_links_core_notes",
+      "name": "test_adv104_zero_orphan_incoming_links_core_notes",
+      "doc": "ADV1.04: All core project notes, agent profiles, and PARA MOCs must have incoming links.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialVaultGraphConnectivity.test_adv105_zero_orphan_incoming_links_vault_wide",
+      "name": "test_adv105_zero_orphan_incoming_links_vault_wide",
+      "doc": "ADV1.05: Vault-wide orphan check. Every markdown file in vault must have >= 1 incoming link.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialVaultGraphConnectivity.test_adv106_zero_pure_island_nodes_vault_wide",
+      "name": "test_adv106_zero_pure_island_nodes_vault_wide",
+      "doc": "ADV1.06: No file in the vault should be a pure isolated island (in-degree=0 AND out-degree=0).",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialVaultGraphConnectivity.test_adv107_core_notes_bidirectional_connectivity",
+      "name": "test_adv107_core_notes_bidirectional_connectivity",
+      "doc": "ADV1.07: Every core note must have BOTH inbound (>= 1) and outbound (>= 1) links.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialWikilinkCaseAndAliasFormatting.test_adv201_wikilink_case_sensitivity_alignment",
+      "name": "test_adv201_wikilink_case_sensitivity_alignment",
+      "doc": "ADV2.01: All wikilinks in the vault must match the exact disk case of their target files.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialWikilinkCaseAndAliasFormatting.test_adv202_wikilink_heading_anchors_exist_in_target",
+      "name": "test_adv202_wikilink_heading_anchors_exist_in_target",
+      "doc": "ADV2.02: All heading anchors ([[Target#Heading]]) must correspond to actual headings.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialWikilinkCaseAndAliasFormatting.test_adv203_wikilink_alias_syntax_robustness",
+      "name": "test_adv203_wikilink_alias_syntax_robustness",
+      "doc": "ADV2.03: Stress-test alias parsing against standard and escaped pipes.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialWikilinkCaseAndAliasFormatting.test_adv204_wikilink_no_raw_windows_backslashes",
+      "name": "test_adv204_wikilink_no_raw_windows_backslashes",
+      "doc": "ADV2.04: Wikilinks across all markdown files must NOT use Windows backslashes in paths.",
+      "status": "PASS",
+      "duration_ms": 12.96,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialWikilinkCaseAndAliasFormatting.test_adv205_wikilink_bracket_balance_and_cleanliness",
+      "name": "test_adv205_wikilink_bracket_balance_and_cleanliness",
+      "doc": "ADV2.05: Verify no malformed double brackets across all vault markdown notes.",
+      "status": "PASS",
+      "duration_ms": 6.39,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialConcurrencyAndStaleLockRecovery.test_adv301_collision_rejection_and_data_preservation",
+      "name": "test_adv301_collision_rejection_and_data_preservation",
+      "doc": "ADV3.01: Active lock completely blocks second agent and preserves original lock metadata.",
+      "status": "PASS",
+      "duration_ms": 15.97,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialConcurrencyAndStaleLockRecovery.test_adv302_stale_lock_boundary_conditions",
+      "name": "test_adv302_stale_lock_boundary_conditions",
+      "doc": "ADV3.02: Stale lock threshold: age < TTL is blocked; age >= TTL is broken and recovered.",
+      "status": "PASS",
+      "duration_ms": 47.21,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialConcurrencyAndStaleLockRecovery.test_adv303_corrupt_lockfile_adversarial_recovery",
+      "name": "test_adv303_corrupt_lockfile_adversarial_recovery",
+      "doc": "ADV3.03: Handles completely corrupt, empty, or partial lockfiles gracefully.",
+      "status": "PASS",
+      "duration_ms": 84.65,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialConcurrencyAndStaleLockRecovery.test_adv304_multi_threaded_lock_contention",
+      "name": "test_adv304_multi_threaded_lock_contention",
+      "doc": "ADV3.04: 10 concurrent threads simultaneously race to acquire the exact same file lock.",
+      "status": "PASS",
+      "duration_ms": 22.68,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialConcurrencyAndStaleLockRecovery.test_adv305_atomic_write_rollback_integrity",
+      "name": "test_adv305_atomic_write_rollback_integrity",
+      "doc": "ADV3.05: Atomic write rollback leaves zero leftover temporary files on validation failure.",
+      "status": "PASS",
+      "duration_ms": 4.79,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialVaultUtf8NoBomHygiene.test_adv401_all_vault_markdown_files_no_bom",
+      "name": "test_adv401_all_vault_markdown_files_no_bom",
+      "doc": "ADV4.01: Verifies that NO markdown file in the entire vault contains a UTF-8 BOM.",
+      "status": "PASS",
+      "duration_ms": 5.51,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialVaultUtf8NoBomHygiene.test_adv402_all_vault_markdown_strict_utf8_decoding",
+      "name": "test_adv402_all_vault_markdown_strict_utf8_decoding",
+      "doc": "ADV4.02: All markdown files must decode under strict UTF-8 with zero errors.",
+      "status": "PASS",
+      "duration_ms": 5.46,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialVaultUtf8NoBomHygiene.test_adv403_no_unicode_replacement_or_mojibake",
+      "name": "test_adv403_no_unicode_replacement_or_mojibake",
+      "doc": "ADV4.03: Detects Unicode replacement characters (U+FFFD) and mojibake sequences.",
+      "status": "PASS",
+      "duration_ms": 7.12,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialVaultUtf8NoBomHygiene.test_adv404_non_markdown_vault_files_encoding",
+      "name": "test_adv404_non_markdown_vault_files_encoding",
+      "doc": "ADV4.04: Non-markdown configuration files (.base, .canvas, .json) must also be clean UTF-8.",
+      "status": "PASS",
+      "duration_ms": 3.65,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialGeminiTopicsBoundaryConstraints.test_adv501_latest_state_summary_presence_and_word_count_boundaries",
+      "name": "test_adv501_latest_state_summary_presence_and_word_count_boundaries",
+      "doc": "ADV5.01: Latest State Summary must exist in all project notes and contain 30-50 words.",
+      "status": "PASS",
+      "duration_ms": 1.01,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialGeminiTopicsBoundaryConstraints.test_adv502_latest_state_summary_sentence_count",
+      "name": "test_adv502_latest_state_summary_sentence_count",
+      "doc": "ADV5.02: Latest State Summary must consist of 1 to 2 sentences.",
+      "status": "PASS",
+      "duration_ms": 0.5,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialGeminiTopicsBoundaryConstraints.test_adv503_suggested_next_steps_count_boundaries",
+      "name": "test_adv503_suggested_next_steps_count_boundaries",
+      "doc": "ADV5.03: Suggested Next Steps must contain strictly 2 to 4 actionable suggestions.",
+      "status": "PASS",
+      "duration_ms": 1.01,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialGeminiTopicsBoundaryConstraints.test_adv504_suggested_next_steps_char_length_boundaries",
+      "name": "test_adv504_suggested_next_steps_char_length_boundaries",
+      "doc": "ADV5.04: Every Suggested Next Step must be strictly between 60 and 85 characters.",
+      "status": "PASS",
+      "duration_ms": 1.01,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialGeminiTopicsBoundaryConstraints.test_adv505_suggested_next_steps_action_verbs_compliance",
+      "name": "test_adv505_suggested_next_steps_action_verbs_compliance",
+      "doc": "ADV5.05: First word of every Suggested Next Step must be an approved imperative action verb.",
+      "status": "PASS",
+      "duration_ms": 1.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialGeminiTopicsBoundaryConstraints.test_adv506_synthetic_edge_case_boundary_validation",
+      "name": "test_adv506_synthetic_edge_case_boundary_validation",
+      "doc": "ADV5.06: Synthetic boundary edge cases: 59 chars fails, 60 passes, 85 passes, 86 fails.",
+      "status": "PASS",
+      "duration_ms": 0.0,
+      "error": null
+    },
+    {
+      "test_id": "tests.e2e.test_tier5_adversarial.TestAdversarialGeminiTopicsBoundaryConstraints.test_adv507_visual_separation_boundary_check",
+      "name": "test_adv507_visual_separation_boundary_check",
+      "doc": "ADV5.07: Visual separation between Suggested Next Steps and ```text block must be >= 5 blank lines.",
+      "status": "PASS",
+      "duration_ms": 1.5,
       "error": null
     }
   ]
