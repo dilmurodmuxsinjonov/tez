@@ -1,0 +1,36 @@
+filters:
+  and:
+    - file.inFolder("30 Resources/Agent Skills")
+    - 'file.ext == "md"'
+
+formulas:
+  status_icon: 'if(status == "installed", "✅ Installed", if(status == "active", "🚀 Active", if(status == "pending-cli-activation", "⏳ Pending CLI", "⚠️ Unknown")))'
+  difficulty_label: 'if(difficulty == "Easy", "🟢 Easy", if(difficulty == "Medium", "🟡 Medium", "🔴 Hard"))'
+
+properties:
+  type:
+    displayName: "Kategoriya"
+  formula.status_icon:
+    displayName: "Holati"
+  formula.difficulty_label:
+    displayName: "Qiyinchilik"
+
+views:
+  - type: table
+    name: "Hamma Ko'nikmalar"
+    order:
+      - file.name
+      - type
+      - formula.status_icon
+      - formula.difficulty_label
+    groupBy:
+      property: type
+      direction: ASC
+
+  - type: cards
+    name: "Ko'nikmalar Kartalari"
+    order:
+      - file.name
+      - type
+      - formula.status_icon
+      - formula.difficulty_label
