@@ -1,6 +1,6 @@
 ---
 title: "MobCreatorWebApp — 3D Minecraft Mob Creator"
-version: "1.0.0"
+version: 1.0.0
 status: active
 type: project-memory
 tags:
@@ -28,7 +28,7 @@ The 3D procedural mob generator is currently operational on branch main, featuri
 
 ## 💡 Goals & Decisions Log (ADR)
 
-| Sana | ADR ID | Qaror va Ko'lam (Decision & Scope) | Asos va Afzallik (Rationale) | Rad etilgan Variantlar (Alternatives) | Holat | Muallif |
+| Sana | ADR ID | Decision & Scope | Rationale | Alternatives | Holat | Muallif |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-09-11 | ADR-MC-001 | Adopt React Three Fiber (@react-three/fiber) & Drei | Declarative scene graph and tight React 19 state synchronization | Vanilla Three.js imperative rendering | Active | Antigravity 1 |
 | 2026-09-11 | ADR-MC-002 | Procedural Box Decomposition for Mob Segments | Parametric box math with dorsal fins and lateral ridges for creature styling | Static GLTF loading (no dynamic editing) | Active | Antigravity 1 |
@@ -73,35 +73,34 @@ Loyiha bilan muloqot boshlanganda tizim vaziyatga qarab quyidagi 10 ta salomlash
 
 
 
-
 ```text
 🎯 ACTIVE GOALS & OBJECTIVES
-- Objective 1: Build interactive React Three Fiber 3D parametric mob generator
-- Objective 2: Implement multi-segment box calculations for aquatic and mythical creatures
-- Objective 3: Export generated mob models to Minecraft Bedrock and Java JSON geometries
+- Objective 1: Build interactive React Three Fiber 3D mob generator
+- Objective 2: Implement multi-segment box math for creature models
+- Objective 3: Export generated mob geometries to Minecraft formats
 
 📋 LATEST STATE & MILESTONE PROGRESS
 - Project Path: C:\Users\dilmu\.gemini\antigravity\scratch\MobCreatorWebApp
-- Current Phase: Phase 1 (Core 3D Viewport & Parametric Segment Generation)
+- Current Phase: Phase 1 (Core 3D Viewport & Parametric Generation)
 - Active Branch: main
-- Stopping Point: src/App.jsx line 45 (SkeletonViewer and OrbitControls integration)
-- Blockers: None; 3D canvas renders stable 60 FPS in Vite development server
+- Stopping Point: src/App.jsx line 45 (SkeletonViewer and OrbitControls)
+- Blockers: None; 3D canvas renders stable 60 FPS in Vite dev server
 
 💡 ARCHITECTURAL DECISIONS LOG
-- ADR-MC-001: Adopted React Three Fiber (@react-three/fiber v9) & Drei v10 with React 19
-- ADR-MC-002: Procedural box decomposition with parametric dorsal fins and lateral ridges
+- ADR-MC-001: React Three Fiber (@react-three/fiber v9) & Drei v10
+- ADR-MC-002: Procedural box decomposition with parametric fins & ridges
 - ADR-MC-003: Vite 8 build pipeline with Lucide React iconography
 
 ⚠️ KNOWN ISSUES & ACTIVE BLOCKERS
-- Known Issue: High segment count (>50 boxes) introduces minor frame drops on lower-end GPUs
-- Resolution: Plan instanced mesh buffer geometry grouping for redundant fin segments
+- Known Issue: High segment count (>50 boxes) drops FPS on low-end GPUs
+- Resolution: Plan instanced mesh buffer grouping for fin segments
 
 💬 RELEVANT CONVERSATIONS & GIT COMMITS
-- Discussion: Session with Antigravity 1 on procedural Leviathan mob segment math
+- Discussion: Session with Antigravity 1 on Leviathan mob math
 - Environment: Node.js v22.23.2, Vite 8.0.12, Three.js 0.184.0
 
 🔗 CROSS-DOMAIN DEPENDENCIES
 - Master Brain: [[AI Sozlangan Miyyasi]]
-- Related Project: [[NagoyaCastle]] (Minecraft world structure and assets)
-- Upstream Guidelines: [[30 Resources/Agent Skills/git-workflow|Git Workflow Specification]]
+- Related Project: [[NagoyaCastle]] (Minecraft world structure assets)
+- Upstream: [[30 Resources/Agent Skills/git-workflow|Git Workflow]]
 ```

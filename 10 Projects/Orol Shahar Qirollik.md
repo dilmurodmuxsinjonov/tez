@@ -1,6 +1,6 @@
 ---
 title: "Orol Shahar Qirollik — Economic Simulation Game Monorepo"
-version: "1.0.0"
+version: 1.0.0
 status: active
 type: project-memory
 tags:
@@ -28,7 +28,7 @@ The economic simulation monorepo is actively progressing on branch feature/v1-p3
 
 ## 💡 Goals & Decisions Log (ADR)
 
-| Sana | ADR ID | Qaror va Ko'lam (Decision & Scope) | Asos va Afzallik (Rationale) | Rad etilgan Variantlar (Alternatives) | Holat | Muallif |
+| Sana | ADR ID | Decision & Scope | Rationale | Alternatives | Holat | Muallif |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-09-11 | ADR-OSH-001 | Integer Resource Arithmetic & Idempotent Ledger | Integer math avoids floating point drift; idempotency keys prevent duplicate settlement | Floating-point arithmetic | Active | Antigravity 1 |
 | 2026-09-11 | ADR-OSH-002 | Embedded PostgreSQL & Prisma 7 Monorepo | Zero-install embedded Postgres for rapid local test reproducibility and type-safety | Raw SQLite (lack of concurrent write concurrency) | Active | Antigravity 1 |
@@ -73,35 +73,34 @@ Loyiha bilan muloqot boshlanganda tizim vaziyatga qarab quyidagi 10 ta salomlash
 
 
 
-
 ```text
 🎯 ACTIVE GOALS & OBJECTIVES
-- Objective 1: Deliver modular monorepo simulation (Orol -> Shahar -> Qirollik)
-- Objective 2: Complete milestone V1-P3 (Guide, admin analytics, idempotency)
-- Objective 3: Prepare architecture contracts for V2 Web3 Solana Treasury integration
+- Objective 1: Deliver modular monorepo (Orol -> Shahar -> Qirollik)
+- Objective 2: Complete V1-P3 (Guide, admin analytics, idempotency)
+- Objective 3: Prepare architecture contracts for V2 Web3 Treasury
 
 📋 LATEST STATE & MILESTONE PROGRESS
 - Project Path: C:\Users\dilmu\OneDrive\Desktop\game23v1
 - Current Phase: Milestone V1-P3 (Contextual Guide & Admin Infrastructure)
 - Active Branch: feature/v1-p3
 - Stopping Point: backend/src/services/onboarding.service.ts line 68
-- Blockers: None; V1-P1 (Core loop) and V1-P2 (Marketplace) passed all Playwright tests
+- Blockers: None; V1-P1 & V1-P2 passed all automated Playwright tests
 
 💡 ARCHITECTURAL DECISIONS LOG
-- ADR-OSH-001: Integer resource math with strict idempotency keys on settlements
-- ADR-OSH-002: Monorepo with Prisma 7 and embedded PostgreSQL 17 for zero-friction setup
-- ADR-OSH-003: Standalone minute-tick worker computing population balance and yield
+- ADR-OSH-001: Integer resource math with strict idempotency keys
+- ADR-OSH-002: Monorepo with Prisma 7 and embedded PostgreSQL 17
+- ADR-OSH-003: Standalone minute-tick worker computing population & yield
 
 ⚠️ KNOWN ISSUES & ACTIVE BLOCKERS
-- Known Issue: High concurrent WebSocket trade quotes trigger brief Redis connection bursts
-- Resolution: Configure connection pooling and backoff throttles in ioredis client
+- Known Issue: High concurrent trade quotes trigger Redis bursts
+- Resolution: Configure pooling and backoff throttles in ioredis
 
 💬 RELEVANT CONVERSATIONS & GIT COMMITS
-- Commits: Verified test passes on scripts/test.mjs and Playwright E2E suites
-- Environment: Node.js >=24 <25, Express 5.2.1, Prisma 7.10.0, React 19.2.8
+- Commits: Verified test passes on scripts/test.mjs and Playwright
+- Environment: Node.js >=24 <25, Express 5.2.1, Prisma 7.10.0, React 19
 
 🔗 CROSS-DOMAIN DEPENDENCIES
 - Master Brain: [[AI Sozlangan Miyyasi]]
-- Related Project: [[MobCreatorWebApp]] (3D building and character assets)
-- Architecture Specs: loyiha/gap_analysis_resolutions.md (Gaps O01-O26 resolved)
+- Related Project: [[MobCreatorWebApp]] (3D assets)
+- Architecture Specs: loyiha/gap_analysis_resolutions.md
 ```

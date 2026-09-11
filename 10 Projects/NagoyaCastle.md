@@ -1,6 +1,6 @@
 ---
 title: "NagoyaCastle — Minecraft Japanese Castle Asset Pipeline"
-version: "1.0.0"
+version: 1.0.0
 status: active
 type: project-memory
 tags:
@@ -28,7 +28,7 @@ The Japanese castle world extraction pipeline is fully verified on branch main, 
 
 ## 💡 Goals & Decisions Log (ADR)
 
-| Sana | ADR ID | Qaror va Ko'lam (Decision & Scope) | Asos va Afzallik (Rationale) | Rad etilgan Variantlar (Alternatives) | Holat | Muallif |
+| Sana | ADR ID | Decision & Scope | Rationale | Alternatives | Holat | Muallif |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-09-11 | ADR-NC-001 | Python MediaFire Automated Scraper Pipeline | Direct download link extraction and automated RAR decompression via download_osaka.py | Manual browser downloads (unrepeatable) | Active | Antigravity 1 |
 | 2026-09-11 | ADR-NC-002 | Retain Full Minecraft Anvil Directory Structure | Preserve level.dat (4,280 bytes), region/*.mca, poi, and playerdata intact | Stripping chunks to raw block arrays | Active | Antigravity 1 |
@@ -73,35 +73,34 @@ Loyiha bilan muloqot boshlanganda tizim vaziyatga qarab quyidagi 10 ta salomlash
 
 
 
-
 ```text
 🎯 ACTIVE GOALS & OBJECTIVES
-- Objective 1: Maintain automated scraper pipeline for Japanese Castle world archives
-- Objective 2: Parse Minecraft Anvil MCA chunk format and NBT metadata cleanly
-- Objective 3: Bridge Minecraft architectural assets to web-based Three.js 3D models
+- Objective 1: Maintain automated scraper pipeline for world archives
+- Objective 2: Parse Minecraft Anvil MCA format and NBT metadata cleanly
+- Objective 3: Bridge Minecraft assets to web Three.js 3D models
 
 📋 LATEST STATE & MILESTONE PROGRESS
 - Project Path: C:\Users\dilmu\.gemini\antigravity\scratch\NagoyaCastle
 - Current Phase: Phase 1 (Archive Retrieval & Anvil Chunk Extraction)
 - Active Branch: main
-- Stopping Point: download_osaka.py line 38 (Extraction of Osaka Castle world directory)
-- Blockers: None; world directory verified with valid level.dat and region MCA chunks
+- Stopping Point: download_osaka.py line 38 (Osaka Castle extraction)
+- Blockers: None; world directory verified with level.dat and MCA chunks
 
 💡 ARCHITECTURAL DECISIONS LOG
-- ADR-NC-001: Automated MediaFire direct link scraping with BeautifulSoup4 and requests
-- ADR-NC-002: Retaining standard Minecraft Anvil folder hierarchy (region, poi, playerdata)
-- ADR-NC-003: Schematic and GLTF pipeline target for browser 3D visualization
+- ADR-NC-001: Automated MediaFire scraping with bs4 and requests
+- ADR-NC-002: Retain standard Minecraft Anvil folder hierarchy
+- ADR-NC-003: Schematic and GLTF pipeline target for browser 3D view
 
 ⚠️ KNOWN ISSUES & ACTIVE BLOCKERS
-- Known Issue: Anvil MCA region format uses zlib chunk compression requiring byte offsets
-- Resolution: Use Python nbtlib/anvil-parser library for robust chunk decompression
+- Known Issue: Anvil MCA format uses zlib compression with byte offsets
+- Resolution: Use Python nbtlib/anvil-parser for robust decompression
 
 💬 RELEVANT CONVERSATIONS & GIT COMMITS
-- Discussion: Session on Nagoya and Osaka Castle map ingestion with Antigravity 1
+- Discussion: Session on Nagoya and Osaka Castle map ingestion
 - Environment: Python 3.12.10, requests, beautifulsoup4, unrar utilities
 
 🔗 CROSS-DOMAIN DEPENDENCIES
 - Master Brain: [[AI Sozlangan Miyyasi]]
-- Related Project: [[MobCreatorWebApp]] (Shared 3D voxel / box rendering engine)
+- Related Project: [[MobCreatorWebApp]] (Shared 3D voxel/box engine)
 - Asset Repository: D:\.minecraft\xaero\world-map\orolcha
 ```

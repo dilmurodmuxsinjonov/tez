@@ -1,6 +1,6 @@
 ---
 title: "The_AI_Pipeline — 30-Day AI Media Automation Course"
-version: "1.0.0"
+version: 1.0.0
 status: active
 type: project-memory
 tags:
@@ -28,7 +28,7 @@ The 30-day AI video automation course is fully authored on branch main, containi
 
 ## 💡 Goals & Decisions Log (ADR)
 
-| Sana | ADR ID | Qaror va Ko'lam (Decision & Scope) | Asos va Afzallik (Rationale) | Rad etilgan Variantlar (Alternatives) | Holat | Muallif |
+| Sana | ADR ID | Decision & Scope | Rationale | Alternatives | Holat | Muallif |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-09-11 | ADR-AIP-001 | Bilingual Parallel Script Architecture (UZ/EN) | Two mirrored tracks of 30 production lessons for local and global audience reach | Single-language course (limited audience) | Active | Antigravity 1 |
 | 2026-09-11 | ADR-AIP-002 | Decoupled 45-Minute Seamless Audio/Video Rendering | Loop engine in D:\youtube chennel 1\work_45min with seam_check verification | Real-time on-demand video rendering (computationally heavy) | Active | Antigravity 1 |
@@ -73,36 +73,35 @@ Loyiha bilan muloqot boshlanganda tizim vaziyatga qarab quyidagi 10 ta salomlash
 
 
 
-
 ```text
 🎯 ACTIVE GOALS & OBJECTIVES
-- Objective 1: Author 30-day structured AI engineering curriculum in UZ and EN
-- Objective 2: Automate 45-minute seamless audio/video rendering and seam logging
-- Objective 3: Automate video publishing via YouTube Data API v3 integration
+- Objective 1: Author 30-day AI curriculum in UZ and EN tracks
+- Objective 2: Automate 45-min seamless audio/video loop rendering
+- Objective 3: Automate video publishing via YouTube Data API v3
 
 📋 LATEST STATE & MILESTONE PROGRESS
 - Project Path: C:\Users\dilmu\.gemini\antigravity\scratch\The_AI_Pipeline
 - Rendering Directory: D:\youtube chennel 1\work_45min
 - Current Phase: Phase 2 (Rendering Seam Verification & Metadata Automation)
 - Active Branch: main
-- Stopping Point: D:\youtube chennel 1\work_45min\verify.py line 52 (Seam check)
-- Blockers: None; 60 scripts complete (English_Scripts/VID_001-030, Uzbek_Scripts/VID_001-030)
+- Stopping Point: D:\youtube chennel 1\work_45min\verify.py line 52
+- Blockers: None; 60 scripts complete in English & Uzbek folders
 
 💡 ARCHITECTURAL DECISIONS LOG
-- ADR-AIP-001: Parallel bilingual structure (30 Uzbek / 30 English production scripts)
-- ADR-AIP-002: Seamless 45-minute loop rendering pipeline with automated audio seam checks
-- ADR-AIP-003: Gemini structured JSON prompting for programmatic curriculum generation
+- ADR-AIP-001: Parallel bilingual structure (30 UZ / 30 EN scripts)
+- ADR-AIP-002: Seamless 45-min loop pipeline with audio seam verification
+- ADR-AIP-003: Gemini structured JSON prompts for programmatic curriculum
 
 ⚠️ KNOWN ISSUES & ACTIVE BLOCKERS
-- Known Issue: YouTube Data API daily upload quota limits automated video batch scheduling
-- Resolution: Throttle automated uploads to 4 scheduled videos per calendar day
+- Known Issue: YouTube Data API daily upload quota limits batch upload
+- Resolution: Throttle automated uploads to 4 scheduled videos per day
 
 💬 RELEVANT CONVERSATIONS & GIT COMMITS
-- Discussion: Review of Gemini API video scripts and audio looping parameters
+- Discussion: Review of Gemini API video scripts and audio looping
 - Tools: Python 3.12.10, FFmpeg, Google API Client, edge-tts
 
 🔗 CROSS-DOMAIN DEPENDENCIES
 - Master Brain: [[AI Sozlangan Miyyasi]]
-- Related Skills: [[30 Resources/Agent Skills/git-workflow|Git Workflow Specification]]
+- Related Skills: [[30 Resources/Agent Skills/git-workflow|Git Workflow]]
 - Media Production Engine: D:\youtube chennel 1\work_45min
 ```

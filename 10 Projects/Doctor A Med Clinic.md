@@ -1,6 +1,6 @@
 ---
 title: "Doctor A Med Clinic — Healthcare Clinic Platform"
-version: "1.0.0"
+version: 1.0.0
 status: active
 type: project-memory
 tags:
@@ -28,7 +28,7 @@ The clinic web portal is actively maintained on branch feature/doctor-a-med-clin
 
 ## 💡 Goals & Decisions Log (ADR)
 
-| Sana | ADR ID | Qaror va Ko'lam (Decision & Scope) | Asos va Afzallik (Rationale) | Rad etilgan Variantlar (Alternatives) | Holat | Muallif |
+| Sana | ADR ID | Decision & Scope | Rationale | Alternatives | Holat | Muallif |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-09-11 | ADR-DAM-001 | Material "Clinical Precision" Glassmorphic Theme | Deep navy, clinical red, surface #f8f9ff, ambient glow-cards for trustworthy healthcare aesthetic | Flat generic UI template | Active | Antigravity 1 |
 | 2026-09-11 | ADR-DAM-002 | Next.js 16 App Router & React 19 Server Components | Optimized SEO, fast server rendering, and zero client JS overhead for static info pages | Pure client-side SPA (poor SEO for medical discovery) | Active | Antigravity 1 |
@@ -73,36 +73,35 @@ Loyiha bilan muloqot boshlanganda tizim vaziyatga qarab quyidagi 10 ta salomlash
 
 
 
-
 ```text
 🎯 ACTIVE GOALS & OBJECTIVES
-- Objective 1: Build modern multidisciplinary medical clinic web portal
-- Objective 2: Implement online patient queue and appointment reservation system
-- Objective 3: Maintain Material "Clinical Precision" glassmorphic UI design tokens
+- Objective 1: Build modern multidisciplinary clinic web portal
+- Objective 2: Implement online patient queue and reservation system
+- Objective 3: Maintain "Clinical Precision" glassmorphic UI tokens
 
 📋 LATEST STATE & MILESTONE PROGRESS
 - Project Path: C:\Users\dilmu\OneDrive\Desktop\DOCTOR A
 - Active Branch: feature/doctor-a-med-clinic-website
-- GitHub Remote: https://github.com/dilmurodmuhsinjanov910-byte/doctoramedclinic..git
-- Stopping Point: doctor-a-med-clinic-app/src/components/BookingModal.tsx line 84
+- GitHub Remote: dilmurodmuhsinjanov910-byte/doctoramedclinic
+- Stopping Point: components/BookingModal.tsx line 84
 - Blockers: None; dev database seeded cleanly via prisma/seed.js
 
 💡 ARCHITECTURAL DECISIONS LOG
-- ADR-DAM-001: Material Clinical Precision theme (deep-navy #121521, clinical-red #FF0000)
-- ADR-DAM-002: Next.js 16 App Router with React 19 server components and Tailwind CSS v4
-- ADR-DAM-003: Prisma 5 ORM with local SQLite development database and seed script
+- ADR-DAM-001: Material Clinical Precision (navy #121521, red #FF0000)
+- ADR-DAM-002: Next.js 16 App Router with React 19 RSC & Tailwind v4
+- ADR-DAM-003: Prisma 5 ORM with local SQLite dev database & seeding
 
 ⚠️ KNOWN ISSUES & ACTIVE BLOCKERS
-- Known Issue: Appointment slot overlap if two concurrent users select identical time slots
-- Resolution: Add database unique composite index on [doctorId, appointmentDateTime]
+- Known Issue: Slot overlap if two users select identical times
+- Resolution: Unique composite index on [doctorId, appointmentDateTime]
 
 💬 RELEVANT CONVERSATIONS & GIT COMMITS
-- Commit fd0c6dc: "Design: Maximize glassmorphism styling across navbar, cards, and modal"
-- Commit ba016d8: "Design: Implement UI/UX maximalism with ambient blurs and stats strip"
-- Environment: Node.js v22.23.2, Next.js 16.2.11, Prisma 5.22.0, Tailwind CSS v4
+- Commit fd0c6dc: "Design: Maximize glassmorphism styling across UI"
+- Commit ba016d8: "Design: Implement UI/UX maximalism with blurs"
+- Environment: Node.js v22.23.2, Next.js 16.2.11, Prisma 5.22.0
 
 🔗 CROSS-DOMAIN DEPENDENCIES
 - Master Brain: [[AI Sozlangan Miyyasi]]
-- Related Skills: [[30 Resources/Agent Skills/git-workflow|Git Workflow Specification]]
-- UI Tokens: stitch_doctor_a_med_clinic_website (Design specs and color palettes)
+- Related Skills: [[30 Resources/Agent Skills/git-workflow|Git Workflow]]
+- UI Tokens: stitch_doctor_a_med_clinic_website (Design tokens)
 ```
