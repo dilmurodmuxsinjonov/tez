@@ -30,6 +30,11 @@ from tests.e2e.test_tier2_boundaries import (
 )
 from tests.e2e.test_tier3_combinations import TestTier3CrossFeatureCombinations
 from tests.e2e.test_tier4_workloads import TestTier4RealWorldWorkloads
+from tests.e2e.test_tier5_adversarial import (
+    TestTier5ParaMocs,
+    TestTier5GeminiTopicsProjectsFidelity,
+    TestTier5VaultGraphHygiene,
+)
 
 TIER_MAP = {
     "1": [
@@ -49,6 +54,11 @@ TIER_MAP = {
     ],
     "4": [
         TestTier4RealWorldWorkloads,
+    ],
+    "5": [
+        TestTier5ParaMocs,
+        TestTier5GeminiTopicsProjectsFidelity,
+        TestTier5VaultGraphHygiene,
     ],
 }
 
@@ -180,6 +190,8 @@ def run_e2e_suite(tier: str = "all", verbose: bool = False, json_output: str = N
             t_num = "3"
         elif "tier4" in record["test_id"]:
             t_num = "4"
+        elif "tier5" in record["test_id"]:
+            t_num = "5"
             
         if t_num not in tier_stats:
             tier_stats[t_num] = {"PASS": 0, "FAIL": 0, "ERROR": 0, "SKIP": 0}
@@ -189,7 +201,8 @@ def run_e2e_suite(tier: str = "all", verbose: bool = False, json_output: str = N
         "1": "Tier 1: Feature Coverage (Core Requirements)",
         "2": "Tier 2: Boundary & Corner Cases",
         "3": "Tier 3: Cross-Feature Combinations (Pairwise)",
-        "4": "Tier 4: Real-World Workload Scenarios"
+        "4": "Tier 4: Real-World Workload Scenarios",
+        "5": "Tier 5: Adversarial MOCs & Vault Hygiene"
     }
 
     for t, counts in sorted(tier_stats.items()):
