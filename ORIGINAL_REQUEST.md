@@ -1,4 +1,4 @@
-﻿# Original User Request
+# Original User Request
 
 ## Initial Request — 2026-09-11T18:29:55Z
 
@@ -50,3 +50,32 @@ Ensure that every sub-note, project memory, and rule is cross-linked using bidir
 - [ ] User's global Git workflow rules (`RULE[user_global]`) are verbatim documented and enforced as a mandatory guideline for all AIs.
 - [ ] Active local projects and agent skills (`30 Resources\Agent Skills`) are fully referenced and cross-linked.
 - [ ] Programmatic validation confirms zero broken wikilinks in newly created files and 100% valid Markdown syntax.
+
+## Follow-up — 2026-09-11T21:05:57Z
+
+Conduct continuous, deep internet research and autonomous engineering to massively evolve the cognitive architecture and knowledge base of the Universal AI Second Brain ("AI Sozlangan Miyyasi") inside `D:\obsidian file`. Continuously discover, analyze, and synthesize the world's most advanced autonomous agent architectures, multimodal generation workflows (Google Labs, Flow, Imagen 3, Veo, Vids), self-improving memory systems, and expert domain skills, embedding them into structured Obsidian PARA MOCs with zero broken links and 100% test-backed integrity.
+
+Working directory: D:\obsidian file
+Integrity mode: development
+
+## Requirements
+
+### R1. Deep Web Research & Intelligence Mining
+Continuously search and extract high-density knowledge from leading AI labs (Google DeepMind, Anthropic, OpenAI, Stanford NLP, AI research repositories) regarding autonomous agent memory, tool orchestration, and browser automation patterns.
+
+### R2. Continuous Knowledge Ingestion into Vault
+Synthesize all discovered techniques, style guides, prompts, and frameworks into dedicated, richly formatted Obsidian notes within `30 Resources/`, `10 Projects/`, and `20 Areas/` with complete YAML frontmatter and bidirectional wikilinks.
+
+### R3. Autonomous Multi-Agent Teamwork Operations
+Deploy specialized subagents (explorers, researchers, implementers, and adversarial reviewers) in parallel to maintain rapid execution velocity without waiting for manual intervention.
+
+### R4. Zero-Defect Architecture & Test Enforcement
+Maintain 100% test coverage across all newly created notes, ensuring zero broken wikilinks, clean UTF-8 encoding (no BOM), and full conformance to the Gemini Topics structured memory format.
+
+## Acceptance Criteria
+
+### Continuous Expansion & Quality
+- [ ] New advanced research dossiers, browser automation playbooks, and multimodal generation guides created and indexed in `AI Sozlangan Miyyasi.md`.
+- [ ] Every new note includes valid YAML frontmatter, backlinks to master entrypoints, and zero orphaned references.
+- [ ] All test suites (Tiers 1–5) continue to execute and pass with 100% success rate on each milestone cycle.
+

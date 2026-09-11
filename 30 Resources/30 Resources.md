@@ -64,6 +64,16 @@ Ushbu MOC foydalanuvchining barcha ma'lumot resurslari, o'quv qo'llanmalari va A
 - ⚡ **[[30 Resources/External AI Integrations/OpenAI Codex & OpenCode Manual|OpenAI Codex Manual]]** — Terminal orqali kod generatsiyasi
 - 🔄 **[[30 Resources/External AI Integrations/LLM Interoperability & Handoff Format|LLM Handoff Format]]** — Modellararo kontekst uzatish formati
 
+
+---
+
+## 🔬 Ilg'or Sun'iy Intellekt Tadqiqotlari (AI Frontier Research)
+
+- 🧠 **[[30 Resources/AI Research/Autonomous Agent Memory Architecture|Avtonom Kognitiv Agentlar Xotirasi]]** — Ko'p qatlamli kognitiv xotira, Mem0 va Letta
+- 🧪 **[[30 Resources/AI Research/Google Labs & Next-Gen Generative Suite|Google Labs & Next-Gen Generative Suite]]** — Imagen 3, Veo, MusicFX va NotebookLM
+- 🌐 **[[30 Resources/Browser & Automation Guides/Advanced Agentic Browser Playbook|Ilg'or Agentik Brauzer Playbooki]]** — Accessibility Tree, CDP va self-healing selektorlar
+- 💎 **[[30 Resources/Prompt Engineering/Master Production Prompts|Master Production Prompts]]** — Sinovdan o'tgan professional prompt andozalari
+
 ## 📖 Foydali Qo'llanmalar va Tashqi Resurslar
 
 - **PARA Metodologiyasi**: Tiago Forte tomonidan yaratilgan Ikkinchi Miya tashkiliy modeli.

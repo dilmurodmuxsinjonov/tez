@@ -146,6 +146,10 @@ Foydalanuvchi nomidan internetda avtonom vazifalarni bajarish va multimodal kont
 | **OpenAI Codex & OpenCode** | `codex.exe` va `opencode.ps1` orqali terminalda avtonom kod yozish | [[30 Resources/External AI Integrations/OpenAI Codex & OpenCode Manual\|OpenAI Codex Manual]] |
 | **LLM Handoff Format** | Turli AI modellari o'rtasida kontekstni yo'qotmasdan uzatish formati | [[30 Resources/External AI Integrations/LLM Interoperability & Handoff Format\|LLM Handoff Format]] |
 | **Autonomous Decision Protocol** | Foydalanuvchi dam olayotganda agentlarning mustaqil qaror qabul qilish chegaralari | [[20 Areas/Agent Profiles/Autonomous Decision Protocols\|Autonomous Decision Protocols]] |
+| **Agent Memory Architecture** | Ko'p qatlamli kognitiv xotira, Mem0 va Letta arxitekturasi | [[30 Resources/AI Research/Autonomous Agent Memory Architecture\|Agent Memory Architecture]] |
+| **Next-Gen Generative Suite** | Google Flow, Veo, Imagen 3 va MusicFX prompt muhandisligi | [[30 Resources/AI Research/Google Labs & Next-Gen Generative Suite\|Next-Gen Generative Suite]] |
+| **Advanced Browser Playbook** | Accessibility Tree va CDP orqali avtonom brauzer operatsiyalari | [[30 Resources/Browser & Automation Guides/Advanced Agentic Browser Playbook\|Advanced Browser Playbook]] |
+| **Master Production Prompts** | Rasm, video va kod generatsiyasi uchun sinovdan o'tgan andozalar | [[30 Resources/Prompt Engineering/Master Production Prompts\|Master Production Prompts]] |
 
 ---
 
