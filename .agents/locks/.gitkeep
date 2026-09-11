@@ -1,0 +1,2 @@
+# Multi-agent distributed file locks directory
+# Lockfiles are ephemeral: .agents/locks/<sha256_hash>.lock

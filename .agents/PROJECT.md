@@ -56,8 +56,8 @@ Every feature from the Survey phase appears here with its assigned milestone. No
 
 | # | Name | Scope | Dependencies | Status |
 |---|---|---|---|---|
-| M1 | Master Brain Core & Rules Engine | `AI Sozlangan Miyyasi.md`, `Dashboard.md`, Verbatim Git rules (`RULE[user_global]`), Toolchain matrix | Survey complete | PLANNED |
-| M2 | Universal AI Agent Profiles & Concurrency | `20 Areas/Agent Profiles/` (`Antigravity 1.md`, `Antigravity 2.md`, `Codex LLM Assistant.md`, `Concurrency & Sync Protocol.md`) | M1 | PLANNED |
+| M1 | Master Brain Core & Rules Engine | `AI Sozlangan Miyyasi.md`, `Dashboard.md`, Verbatim Git rules (`RULE[user_global]`), Toolchain matrix | Survey complete | DONE |
+| M2 | Universal AI Agent Profiles & Concurrency | `20 Areas/Agent Profiles/` (`Antigravity 1.md`, `Antigravity 2.md`, `Codex LLM Assistant.md`, `Concurrency & Sync Protocol.md`) | M1 | IN_PROGRESS |
 | M3 | Gemini Topics Memory & Active Projects | `10 Projects/` (5 project profiles with Topic Memory Blocks, 10 communication styles, ~75-char action-verb next steps, ADR logs) | M1, M2 | PLANNED |
 | M4 | Obsidian PARA MOCs & Skills Hub Integration | MOCs for 00, 10, 20, 30, 40; cross-linking `30 Resources/Agent Skills` and `50 Templates` | M1, M2, M3 | PLANNED |
 | M5 | E2E Verification & Adversarial Hardening | Phase 1: Pass 100% of E2E test suite (Tiers 1-4) & 0 broken wikilinks. Phase 2: Adversarial Tier 5 hardening. Forensic Integrity Audit. | M1, M2, M3, M4 | PLANNED |
