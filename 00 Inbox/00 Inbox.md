@@ -23,7 +23,11 @@ Ushbu bo'lim Tiago Fortening **PARA** (Projects, Areas, Resources, Archives) met
 
 - 🧠 **[[AI Sozlangan Miyyasi|🧠 AI Sozlangan Miyyasi — Universal AI Second Brain]]** (Bosh Markaz)
 - 📊 **[[Dashboard|Mening Ikkinchi Miyyam (Dashboard)]]**
+- 🗺️ **[[00 Inbox/00 Inbox MOC|📥 00 Inbox MOC (To'liq Xarita)]]**
+- 🎛️ **[[30 Resources/Agent Skills/Skills Dashboard|Agent Ko'nikmalari (Skills Dashboard)]]**
 - 📅 **[[50 Templates/Daily Note Template|Kunlik Qayd Shabloni]]**
+- 📋 **[[50 Templates/Project Template|Loyiha Shabloni]]**
+- 📑 **[[50 Templates/Resource Template|Resurs Shabloni]]**
 
 ---
 

@@ -152,6 +152,14 @@ class TestTier5VaultGraphHygiene(unittest.TestCase):
             VAULT_ROOT / "20 Areas" / "20 Areas.md",
             VAULT_ROOT / "30 Resources" / "30 Resources.md",
             VAULT_ROOT / "40 Archives" / "40 Archives.md",
+            VAULT_ROOT / "30 Resources" / "Autonomous Agent Architectures.md",
+            VAULT_ROOT / "20 Areas" / "Browser Automation Playbook.md",
+            VAULT_ROOT / "30 Resources" / "Multimodal Generation Workflows.md",
+            VAULT_ROOT / "00 Inbox" / "00 Inbox MOC.md",
+            VAULT_ROOT / "10 Projects" / "10 Projects MOC.md",
+            VAULT_ROOT / "20 Areas" / "20 Areas MOC.md",
+            VAULT_ROOT / "30 Resources" / "30 Resources MOC.md",
+            VAULT_ROOT / "40 Archives" / "40 Archives MOC.md",
         ]
         for proj in ACTIVE_PROJECTS:
             notes_to_check.append(VAULT_ROOT / "10 Projects" / f"{proj}.md")

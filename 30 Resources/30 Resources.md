@@ -24,7 +24,11 @@ Ushbu MOC foydalanuvchining barcha ma'lumot resurslari, o'quv qo'llanmalari va A
 
 - 🧠 **[[AI Sozlangan Miyyasi|🧠 AI Sozlangan Miyyasi — Universal AI Second Brain]]** (Bosh Markaz)
 - 📊 **[[Dashboard|Mening Ikkinchi Miyyam (Dashboard)]]**
+- 🗺️ **[[30 Resources/30 Resources MOC|📚 30 Resources MOC (To'liq Xarita)]]**
+- 🎛️ **[[30 Resources/Agent Skills/Skills Dashboard|Agent Ko'nikmalari (Skills Dashboard)]]**
 - 📑 **[[50 Templates/Resource Template|Resurs Shabloni]]**
+- 📋 **[[50 Templates/Project Template|Loyiha Shabloni]]**
+- 📅 **[[50 Templates/Daily Note Template|Kunlik Qayd Shabloni]]**
 
 ---
 
@@ -69,6 +73,8 @@ Ushbu MOC foydalanuvchining barcha ma'lumot resurslari, o'quv qo'llanmalari va A
 
 ## 🔬 Ilg'or Sun'iy Intellekt Tadqiqotlari (AI Frontier Research)
 
+- 🧠 **[[Autonomous Agent Architectures|🧠 Autonomous Agent Architectures (Memory, MCP & Multi-Agent Swarms)]]** — Kognitiv xotira, Model Context Protocol, ReAct/Plan-and-Solve va to'qnashuvsiz sinxronizatsiya.
+- 🎬 **[[Multimodal Generation Workflows|🎬 Multimodal Generation Workflows (Google Labs & FFmpeg Pipeline)]]** — Google Flow, Imagen 3, Veo, Vids, MusicFX va FFmpeg montaj quvurlari.
 - 🧠 **[[30 Resources/AI Research/Autonomous Agent Memory Architecture|Avtonom Kognitiv Agentlar Xotirasi]]** — Ko'p qatlamli kognitiv xotira, Mem0 va Letta
 - 🧪 **[[30 Resources/AI Research/Google Labs & Next-Gen Generative Suite|Google Labs & Next-Gen Generative Suite]]** — Imagen 3, Veo, MusicFX va NotebookLM
 - 🌐 **[[30 Resources/Browser & Automation Guides/Advanced Agentic Browser Playbook|Ilg'or Agentik Brauzer Playbooki]]** — Accessibility Tree, CDP va self-healing selektorlar

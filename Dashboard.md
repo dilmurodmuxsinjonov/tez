@@ -24,11 +24,11 @@ tags:
 
 | Bo'lim | Tavsif | Havola (MOC) |
 | :--- | :--- | :--- |
-| 📥 **Inbox** | Tezkor fikrlar va tartibga solinmagan yangi yozuvlar | [[00 Inbox/00 Inbox\|00 Inbox]] |
-| 🚀 **Projects** | Aniq maqsad va tugash muddatiga ega faol loyihalar | [[10 Projects/10 Projects\|10 Projects]] |
-| 🛡️ **Areas** | Doimiy mas'uliyat va e'tibor talab qiluvchi shaxsiy sohalar | [[20 Areas/20 Areas\|20 Areas]] |
-| 📚 **Resources** | Qiziqishlar, kitoblar, foydali maqolalar va kurslar | [[30 Resources/30 Resources\|30 Resources]] |
-| 🗄️ **Archives** | Yakunlangan loyihalar va eski yozuvlar arxivi | [[40 Archives/40 Archives\|40 Archives]] |
+| 📥 **Inbox** | Tezkor fikrlar va tartibga solinmagan yangi yozuvlar | [[00 Inbox/00 Inbox\|00 Inbox]] • [[00 Inbox/00 Inbox MOC\|00 Inbox MOC]] |
+| 🚀 **Projects** | Aniq maqsad va tugash muddatiga ega faol loyihalar | [[10 Projects/10 Projects\|10 Projects]] • [[10 Projects/10 Projects MOC\|10 Projects MOC]] |
+| 🛡️ **Areas** | Doimiy mas'uliyat va e'tibor talab qiluvchi shaxsiy sohalar | [[20 Areas/20 Areas\|20 Areas]] • [[20 Areas/20 Areas MOC\|20 Areas MOC]] |
+| 📚 **Resources** | Qiziqishlar, kitoblar, foydali maqolalar va kurslar | [[30 Resources/30 Resources\|30 Resources]] • [[30 Resources/30 Resources MOC\|30 Resources MOC]] |
+| 🗄️ **Archives** | Yakunlangan loyihalar va eski yozuvlar arxivi | [[40 Archives/40 Archives\|40 Archives]] • [[40 Archives/40 Archives MOC\|40 Archives MOC]] |
 
 ---
 
@@ -51,8 +51,11 @@ tags:
 
 ---
 
-## 🛠️ Tezkor Qo'llanmalar (Quick Guides)
+## 🛠️ Tezkor Qo'llanmalar & Ilg'or Tadqiqotlar (Quick Guides & Frontier Research)
 
+- [[Autonomous Agent Architectures|🧠 Avtonom Agent Arxitekturalari (Memory & MCP)]]
+- [[Browser Automation Playbook|🌐 Avtonom Brauzer Playbooki (Accessibility Tree & CDP)]]
+- [[Multimodal Generation Workflows|🎬 Multimodal Generatsiya Quvurlari (Google Labs & FFmpeg)]]
 - [[30 Resources/Style Guides/Gemini Topics Style Guide|🎨 Gemini Topics Muloqot Standarti]]
 - [[30 Resources/Style Guides/Project Discovery Questionnaire|📋 Loyiha Aniqlashtirish So'rovnomasi]]
 - [[30 Resources/Browser & Automation Guides/Google Labs & AI Tools Manual|🧪 Google Labs & Flow Boshqaruv Qo'llanmasi]]

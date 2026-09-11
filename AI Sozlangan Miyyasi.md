@@ -138,6 +138,9 @@ Foydalanuvchi nomidan internetda avtonom vazifalarni bajarish va multimodal kont
 
 | Qo'llanma / Vosita | Vazifasi va Imkoniyatlari | Havola |
 | :--- | :--- | :--- |
+| **Autonomous Agent Architectures** | Kognitiv xotira, Model Context Protocol (MCP), ReAct/Plan-and-Solve va swarm arxitekturasi | [[Autonomous Agent Architectures\|Autonomous Agent Architectures]] |
+| **Browser Automation Playbook** | Accessibility Tree, seanslar izolyatsiyasi, CDP diagnostikasi va self-healing | [[Browser Automation Playbook\|Browser Automation Playbook]] |
+| **Multimodal Generation Workflows** | Google Flow, Imagen 3, Veo, Vids, MusicFX, Whisper audio sync va FFmpeg | [[Multimodal Generation Workflows\|Multimodal Generation Workflows]] |
 | **Browser Automation Manual** | Brauzer orqali veb-sahifalarga kirish, elementlarni bosish va ma'lumot yig'ish | [[30 Resources/Browser & Automation Guides/Browser Automation Operations Manual\|Browser Automation Manual]] |
 | **Google Labs & AI Tools Manual** | Google Flow, Vids, Imagen 3, MusicFX va NotebookLM boshqaruv yo'riqnomasi | [[30 Resources/Browser & Automation Guides/Google Labs & AI Tools Manual\|Google Labs & Flow Manual]] |
 | **Story to Video Pipeline** | Hikoyadan ssenariy, rasmlar, animatsiyalar va yaxlit video montaj quvuri | [[30 Resources/Browser & Automation Guides/Multimodal Story to Video Pipeline\|Story to Video Pipeline]] |
@@ -159,11 +162,11 @@ Ushbu vault Tiago Fortening **PARA** (Projects, Areas, Resources, Archives) meto
 
 | Bo'lim / Hub | Tavsif | Asosiy Havola (MOC) |
 | :--- | :--- | :--- |
-| 📥 **00 Inbox** | Tezkor fikrlar, yangi g'oyalar va kunlik yozuvlar (Daily Notes) qabulxonasi | [[00 Inbox/00 Inbox\|00 Inbox]] |
-| 🚀 **10 Projects** | Aniq maqsad, natija va muddatga ega bo'lgan barcha faol loyihalar | [[10 Projects/10 Projects\|10 Projects]] |
-| 🛡️ **20 Areas** | Doimiy mas'uliyat sohalari, standartlar va AI Agent profillari | [[20 Areas/20 Areas\|20 Areas]] |
-| 📚 **30 Resources** | Ma'lumotlar bazasi, qo'llanmalar, kitoblar va agent ko'nikmalari | [[30 Resources/30 Resources\|30 Resources]] |
-| 🗄️ **40 Archives** | Yakunlangan, muzlatilgan yoki tarixiy loyihalar arxivi | [[40 Archives/40 Archives\|40 Archives]] |
+| 📥 **00 Inbox** | Tezkor fikrlar, yangi g'oyalar va kunlik yozuvlar (Daily Notes) qabulxonasi | [[00 Inbox/00 Inbox\|00 Inbox]] • [[00 Inbox/00 Inbox MOC\|00 Inbox MOC]] |
+| 🚀 **10 Projects** | Aniq maqsad, natija va muddatga ega bo'lgan barcha faol loyihalar | [[10 Projects/10 Projects\|10 Projects]] • [[10 Projects/10 Projects MOC\|10 Projects MOC]] |
+| 🛡️ **20 Areas** | Doimiy mas'uliyat sohalari, standartlar va AI Agent profillari | [[20 Areas/20 Areas\|20 Areas]] • [[20 Areas/20 Areas MOC\|20 Areas MOC]] |
+| 📚 **30 Resources** | Ma'lumotlar bazasi, qo'llanmalar, kitoblar va agent ko'nikmalari | [[30 Resources/30 Resources\|30 Resources]] • [[30 Resources/30 Resources MOC\|30 Resources MOC]] |
+| 🗄️ **40 Archives** | Yakunlangan, muzlatilgan yoki tarixiy loyihalar arxivi | [[40 Archives/40 Archives\|40 Archives]] • [[40 Archives/40 Archives MOC\|40 Archives MOC]] |
 | 🤖 **Agent Skills Hub** | Agentlarning rasmiy Obsidian va workflow ko'nikmalari boshqaruv paneli | [[30 Resources/Agent Skills/Skills Dashboard\|Skills Dashboard]] |
 | 📅 **Daily Template** | Kunlik rejalar va sarhisoblar uchun rasmiy shablon | [[50 Templates/Daily Note Template\|Daily Note Template]] |
 | 📋 **Project Template** | Yangi loyihalar ochish uchun standart shablon | [[50 Templates/Project Template\|Project Template]] |

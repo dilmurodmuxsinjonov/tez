@@ -23,7 +23,12 @@ Ushbu MOC faol bo'lmagan, lekin kelajakda havola sifatida kerak bo'lishi mumkin 
 
 - 🧠 **[[AI Sozlangan Miyyasi|🧠 AI Sozlangan Miyyasi — Universal AI Second Brain]]** (Bosh Markaz)
 - 📊 **[[Dashboard|Mening Ikkinchi Miyyam (Dashboard)]]**
+- 🗺️ **[[40 Archives/40 Archives MOC|🗄️ 40 Archives MOC (To'liq Xarita)]]**
 - 🚀 **[[10 Projects/10 Projects|10 Projects]]**
+- 🎛️ **[[30 Resources/Agent Skills/Skills Dashboard|Agent Ko'nikmalari (Skills Dashboard)]]**
+- 📑 **[[50 Templates/Resource Template|Resurs Shabloni]]**
+- 📋 **[[50 Templates/Project Template|Loyiha Shabloni]]**
+- 📅 **[[50 Templates/Daily Note Template|Kunlik Qayd Shabloni]]**
 
 ---
 

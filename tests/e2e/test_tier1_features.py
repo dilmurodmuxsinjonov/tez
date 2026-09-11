@@ -269,6 +269,66 @@ class TestTier1ObsidianParamocsAndSkills(unittest.TestCase):
             p = templates_dir / tmpl
             self.assertTrue(p.exists(), f"Template {tmpl} missing in {templates_dir}.")
 
+    def test_tc128_frontier_research_and_playbooks_exist(self):
+        """TC1.28: Frontier research dossiers, browser playbook, and multimodal workflows exist and link cleanly."""
+        dossiers = [
+            VAULT_ROOT / "30 Resources" / "Autonomous Agent Architectures.md",
+            VAULT_ROOT / "20 Areas" / "Browser Automation Playbook.md",
+            VAULT_ROOT / "30 Resources" / "Multimodal Generation Workflows.md",
+        ]
+        for d in dossiers:
+            self.assertTrue(d.is_file(), f"Dossier missing: {d}")
+            with open(d, "r", encoding="utf-8") as f:
+                content = f.read()
+            fm, _ = parse_frontmatter(content)
+            self.assertIsNotNone(fm, f"Frontmatter missing in {d.name}")
+            self.assertEqual(fm.get("status"), "active", f"status must be 'active' in {d.name}")
+            self.assertIn("title", fm)
+            self.assertIn("tags", fm)
+            links = extract_wikilinks(content)
+            targets = [l["target"] for l in links]
+            self.assertTrue(
+                any("AI Sozlangan Miyyasi" in t for t in targets),
+                f"{d.name} does not link to AI Sozlangan Miyyasi"
+            )
+            self.assertTrue(
+                any("Dashboard" in t for t in targets),
+                f"{d.name} does not link to Dashboard"
+            )
+
+        # Ensure Master Brain and Dashboard index these notes
+        for d in dossiers:
+            self.assertIn(d.stem, self.master_content, f"Master brain does not index {d.stem}")
+            self.assertIn(d.stem, self.dash_content, f"Dashboard does not index {d.stem}")
+
+    def test_tc129_all_para_moc_files_exist_and_crosslinked(self):
+        """TC1.29: All five companion PARA MOC notes exist, have type: moc, and cross-link with Skills Dashboard."""
+        mocs = {
+            "00 Inbox MOC": VAULT_ROOT / "00 Inbox" / "00 Inbox MOC.md",
+            "10 Projects MOC": VAULT_ROOT / "10 Projects" / "10 Projects MOC.md",
+            "20 Areas MOC": VAULT_ROOT / "20 Areas" / "20 Areas MOC.md",
+            "30 Resources MOC": VAULT_ROOT / "30 Resources" / "30 Resources MOC.md",
+            "40 Archives MOC": VAULT_ROOT / "40 Archives" / "40 Archives MOC.md",
+        }
+        for name, path in mocs.items():
+            self.assertTrue(path.is_file(), f"MOC file missing: {path}")
+            with open(path, "r", encoding="utf-8") as f:
+                content = f.read()
+            fm, _ = parse_frontmatter(content)
+            self.assertIsNotNone(fm, f"Frontmatter missing in {name}")
+            self.assertEqual(fm.get("type"), "moc", f"type must be 'moc' in {name}")
+            self.assertEqual(fm.get("status"), "active", f"status must be 'active' in {name}")
+            self.assertIn("title", fm)
+            self.assertIn("tags", fm)
+            self.assertIn("AI Sozlangan Miyyasi", content, f"{name} does not link to Master Brain")
+            self.assertIn("Dashboard", content, f"{name} does not link to Dashboard")
+            self.assertIn("Skills Dashboard", content, f"{name} does not index Skills Dashboard")
+
+        # Master Brain and Dashboard must index the companion MOCs
+        for name in mocs:
+            self.assertIn(name, self.master_content, f"Master brain does not index {name}")
+            self.assertIn(name, self.dash_content, f"Dashboard does not index {name}")
+
 
 if __name__ == "__main__":
     unittest.main()

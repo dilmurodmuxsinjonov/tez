@@ -24,7 +24,11 @@ Ushbu MOC foydalanuvchi **Dilmurod Muhsinjanov**ning barcha faol dasturiy ta'min
 
 - 🧠 **[[AI Sozlangan Miyyasi|🧠 AI Sozlangan Miyyasi — Universal AI Second Brain]]** (Bosh Markaz)
 - 📊 **[[Dashboard|Mening Ikkinchi Miyyam (Dashboard)]]**
+- 🗺️ **[[10 Projects/10 Projects MOC|🚀 10 Projects MOC (To'liq Xarita)]]**
+- 🎛️ **[[30 Resources/Agent Skills/Skills Dashboard|Agent Ko'nikmalari (Skills Dashboard)]]**
 - 📋 **[[50 Templates/Project Template|Yangi Loyiha Shabloni]]**
+- 📅 **[[50 Templates/Daily Note Template|Kunlik Qayd Shabloni]]**
+- 📑 **[[50 Templates/Resource Template|Resurs Shabloni]]**
 
 ---
 
