@@ -122,3 +122,10 @@ python ".agents/test_track/run_e2e_tests.py"
 - **Zero External Dependencies**: Standard library Python 3.12 only.
 - **Genuine Implementations**: Zero mocks or facades on real vault files; genuine filesystem locks, real SHA-256 hashes, real markdown parsing.
 - **Requirements Traceability**: 100% mapped to `ORIGINAL_REQUEST.md` (R1?R5) and `PROJECT.md` (Features 1?22).
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 🗄️ **[[40 Archives/40 Archives MOC|40 Archives MOC]]**
+

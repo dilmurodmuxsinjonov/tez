@@ -68,8 +68,18 @@ def validate_vault(vault_root, ignored_dirs=None):
             syntax_errors.append((rel_path, len(lines), f"Unclosed code fence (odd number of ```: {fence_count})"))
 
         # Wikilink check
+        in_code_block = False
         for line_idx, line in enumerate(lines, 1):
-            for m in wikilink_regex.finditer(line):
+            stripped = line.strip()
+            if stripped.startswith("```"):
+                in_code_block = not in_code_block
+                continue
+            if in_code_block:
+                continue
+
+            # Strip inline code spans so didactic/example wikilinks wrapped in backticks are not treated as active links
+            clean_line = re.sub(r'`[^`\r\n]*`', '', line)
+            for m in wikilink_regex.finditer(clean_line):
                 target = m.group(1).rstrip("\\").strip()
                 # Skip template placeholders like [[...]]
                 if target == "..." or not target:

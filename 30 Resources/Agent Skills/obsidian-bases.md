@@ -42,3 +42,9 @@ views:
 ## 🔌 Markdown fayl ichiga joylash:
 Baza jadvallarini oddiy qayd ichida ko'rsatish:
 `![[Vazifalar.base#Faol Vazifalar]]`
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

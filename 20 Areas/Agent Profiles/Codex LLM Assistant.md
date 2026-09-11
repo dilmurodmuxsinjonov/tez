@@ -105,8 +105,8 @@ Codex foydalanuvchining global Git qoidalarini istisnosiz avtomatik tarzda bajar
 
 ## 🔗 Aloqador Bog'lanishlar (Related Links)
 
-- Bosh Boshqaruv Markazi: `[[AI Sozlangan Miyyasi]]`
-- Bosh Tizim Arxitektori: `[[Antigravity 1]]`
-- Sandbox Sinovchi Agent: `[[Antigravity 2]]`
-- Fayllarni Qulflash va Sinxronizatsiya: `[[Concurrency & Sync Protocol]]`
-- Git Qoidalari va Ko'nikmalari: `[[30 Resources/Agent Skills/git-workflow|git-workflow]]`
+- Bosh Boshqaruv Markazi: [[AI Sozlangan Miyyasi]]
+- Bosh Tizim Arxitektori: [[Antigravity 1]]
+- Sandbox Sinovchi Agent: [[Antigravity 2]]
+- Fayllarni Qulflash va Sinxronizatsiya: [[Concurrency & Sync Protocol]]
+- Git Qoidalari va Ko'nikmalari: [[30 Resources/Agent Skills/git-workflow|git-workflow]]

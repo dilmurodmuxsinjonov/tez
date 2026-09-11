@@ -29,3 +29,9 @@ Ushbu protokol AI agentlari internetdan yangi kutubxonalar, me'moriy yechimlar v
    - Yangi texnologik tendensiyalar va texnik hujjatlarni qidirish.
 3. **Chrome DevTools & Network Audit**:
    - Veb-ilovalarning API tuzilishi, JSON so'rovlari va resurslarini tahlil qilish.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

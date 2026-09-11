@@ -68,3 +68,9 @@ Veo modeli 1080p sifatdagi barqaror va dinamik sahnalarni yaratadi.
 
 - **Grounded RAG:** Faqat foydalanuvchi yuklagan hujjatlarga tayanadi, gallyutsinatsiya qilmaydi.
 - **Audio Deep Dive:** 2 ta virtual tahlilchining tabiiy suhbati orqali murakkab hisobotlarni 10 daqiqalik qiziqarli podkastga aylantirish.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

@@ -69,3 +69,9 @@ Ushbu tadqiqot qaydi inson miyasi kognitiv modeliga asoslangan **ko'p qatlamli a
 
 - **Mem0**: Foydalanuvchi afzalliklari va agent tajribasini gibrid (Graph + Vector) tarzda saqlovchi zamonaviy qatlam.
 - **Letta (sobiq MemGPT)**: Operatsion tizim kabi kontekstni disk va RAM o'rtasida sahifalab (paging) boshqaruvchi tizim.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

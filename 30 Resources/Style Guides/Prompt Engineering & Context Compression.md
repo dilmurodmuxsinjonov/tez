@@ -28,3 +28,9 @@ Sun'iy intellekt modellari (Gemini, Claude, GPT) bilan ishlashda kontekst oynasi
    - Loyiha holatini hikoya tarzida emas, parametrlar orqali ko'rsatish (`Git: feature/x`, `Milestone: 3/5`, `Status: PASS`).
 3. **Structured Memory Blocks**:
    - Gemini Topics arxitekturasidagi kabi maxsus kod bloklari ichida emoji-belgilar bilan tartiblash.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

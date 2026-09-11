@@ -36,3 +36,9 @@ Ushbu hujjat foydalanuvchi tasarrufidagi barcha AI modellarining ixtisoslashuv d
 1. **Agar topshiriq UI/UX yoki front-end bo'lsa** ➡️ CSS/Three.js tajribasi yuqori modelga yo'naltiriladi.
 2. **Agar topshiriq tizim tahlili yoki testlash bo'lsa** ➡️ Qat'iy mantiqiy auditor agentga topshiriladi.
 3. **Agar topshiriq media yoki marketing bo'lsa** ➡️ Multimodal generativ modellarga uzatiladi.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

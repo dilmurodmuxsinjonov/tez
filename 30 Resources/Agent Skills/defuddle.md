@@ -32,3 +32,9 @@ npm install -g defuddle
   defuddle parse <havola-url> -p title
   defuddle parse <havola-url> -p description
   ```
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

@@ -43,3 +43,9 @@ Ushbu to'plam rasm, video, audio va dasturlash sohalarida amaliyotda 100% yuqori
 
 ### 1. Kinematik Qahramon Ko'rinishi
 > *"Cinematic slow tracking dolly shot moving around an ancient oriental samurai fortress at dusk. Cherry blossom petals gently falling in the wind, lanterns flickering with warm orange glow, 35mm anamorphic lens, realistic atmospheric fog."*
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

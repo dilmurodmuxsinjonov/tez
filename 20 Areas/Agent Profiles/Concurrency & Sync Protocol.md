@@ -149,8 +149,8 @@ Bir vaqtning o'zida bir nechta agent ishlayotganda Git to'qnashuvlarining (merge
 
 ## 🔗 Aloqador Bog'lanishlar (Related Links)
 
-- Bosh Boshqaruv Markazi: `[[AI Sozlangan Miyyasi]]`
-- Bosh Tizim Arxitektori: `[[Antigravity 1]]`
-- Sandbox Sinovchi Agent: `[[Antigravity 2]]`
-- Avtonom Kod Generatsiyasi Dvigateli: `[[Codex LLM Assistant]]`
-- Majburiy Git Qoidalari: `[[30 Resources/Agent Skills/git-workflow|git-workflow]]`
+- Bosh Boshqaruv Markazi: [[AI Sozlangan Miyyasi]]
+- Bosh Tizim Arxitektori: [[Antigravity 1]]
+- Sandbox Sinovchi Agent: [[Antigravity 2]]
+- Avtonom Kod Generatsiyasi Dvigateli: [[Codex LLM Assistant]]
+- Majburiy Git Qoidalari: [[30 Resources/Agent Skills/git-workflow|git-workflow]]

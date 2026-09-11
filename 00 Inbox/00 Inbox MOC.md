@@ -42,6 +42,8 @@ Quyida foydalanuvchining tizimga kiritilgan kunlik yozuvlari va dastlabki xom ma
 - 📅 **[[2026-09-09|2026-09-09 Kunlik Qaydi]]** — Tizim integratsiyasi va xotira boshqaruvi
 - 👋 **[[Salom|Salomlashish va Aloqa Qaydi]]** — Foydalanuvchi bilan dastlabki aloqa
 - 🤖 **[[Antigravity Chat History|Antigravity Chat Tarixi]]** — Agent suhbatlarining to'liq arxivi
+- 👤 **[[DILMUROD/Welcome|DILMUROD Xush Kelibsiz Qaydi]]** — Dastlabki tizim xabari
+- 📅 **[[DILMUROD/2026-07-01|2026-07-01 Tarixiy Qaydi]]** — Tarixiy kunlik yozuv
 
 ---
 

@@ -105,9 +105,9 @@ Antigravity 1 foydalanuvchining global Git qoidalarini so'zsiz va avtomatik ravi
 
 ## 🔗 Aloqador Bog'lanishlar (Related Links)
 
-- Bosh Boshqaruv Markazi: `[[AI Sozlangan Miyyasi]]`
-- Boshqaruv Paneli: `[[Dashboard]]`
-- Sinovchi va Tadqiqotchi Agent: `[[Antigravity 2]]`
-- Kod Generatsiyasi Dvigateli: `[[Codex LLM Assistant]]`
-- Fayllarni Qulflash va Sinxronizatsiya: `[[Concurrency & Sync Protocol]]`
-- Git Qoidalari va Ko'nikmalari: `[[30 Resources/Agent Skills/git-workflow|git-workflow]]`
+- Bosh Boshqaruv Markazi: [[AI Sozlangan Miyyasi]]
+- Boshqaruv Paneli: [[Dashboard]]
+- Sinovchi va Tadqiqotchi Agent: [[Antigravity 2]]
+- Kod Generatsiyasi Dvigateli: [[Codex LLM Assistant]]
+- Fayllarni Qulflash va Sinxronizatsiya: [[Concurrency & Sync Protocol]]
+- Git Qoidalari va Ko'nikmalari: [[30 Resources/Agent Skills/git-workflow|git-workflow]]

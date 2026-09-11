@@ -34,7 +34,11 @@ Ushbu MOC faol bo'lmagan, lekin kelajakda havola sifatida kerak bo'lishi mumkin 
 
 ## 📦 Arxivlangan Materiallar Ro'yxati
 
-*Hozircha barcha loyihalar faol holatda. Yakunlangan loyihalar va tadqiqotlar ushbu bo'limga ko'chiriladi.*
+- [[ORIGINAL_REQUEST|📜 Birlamchi Texnik Vazifa (Original Request)]]
+- [[TEST_INFRA|🧪 E2E Test Infratuzilmasi]]
+- [[TEST_READY|📋 Test Tayyorgarligi]]
+- [[DILMUROD/Welcome|👤 Dastlabki Xush Kelibsiz Qaydi]]
+- [[DILMUROD/2026-07-01|📅 2026-07-01 Tarixiy Qaydi]]
 
 ---
 

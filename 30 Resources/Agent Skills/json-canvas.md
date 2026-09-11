@@ -22,3 +22,9 @@ Canvas fayllari orqa fonda JSON ma'lumotlaridan iborat bo'lib, ular quyidagi qis
 1. **Text Node** — to'g'ridan-to'g'ri Canvas ichida yozilgan matnlar.
 2. **File Node** — vault-dagi mavjud qaydlar yoki rasmlar.
 3. **Link Node** — internetdagi havolalar (URL).
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

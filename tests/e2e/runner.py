@@ -34,6 +34,11 @@ from tests.e2e.test_tier5_adversarial import (
     TestTier5ParaMocs,
     TestTier5GeminiTopicsProjectsFidelity,
     TestTier5VaultGraphHygiene,
+    TestAdversarialVaultGraphConnectivity,
+    TestAdversarialWikilinkCaseAndAliasFormatting,
+    TestAdversarialConcurrencyAndStaleLockRecovery,
+    TestAdversarialVaultUtf8NoBomHygiene,
+    TestAdversarialGeminiTopicsBoundaryConstraints,
 )
 
 TIER_MAP = {
@@ -59,6 +64,11 @@ TIER_MAP = {
         TestTier5ParaMocs,
         TestTier5GeminiTopicsProjectsFidelity,
         TestTier5VaultGraphHygiene,
+        TestAdversarialVaultGraphConnectivity,
+        TestAdversarialWikilinkCaseAndAliasFormatting,
+        TestAdversarialConcurrencyAndStaleLockRecovery,
+        TestAdversarialVaultUtf8NoBomHygiene,
+        TestAdversarialGeminiTopicsBoundaryConstraints,
     ],
 }
 
@@ -246,7 +256,7 @@ def run_e2e_suite(tier: str = "all", verbose: bool = False, json_output: str = N
 
 def main():
     parser = argparse.ArgumentParser(description="Universal AI Second Brain E2E Test Suite Runner")
-    parser.add_argument("--tier", choices=["1", "2", "3", "4", "all"], default="all", help="Test Tier to execute")
+    parser.add_argument("--tier", choices=["1", "2", "3", "4", "5", "all"], default="all", help="Test Tier to execute")
     parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
     parser.add_argument("--json", type=str, default=None, help="Path to write JSON test report")
     args = parser.parse_args()

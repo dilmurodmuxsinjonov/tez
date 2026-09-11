@@ -99,7 +99,11 @@ def build_vault_graph(vault_path: Path, md_files: List[Tuple[Path, str]]) -> Dic
         except Exception:
             content = full_path.read_text(encoding="utf-8", errors="replace")
 
-        for m in wikilink_regex.finditer(content):
+        # Strip code blocks and inline code spans so didactic/example links in backticks are not treated as active wikilinks
+        content_clean = re.sub(r"```[\s\S]*?```", "", content)
+        content_clean = re.sub(r"`[^`\r\n]*`", "", content_clean)
+
+        for m in wikilink_regex.finditer(content_clean):
             inner = m.group(2).strip()
             # Alias pipe
             if "|" in inner:

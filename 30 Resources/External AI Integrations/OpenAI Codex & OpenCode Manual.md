@@ -32,3 +32,9 @@ Ushbu yo'riqnoma `codex.exe` va `opencode.ps1` vositalari orqali avtomatik kod y
 1. **Kod bazasini o'qish**: Kod o'zgartirilishidan oldin mavjud fayllar to'liq o'rganiladi.
 2. **Inkremental o'zgartirish**: Bir vaqtning o'zida barcha fayllar emas, qismlar bo'yicha toza va testlangan commitlar bilan yangilanadi.
 3. **Sintaksis tekshiruvi**: Kod yozilgach, albatta `build` yoki `test` buyruqlari yurgizilib, xatolar yo'qligi tekshiriladi.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

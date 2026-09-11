@@ -90,8 +90,8 @@ Tizim yaxlitligini va ma'lumotlar to'qnashuvini oldini olish maqsadida Antigravi
 
 ## 🔗 Aloqador Bog'lanishlar (Related Links)
 
-- Bosh Boshqaruv Markazi: `[[AI Sozlangan Miyyasi]]`
-- Bosh Tizim Arxitektori: `[[Antigravity 1]]`
-- Avtonom Kod Yozuvchi Agent: `[[Codex LLM Assistant]]`
-- Fayllarni Qulflash va Sinxronizatsiya: `[[Concurrency & Sync Protocol]]`
-- Git Qoidalari va Standartlari: `[[30 Resources/Agent Skills/git-workflow|git-workflow]]`
+- Bosh Boshqaruv Markazi: [[AI Sozlangan Miyyasi]]
+- Bosh Tizim Arxitektori: [[Antigravity 1]]
+- Avtonom Kod Yozuvchi Agent: [[Codex LLM Assistant]]
+- Fayllarni Qulflash va Sinxronizatsiya: [[Concurrency & Sync Protocol]]
+- Git Qoidalari va Standartlari: [[30 Resources/Agent Skills/git-workflow|git-workflow]]

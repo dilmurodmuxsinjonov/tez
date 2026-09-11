@@ -62,10 +62,19 @@ export function validateVault(vaultRoot = 'D:\\obsidian file', ignoredDirs = ['.
     }
 
     // Wikilink check
+    let inCodeBlock = false;
     lines.forEach((line, index) => {
       const lineNum = index + 1;
+      const stripped = line.trim();
+      if (stripped.startsWith('```')) {
+        inCodeBlock = !inCodeBlock;
+        return;
+      }
+      if (inCodeBlock) return;
+
+      const cleanLine = line.replace(/`[^`\r\n]*`/g, '');
       let match;
-      while ((match = wikilinkRegex.exec(line)) !== null) {
+      while ((match = wikilinkRegex.exec(cleanLine)) !== null) {
         const target = match[1].replace(/\\+$/, '').trim();
         if (target === '...' || !target) continue;
         totalLinks++;

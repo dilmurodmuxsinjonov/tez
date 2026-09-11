@@ -35,6 +35,8 @@ Ushbu bo'lim Tiago Fortening **PARA** (Projects, Areas, Resources, Archives) met
 
 - [[Salom|👋 Salomlashish va Aloqa Qaydi]]
 - [[Antigravity Chat History|🤖 Antigravity Chat Tarixi]]
+- [[DILMUROD/Welcome|👤 DILMUROD Xush Kelibsiz Qaydi]]
+- [[DILMUROD/2026-07-01|📅 2026-07-01 Kunlik Qaydi]]
 
 ---
 

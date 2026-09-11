@@ -341,3 +341,8 @@ Tushunarli! Barcha kelishilgan vazifalar bajarildi. Loyihangizda Git sozlamalari
 > - `Dashboard.md` va `Antigravity Chat History.md` tahrirlandi
 
 ---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📥 **[[00 Inbox/00 Inbox MOC|00 Inbox MOC]]**
+

@@ -38,3 +38,9 @@ Obsidian CLI (`obsidian` buyrug'i) yordamida terminallar orqali Obsidian dasturi
   ```bash
   obsidian dev:errors
   ```
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

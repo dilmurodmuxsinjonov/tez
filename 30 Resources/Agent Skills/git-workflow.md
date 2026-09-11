@@ -21,3 +21,9 @@ Ushbu ko'nikma barcha loyihalarimizda Git va GitHub buyruqlarini eslatishlarsiz,
 4. **`git commit -m "..."`**: Har bir o'zgarishni qisqa va aniq izoh bilan Git tarixiga yozib boraman.
 5. **`git push`**: Ish yakunlangach, kodni avtomatik ravishda GitHub-ga yuklayman.
 6. **Avtomatik Shoxlar (Branching)**: Muhim va katta o'zgarishlar kiritayotganda `main` shoxidan yangi shox (`feature/...` yoki `fix/...`) yaratib, ishni o'sha yerda davom ettiraman.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

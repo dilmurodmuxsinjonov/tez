@@ -44,3 +44,9 @@ Har qanday veb-saytda topshiriq bajarishda quyidagi 4 qadam ketma-ket bajariladi
 ### 4. Natijani Tasdiqlash va Rasmga Olish (Verification & Capture)
 - Kutilgan o'zgarish sodir bo'lganini yangi snapshot orqali tekshirish.
 - `take_screenshot` orqali natijani vizual tasdiqlash.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

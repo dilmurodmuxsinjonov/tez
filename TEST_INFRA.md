@@ -138,3 +138,10 @@ python run_e2e_tests.py --json test_report.json
 | **Concurrency Simulator** | `tests/e2e/concurrency_sim.py` | Standalone engine simulating multi-agent file locks and atomic writes |
 | **Vault Graph Validator** | `tests/e2e/vault_validator.py` | Opaque-box parser verifying wikilinks, frontmatter, and formatting |
 | **Test Readiness Report** | `TEST_READY.md` & `.agents/TEST_READY.md` | Published scorecard and readiness declaration |
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 🗄️ **[[40 Archives/40 Archives MOC|40 Archives MOC]]**
+

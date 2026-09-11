@@ -15,3 +15,6 @@
 
 ## 🧠 Amaliyotda qo'llash
 - 
+
+---
+**Bosh Markaz:** [[AI Sozlangan Miyyasi]] | **Resurslar MOC:** [[30 Resources/30 Resources|30 Resources]]

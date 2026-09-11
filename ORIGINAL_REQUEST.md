@@ -79,3 +79,9 @@ Maintain 100% test coverage across all newly created notes, ensuring zero broken
 - [ ] Every new note includes valid YAML frontmatter, backlinks to master entrypoints, and zero orphaned references.
 - [ ] All test suites (Tiers 1–5) continue to execute and pass with 100% success rate on each milestone cycle.
 
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 🗄️ **[[40 Archives/40 Archives MOC|40 Archives MOC]]**
+

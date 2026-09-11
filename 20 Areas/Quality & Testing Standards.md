@@ -27,3 +27,10 @@ Ushbu standart barcha loyihalar va Obsidian vaultida nol xatolik (Zero Defects) 
 3. **Tier 3: Pairwise Combinations (O'zaro Bog'liqlik)**: Fayllararo havolalar va MOC integratsiyasi.
 4. **Tier 4: Real-World Workloads (Haqiqiy Ish Oqimlari)**: Agentlarning qulflash, saqlash va sinxronizatsiya sikllari.
 5. **Tier 5: Adversarial Probing (Qat'iy Hujumkor Sinov)**: Buzilgan havolalar, BOM xatolari va sintaktik chetlanishlarni aniqlash.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 🏛️ **[[20 Areas/20 Areas|20 Areas MOC]]**
+

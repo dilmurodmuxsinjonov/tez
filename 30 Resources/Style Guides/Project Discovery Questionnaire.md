@@ -54,3 +54,9 @@ Ushbu tizim foydalanuvchi yangi loyiha yoki murakkab funksional g'oya berganda, 
 13. **Muvaffaqiyat mezoni (Definition of Done) qanday o'lchanadi?** Qaysi testlar muvaffaqiyatli o'tishi kerak?
 14. **Git va versiyalar nazorati:** Qaysi `feature/...` tarmog'ida ishlanadi?
 15. **Loyiha qayerda saqlanadi?** (Diskdagi aniq manzil).
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

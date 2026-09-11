@@ -16,7 +16,7 @@ from typing import Any, Callable, Dict, List, Optional, Tuple
 @dataclass
 class LockResult:
     success: bool
-    lock_file: Path
+    lock_file: Optional[Path] = None
     error: Optional[str] = None
     was_stale_recovered: bool = False
 
@@ -76,12 +76,27 @@ class ConcurrencyProtocolManager:
                 else:
                     # Stale lock found - break it
                     self._log_audit(f"STALE_LOCK_BROKEN: {lock_file.name} for {target_rel_path}, previously held by {data.get('locked_by')}")
-                    lock_file.unlink(missing_ok=True)
+                    try:
+                        lock_file.unlink(missing_ok=True)
+                    except (PermissionError, OSError) as pe:
+                        self._log_audit(f"STALE_LOCK_UNLINK_COLLISION: {lock_file.name} error: {pe}")
                     was_stale = True
+            except (PermissionError, OSError) as e:
+                # Under Windows NT contention, file is locked/held open by another thread.
+                self._log_audit(f"LOCK_READ_COLLISION: {lock_file.name} error: {e}")
+                return LockResult(
+                    success=False,
+                    lock_file=lock_file,
+                    error=f"Collision: lock file held by another process ({e})",
+                    was_stale_recovered=False
+                )
             except Exception as e:
                 # Corrupt lock file, break and recover
                 self._log_audit(f"CORRUPT_LOCK_RECOVERED: {lock_file.name} error: {e}")
-                lock_file.unlink(missing_ok=True)
+                try:
+                    lock_file.unlink(missing_ok=True)
+                except (PermissionError, OSError) as pe:
+                    self._log_audit(f"CORRUPT_LOCK_UNLINK_COLLISION: {lock_file.name} error: {pe}")
                 was_stale = True
 
         # Write new lock file
@@ -99,8 +114,23 @@ class ConcurrencyProtocolManager:
         with open(temp_lock, "w", encoding="utf-8") as f:
             json.dump(lock_data, f, indent=2)
         
-        # Atomic rename into place
-        temp_lock.replace(lock_file)
+        # Atomic rename into place with Windows NT concurrency collision protection
+        try:
+            temp_lock.replace(lock_file)
+        except (PermissionError, OSError) as e:
+            if temp_lock.exists():
+                try:
+                    temp_lock.unlink(missing_ok=True)
+                except Exception:
+                    pass
+            self._log_audit(f"LOCK_COLLISION_EXCEPTION: {lock_file.name} error: {e}")
+            return LockResult(
+                success=False,
+                lock_file=lock_file,
+                error=f"Contention collision during lock rename: {e}",
+                was_stale_recovered=False
+            )
+
         self._log_audit(f"LOCK_ACQUIRED: {lock_file.name} for {target_rel_path} by {agent_name}")
 
         return LockResult(

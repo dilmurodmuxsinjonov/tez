@@ -36,3 +36,9 @@ Ushbu standart foydalanuvchining barcha web va interfeys loyihalarida (MobCreato
 - **Container Queries & Grid:** Moslashuvchan kartalar va adaptiv boshqaruv panellari.
 - **Glassmorphism / Backdrop Filter:** `backdrop-blur-md`, yarim shaffof orqa fonlar.
 - **Animatsiyalar:** CSS GPU-accelerated transforms (`translate3d`, `scale`) — silliq o'tishlar (`transition: all 0.2s ease`).
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

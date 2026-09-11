@@ -48,3 +48,9 @@ Ushbu qo'llanma foydalanuvchi "bu hikoya asosida videolar yasab birlashtirib to'
 ### 5-Bosqich: Montaj va Yaxlit Videoni Eksport Qilish (Assembly)
 - Barcha qismlar vaqt bo'yicha sinxronlashtiriladi, silliq o'tishlar (`Cross-fade`) qo'yiladi.
 - Tayyor MP4 video fayl loyihaning `output/` papkasiga saqlanadi.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

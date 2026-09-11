@@ -39,3 +39,9 @@ Ushbu yo'riqnoma foydalanuvchining murakkab ijodiy buyruqlarini (masalan, "Googl
 2. **Topshiriqni Parchalash**: Foydalanuvchining umumiy g'oyasini (masalan, "klinika sayti uchun rasmlar") 5–10 ta aniq generativ promptlarga ajratish.
 3. **Generatsiya va Tekshiruv**: Har bir promptni kiritish, natija yuklanishini kutish va sifatini tekshirish.
 4. **Fayllarni Saqlash**: Olingan vizual va media aktivlarni loyihaning tegishli `assets/` papkasiga yuklab olish.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

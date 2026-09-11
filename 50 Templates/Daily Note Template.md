@@ -13,3 +13,6 @@
 - **Bugun nimalarni o'rgandim?**
 - **Nimalar yaxshi bo'ldi?**
 - **Ertaga nimalarni yaxshilashim kerak?**
+
+---
+**Bosh Markaz:** [[AI Sozlangan Miyyasi]] | **Inbox MOC:** [[00 Inbox/00 Inbox|00 Inbox]]

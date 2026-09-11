@@ -49,3 +49,9 @@ Agent to'g'ridan-to'g'ri `click(12)` yoki `fill(15, "user@example.com")` buyrug'
 1. **Self-Healing Selectors**: Agar sayt dizayni o'zgarsa, agent semantik matn ("Sign in", "Submit", "Search") orqali elementni o'zi qayta topadi.
 2. **CDP (Chrome DevTools Protocol)**: Tarmoq so'rovlarini tahlil qilish, javoblarni ushlash va konsol xatoliklarini monitoring qilish.
 3. **Crawl4AI & Stagehand**: Veb-sahifalardan LLM uchun toza Markdown ajratib olish va form-filling amallarini xavfsiz bajarish.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

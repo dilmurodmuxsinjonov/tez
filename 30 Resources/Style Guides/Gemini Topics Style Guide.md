@@ -105,3 +105,9 @@ Har qanday yangi sessiya yoki loyiha bo'yicha muloqot boshlanganda, agent vaziya
 2. **Qat'iy uzunlik chegarasi**: Har bir taklif **60 dan 85 belgigacha** (o'rtacha ~75 belgi) bo'lishi shart.
 3. **AI bajara oladigan ish bo'lishi**: Real dunyodagi ishlar ("do'konga boring") emas, AI bajara oladigan ("hisobot tayyorlash", "kod yozish", "test yurgizish") ishlar bo'lishi shart.
 4. **Miqdor**: Aniq va sifatli 2 tadan 4 tagacha taklif beriladi.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**

@@ -37,6 +37,13 @@ Ushbu MOC foydalanuvchi **Dilmurod Muhsinjanov**ning ayni paytda faol bo'lmagan,
 
 *Ayni paytda barcha 5 ta asosiy dasturiy loyihalar (**MobCreatorWebApp**, **NagoyaCastle**, **The_AI_Pipeline**, **Orol Shahar Qirollik**, **Doctor A Med Clinic**) faol holatda ishlab chiqilmoqda. Kelgusida yakunlangan bosqichlar va loyihalar ushbu bo'limga ko'chiriladi.*
 
+### 📜 Tizim Hujjatlari va Test Arxivi (System Specifications & Test Verification)
+- 📜 **[[ORIGINAL_REQUEST|Foydalanuvchining Asl Texnik Vazifasi (Original Request)]]** — Universal AI Second Brain birlamchi talablari va arxitekturasi
+- 🧪 **[[TEST_INFRA|E2E Test Infratuzilmasi (Test Infrastructure)]]** — 5 bosqichli test qatlamlari spetsifikatsiyasi
+- 📋 **[[TEST_READY|Test Tayyorgarligi Holati (Test Ready Assessment)]]** — E2E test holati va tekshiruv dalillari
+- 👤 **[[DILMUROD/Welcome|Dastlabki Xush Kelibsiz Qaydi (Welcome Note)]]** — Obsidian boshlang'ich tizim xabari
+- 📅 **[[DILMUROD/2026-07-01|2026-07-01 Tarixiy Qaydi]]** — DILMUROD arxividagi dastlabki qayd
+
 ---
 
 ## 🔄 Arxivlash va Qayta Faollashtirish Qoidalari (Lifecycle Management)

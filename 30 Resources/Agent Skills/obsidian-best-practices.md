@@ -31,3 +31,9 @@ Dizaynda ranglar, shriftlar va cursorlar uchun doim Obsidian-ning ichki o'zgaruv
 - Matnlar: `var(--text-normal)`, `var(--text-muted)`
 - Hover effekti: `var(--nav-item-color-hover)`
 - UI elementlarida qimirlashlarning oldini olish uchun `display: none` o'rniga `visibility: hidden` ishlatiladi.
+
+---
+
+## 🧭 Navigatsiya
+- 🧠 **[[AI Sozlangan Miyyasi|AI Sozlangan Miyyasi — Universal AI Second Brain]]**
+- 📚 **[[30 Resources/30 Resources|30 Resources MOC]]**
