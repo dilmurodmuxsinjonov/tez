@@ -35,7 +35,7 @@ def validate_vault(vault_root, ignored_dirs=None):
             if f.endswith(".md"):
                 file_list.append((full_path, rel_path))
 
-    wikilink_regex = re.compile(r'!?\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]')
+    wikilink_regex = re.compile(r'!?\[\[([^\]|#\\]+)(?:#[^\]|\\]*)?(?:\\?\|[^\]]*)?\]\]')
     
     broken_links = []
     syntax_errors = []
@@ -70,7 +70,7 @@ def validate_vault(vault_root, ignored_dirs=None):
         # Wikilink check
         for line_idx, line in enumerate(lines, 1):
             for m in wikilink_regex.finditer(line):
-                target = m.group(1).strip()
+                target = m.group(1).rstrip("\\").strip()
                 # Skip template placeholders like [[...]]
                 if target == "..." or not target:
                     continue

@@ -24,15 +24,16 @@ tags:
 
 | Bo'lim | Tavsif | Havola (MOC) |
 | :--- | :--- | :--- |
-| 📥 **Inbox** | Tezkor fikrlar va tartibga solinmagan yangi yozuvlar | [[00 Inbox/00 Inbox|00 Inbox]] |
-| 🚀 **Projects** | Aniq maqsad va tugash muddatiga ega faol loyihalar | [[10 Projects/10 Projects|10 Projects]] |
-| 🛡️ **Areas** | Doimiy mas'uliyat va e'tibor talab qiluvchi shaxsiy sohalar | [[20 Areas/20 Areas|20 Areas]] |
-| 📚 **Resources** | Qiziqishlar, kitoblar, foydali maqolalar va kurslar | [[30 Resources/30 Resources|30 Resources]] |
-| 🗄️ **Archives** | Yakunlangan loyihalar va eski yozuvlar arxivi | [[40 Archives/40 Archives|40 Archives]] |
+| 📥 **Inbox** | Tezkor fikrlar va tartibga solinmagan yangi yozuvlar | [[00 Inbox/00 Inbox\|00 Inbox]] |
+| 🚀 **Projects** | Aniq maqsad va tugash muddatiga ega faol loyihalar | [[10 Projects/10 Projects\|10 Projects]] |
+| 🛡️ **Areas** | Doimiy mas'uliyat va e'tibor talab qiluvchi shaxsiy sohalar | [[20 Areas/20 Areas\|20 Areas]] |
+| 📚 **Resources** | Qiziqishlar, kitoblar, foydali maqolalar va kurslar | [[30 Resources/30 Resources\|30 Resources]] |
+| 🗄️ **Archives** | Yakunlangan loyihalar va eski yozuvlar arxivi | [[40 Archives/40 Archives\|40 Archives]] |
 
 ---
 
 ## 📅 Kunlik Rejalar & Aloqa
+
 - [[50 Templates/Daily Note Template|📅 Kunlik qayd shabloni]]
 - [[Antigravity Chat History|🤖 Antigravity Chat Tarixi]]
 - [[30 Resources/Agent Skills/Skills Dashboard|🤖 Agent Ko'nikmalari & Tizim Boshqaruvi]]
@@ -41,11 +42,13 @@ tags:
 ---
 
 ## 🚀 Faol Loyihalar va Agentlar Markazi
-- [[AI Sozlangan Miyyasi#🤖 AI Agentlar Floti Indeksi|🤖 AI Agentlar Floti Indeksi]]
-- [[AI Sozlangan Miyyasi#🗂️ Faol Loyihalar Markazi|🗂️ Faol Loyihalar Markazi]]
+
+- [[AI Sozlangan Miyyasi#🤖 AI Agentlar Floti Indeksi (AI Agent Fleet Index)|🤖 AI Agentlar Floti Indeksi]]
+- [[AI Sozlangan Miyyasi#🗂️ Faol Loyihalar Markazi (Active Projects Hub)|🗂️ Faol Loyihalar Markazi]]
 - [[AI Sozlangan Miyyasi#⚡ Universal AI Startup Directive (Read-First Protocol)|⚡ Universal AI Startup Directive]]
 
 ---
 
 ## 📝 So'nggi Yozuvlar (Quick Links)
+
 - [[Salom|👋 Salomlashish Qaydi]]

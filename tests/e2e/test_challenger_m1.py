@@ -359,17 +359,24 @@ class TestMarkdownSyntaxAndAstIntegrity(unittest.TestCase):
     def test_dashboard_internal_anchors_exist_in_master_brain(self):
         """Verify internal section anchors in Dashboard.md target exact headings in Master Brain."""
         dash_text = DASHBOARD_PATH.read_text(encoding="utf-8")
-        anchors = re.findall(r"\[\[AI Sozlangan Miyyasi#([^\]|]+)(?:\|[^\]]+)?\]\]", dash_text)
+        anchors = re.findall(r"\[\[AI Sozlangan Miyyasi#([^\]|\\]+)(?:\\?\|[^\]]+)?\]\]", dash_text)
         self.assertGreater(len(anchors), 0, "No internal section anchors found in Dashboard.md")
 
         mb_text = MASTER_BRAIN_PATH.read_text(encoding="utf-8")
         mb_headings = [l.lstrip("#").strip() for l in mb_text.splitlines() if l.startswith("#")]
 
+        mismatches = []
         for anchor in anchors:
-            self.assertIn(
-                anchor.strip(), mb_headings,
-                f"Dashboard anchor '#{anchor}' does not match any heading in AI Sozlangan Miyyasi.md. Available: {mb_headings}"
-            )
+            clean_anchor = anchor.strip()
+            if clean_anchor not in mb_headings:
+                # Search for closest matching heading
+                closest = [h for h in mb_headings if clean_anchor in h]
+                mismatches.append(f"Anchor '#{clean_anchor}' -> Heading in Master Brain is actually '{closest[0] if closest else 'UNKNOWN'}'")
+
+        self.assertEqual(
+            len(mismatches), 0,
+            f"Dashboard.md contains {len(mismatches)} broken internal heading anchor(s):\n" + "\n".join(f"  - {m}" for m in mismatches)
+        )
 
 
 class TestTablePipeDelimitersAdversarial(unittest.TestCase):
@@ -397,7 +404,7 @@ class TestTablePipeDelimitersAdversarial(unittest.TestCase):
                     in_table = False
                     continue
 
-                cells = [c.strip() for c in stripped.split("|")[1:-1]]
+                cells = [c.strip() for c in re.split(r"(?<!\\)\|", stripped)[1:-1]]
 
                 # Header row
                 if not in_table and all(c != "---" and not c.startswith(":") for c in cells):
@@ -412,7 +419,7 @@ class TestTablePipeDelimitersAdversarial(unittest.TestCase):
                 # Data row in table
                 if in_table:
                     actual_cols = len(cells)
-                    has_aliased_wikilink = bool(re.search(r"\[\[[^\]|]+\|[^\]]+\]\]", line))
+                    has_aliased_wikilink = bool(re.search(r"\[\[[^\]|\\]+\|[^\]]+\]\]", line))
                     if actual_cols != expected_cols and has_aliased_wikilink:
                         # Unescaped pipe inside [[target|alias]] caused an extra cell in CommonMark
                         print(f"\n[ADVERSARIAL OBSERVATION] {p.name}:{line_idx} - CommonMark split row into {actual_cols} cols (expected {expected_cols}) due to unescaped pipe in wikilink alias.")

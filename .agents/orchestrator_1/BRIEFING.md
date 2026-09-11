@@ -48,12 +48,21 @@ Build a complete, modular, and fault-tolerant Universal AI Second Brain ("AI Soz
 | topics_spec_miner | teamwork_preview_spec_miner | Survey Topics Architecture & Agent Profiles | completed | 2069dec9-a876-4118-a7b4-e9c8f138064b |
 | projects_explorer | teamwork_preview_explorer | Survey Projects, Toolchain & Rules | completed | d94dd5be-5208-4334-82aa-614a9d6aa818 |
 | test_writer | teamwork_preview_test_writer | E2E Testing Track & Suite Creation | in-progress | 1d347ee2-d0fa-4126-a00a-7e853f2dbf57 |
-| worker_m1 | teamwork_preview_worker | Milestone 1 (Master Brain Core & Rules) | in-progress | 5bf15500-320b-4dbd-8bc6-2493655299a2 |
+| worker_m1 | teamwork_preview_worker | Milestone 1 (Master Brain Core & Rules) | completed | 5bf15500-320b-4dbd-8bc6-2493655299a2 |
+| reviewer_m1_1 | teamwork_preview_reviewer | M1 Review (Brain Core, Persona, Toolchain) | in-progress | 773445f4-4fab-46bd-aef1-6d7a74f02ebc |
+| reviewer_m1_2 | teamwork_preview_reviewer | M1 Review (Git Rules, Lifecycle Protocols) | in-progress | bd44be39-1623-46dc-a4bc-3d86814f7cd2 |
+| challenger_m1_1 | teamwork_preview_challenger | M1 Challenger (YAML, Markdown, Encoding) | completed | 789560fb-8778-4c89-b574-65700bafa3ea |
+| challenger_m1_2 | teamwork_preview_challenger | M1 Challenger (Git Rules, Toolchain Binaries) | completed | 8b3016c6-69c5-42aa-9600-74918ae884b0 |
+| auditor_m1 | teamwork_preview_auditor | M1 Forensic Integrity Audit | completed | 1318594c-58f2-4c03-b0ad-b2c85de2f8ee |
+| explorer_m1_fix_1 | teamwork_preview_explorer | M1 Fix Explorer (Dashboard Anchors) | completed | 005f9c33-8dcd-44ee-a6b7-17cc715f8e14 |
+| explorer_m1_fix_2 | teamwork_preview_explorer | M1 Fix Explorer (Table Delimiters) | completed | 4f92d146-1ca1-4f95-9a41-2ae888be862d |
+| explorer_m1_fix_3 | teamwork_preview_explorer | M1 Fix Explorer (Regression Guard) | completed | 20240304-a6fc-47a5-b457-6fc4f0a54778 |
+| worker_m1_iter2 | teamwork_preview_worker | M1 Remediation Worker (Iteration 2) | in-progress | 2fe67b48-d84f-4050-8973-edfa762b5a62 |
 
 ## Succession Status
 - Succession required: no
-- Spawn count: 5 / 16
-- Pending subagents: 1d347ee2-d0fa-4126-a00a-7e853f2dbf57, 5bf15500-320b-4dbd-8bc6-2493655299a2
+- Spawn count: 14 / 16
+- Pending subagents: 2fe67b48-d84f-4050-8973-edfa762b5a62
 - Predecessor: none
 - Successor: not yet spawned
 

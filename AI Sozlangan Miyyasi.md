@@ -123,15 +123,15 @@ Ushbu vault Tiago Fortening **PARA** (Projects, Areas, Resources, Archives) meto
 
 | Bo'lim / Hub | Tavsif | Asosiy Havola (MOC) |
 | :--- | :--- | :--- |
-| 📥 **00 Inbox** | Tezkor fikrlar, yangi g'oyalar va kunlik yozuvlar (Daily Notes) qabulxonasi | [[00 Inbox/00 Inbox|00 Inbox]] |
-| 🚀 **10 Projects** | Aniq maqsad, natija va muddatga ega bo'lgan barcha faol loyihalar | [[10 Projects/10 Projects|10 Projects]] |
-| 🛡️ **20 Areas** | Doimiy mas'uliyat sohalari, standartlar va AI Agent profillari | [[20 Areas/20 Areas|20 Areas]] |
-| 📚 **30 Resources** | Ma'lumotlar bazasi, qo'llanmalar, kitoblar va agent ko'nikmalari | [[30 Resources/30 Resources|30 Resources]] |
-| 🗄️ **40 Archives** | Yakunlangan, muzlatilgan yoki tarixiy loyihalar arxivi | [[40 Archives/40 Archives|40 Archives]] |
-| 🤖 **Agent Skills Hub** | Agentlarning rasmiy Obsidian va workflow ko'nikmalari boshqaruv paneli | [[30 Resources/Agent Skills/Skills Dashboard|Skills Dashboard]] |
-| 📅 **Daily Template** | Kunlik rejalar va sarhisoblar uchun rasmiy shablon | [[50 Templates/Daily Note Template|Daily Note Template]] |
-| 📋 **Project Template** | Yangi loyihalar ochish uchun standart shablon | [[50 Templates/Project Template|Project Template]] |
-| 📑 **Resource Template** | Yangi resurslar va o'rganilgan mavzular uchun shablon | [[50 Templates/Resource Template|Resource Template]] |
+| 📥 **00 Inbox** | Tezkor fikrlar, yangi g'oyalar va kunlik yozuvlar (Daily Notes) qabulxonasi | [[00 Inbox/00 Inbox\|00 Inbox]] |
+| 🚀 **10 Projects** | Aniq maqsad, natija va muddatga ega bo'lgan barcha faol loyihalar | [[10 Projects/10 Projects\|10 Projects]] |
+| 🛡️ **20 Areas** | Doimiy mas'uliyat sohalari, standartlar va AI Agent profillari | [[20 Areas/20 Areas\|20 Areas]] |
+| 📚 **30 Resources** | Ma'lumotlar bazasi, qo'llanmalar, kitoblar va agent ko'nikmalari | [[30 Resources/30 Resources\|30 Resources]] |
+| 🗄️ **40 Archives** | Yakunlangan, muzlatilgan yoki tarixiy loyihalar arxivi | [[40 Archives/40 Archives\|40 Archives]] |
+| 🤖 **Agent Skills Hub** | Agentlarning rasmiy Obsidian va workflow ko'nikmalari boshqaruv paneli | [[30 Resources/Agent Skills/Skills Dashboard\|Skills Dashboard]] |
+| 📅 **Daily Template** | Kunlik rejalar va sarhisoblar uchun rasmiy shablon | [[50 Templates/Daily Note Template\|Daily Note Template]] |
+| 📋 **Project Template** | Yangi loyihalar ochish uchun standart shablon | [[50 Templates/Project Template\|Project Template]] |
+| 📑 **Resource Template** | Yangi resurslar va o'rganilgan mavzular uchun shablon | [[50 Templates/Resource Template\|Resource Template]] |
 
 ---
 

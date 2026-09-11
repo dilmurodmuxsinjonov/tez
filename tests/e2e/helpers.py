@@ -107,8 +107,8 @@ def extract_wikilinks(content: str) -> List[Dict[str, str]]:
         
         alias = None
         if "|" in inner:
-            parts = inner.split("|", 1)
-            raw_target = parts[0].strip()
+            parts = re.split(r"\\?\|", inner, maxsplit=1)
+            raw_target = parts[0].rstrip("\\").strip()
             alias = parts[1].strip()
         else:
             raw_target = inner
@@ -116,10 +116,10 @@ def extract_wikilinks(content: str) -> List[Dict[str, str]]:
         anchor = None
         if "#" in raw_target:
             parts = raw_target.split("#", 1)
-            target = parts[0].strip()
-            anchor = parts[1].strip()
+            target = parts[0].rstrip("\\").strip()
+            anchor = parts[1].rstrip("\\").strip()
         else:
-            target = raw_target
+            target = raw_target.rstrip("\\").strip()
             
         links.append({
             "raw": match.group(0),
@@ -136,7 +136,7 @@ def resolve_wikilink(vault_path: Path, current_file: Optional[Path], target: str
     if not target:
         return None
     
-    norm_target = target.replace(chr(92), "/").strip()
+    norm_target = target.rstrip("\\").replace(chr(92), "/").strip()
     
     p1 = vault_path / norm_target
     if p1.is_file():

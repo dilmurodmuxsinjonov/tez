@@ -38,7 +38,7 @@ export function validateVault(vaultRoot = 'D:\\obsidian file', ignoredDirs = ['.
 
   walk(vaultRoot);
 
-  const wikilinkRegex = /!?\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]/g;
+  const wikilinkRegex = /!?\[\[([^\]|#\\]+)(?:#[^\]|\\]*)?(?:\\?\|[^\]]*)?\]\]/g;
   const brokenLinks = [];
   const syntaxErrors = [];
   let totalLinks = 0;
@@ -66,7 +66,7 @@ export function validateVault(vaultRoot = 'D:\\obsidian file', ignoredDirs = ['.
       const lineNum = index + 1;
       let match;
       while ((match = wikilinkRegex.exec(line)) !== null) {
-        const target = match[1].trim();
+        const target = match[1].replace(/\\+$/, '').trim();
         if (target === '...' || !target) continue;
         totalLinks++;
         const normTarget = target.replace(/\\/g, '/').replace(/\/$/, '').toLowerCase();

@@ -11,14 +11,10 @@
             "id": "2115adc27695e8dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "50 Templates/Project Template.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Project Template"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -183,6 +179,7 @@
   },
   "active": "2115adc27695e8dc",
   "lastOpenFiles": [
+    "50 Templates/Project Template.md",
     "DILMUROD/Untitled 1.canvas",
     "2026-09-09.md",
     "Untitled 3.canvas",
@@ -202,7 +199,6 @@
     "30 Resources/Agent Skills/git-workflow.md",
     "50 Templates/Daily Note Template.md",
     "50 Templates/Resource Template.md",
-    "50 Templates/Project Template.md",
     "Untitled.canvas"
   ]
 }

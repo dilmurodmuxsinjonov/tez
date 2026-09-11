@@ -21,17 +21,10 @@
             "id": "504c894d62be335a",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Untitled 1.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Untitled 1"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
@@ -110,7 +103,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 1.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +121,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled 1.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -198,7 +189,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "732d21cbaf112e05",
+  "active": "504c894d62be335a",
   "lastOpenFiles": [
     "Untitled 1.canvas",
     "Welcome.md",
