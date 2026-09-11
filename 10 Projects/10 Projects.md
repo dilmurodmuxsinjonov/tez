@@ -37,6 +37,8 @@ Ushbu MOC foydalanuvchi **Dilmurod Muhsinjanov**ning barcha faol dasturiy ta'min
 | **The_AI_Pipeline** | 30-Day AI Media Automation, 60 skriptlar (UZ/EN) | `C:\Users\dilmu\.gemini\antigravity\scratch\The_AI_Pipeline` | `main` | [[The_AI_Pipeline]] |
 | **Orol Shahar Qirollik** | Web3 Economic Sim, Express 5, Prisma 7, React 19 | `C:\Users\dilmu\OneDrive\Desktop\game23v1` | `feature/v1-p3` | [[Orol Shahar Qirollik]] |
 | **Doctor A Med Clinic** | Healthcare Clinic Portal, Next.js 16, Tailwind v4, Prisma | `C:\Users\dilmu\OneDrive\Desktop\DOCTOR A` | `feature/doctor-a-med-clinic-website` | [[Doctor A Med Clinic]] |
+| **AI Story & Media Engine** | Multimodal Video, Google Flow, Vids, Imagen 3, FFmpeg | `D:\obsidian file\10 Projects\AI Story & Media Engine` | `main` | [[AI Story & Media Engine]] |
+| **Universal Multi-Agent Swarm** | Autonomous Multi-Agent Swarm, Python 3.12, Node.js | `D:\obsidian file\10 Projects\Universal Multi-Agent Swarm Framework` | `main` | [[Universal Multi-Agent Swarm Framework]] |
 
 ---
 

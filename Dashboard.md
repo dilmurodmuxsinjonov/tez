@@ -45,7 +45,19 @@ tags:
 
 - [[AI Sozlangan Miyyasi#🤖 AI Agentlar Floti Indeksi (AI Agent Fleet Index)|🤖 AI Agentlar Floti Indeksi]]
 - [[AI Sozlangan Miyyasi#🗂️ Faol Loyihalar Markazi (Active Projects Hub)|🗂️ Faol Loyihalar Markazi]]
+- [[AI Sozlangan Miyyasi#🎨 Uslubiy Qo'llanmalar va Discovery Markazi (Style Guides & Discovery Hub)|🎨 Uslubiy Qo'llanmalar & Discovery]]
+- [[AI Sozlangan Miyyasi#🌐 Brauzer Avtomatizatsiyasi va Tashqi AI Vositalari (Browser & External AI Tools)|🌐 Brauzer & Tashqi AI Vositalari]]
 - [[AI Sozlangan Miyyasi#⚡ Universal AI Startup Directive (Read-First Protocol)|⚡ Universal AI Startup Directive]]
+
+---
+
+## 🛠️ Tezkor Qo'llanmalar (Quick Guides)
+
+- [[30 Resources/Style Guides/Gemini Topics Style Guide|🎨 Gemini Topics Muloqot Standarti]]
+- [[30 Resources/Style Guides/Project Discovery Questionnaire|📋 Loyiha Aniqlashtirish So'rovnomasi]]
+- [[30 Resources/Browser & Automation Guides/Google Labs & AI Tools Manual|🧪 Google Labs & Flow Boshqaruv Qo'llanmasi]]
+- [[30 Resources/Browser & Automation Guides/Multimodal Story to Video Pipeline|🎬 Hikoyadan Videoga Multimodal Quvur]]
+- [[20 Areas/Agent Profiles/Autonomous Decision Protocols|⚖️ Avtonom Qarorlar Qabul Qilish Qoidalari]]
 
 ---
 

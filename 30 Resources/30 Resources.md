@@ -42,6 +42,28 @@ Ushbu MOC foydalanuvchining barcha ma'lumot resurslari, o'quv qo'llanmalari va A
 
 ---
 
+
+---
+
+## 🎨 Uslubiy Qo'llanmalar (Style Guides)
+
+- 🎨 **[[30 Resources/Style Guides/Gemini Topics Style Guide|Gemini Topics Style Guide]]** — 10 xil muloqot va salomlashish uslubi
+- 📋 **[[30 Resources/Style Guides/Project Discovery Questionnaire|Project Discovery Questionnaire]]** — Loyiha aniqlashtirish so'rovnomasi
+- 💎 **[[30 Resources/Style Guides/UI UX & Modern Web Design Standards|UI/UX & Web Standartlari]]** — Tailwind v4, Three.js va CSS dizayn me'yorlari
+- ⚡ **[[30 Resources/Style Guides/Prompt Engineering & Context Compression|Prompt Engineering & Compression]]** — Kontekstni tejash va qisqartirish
+
+---
+
+## 🌐 Brauzer va Tashqi AI Boshqaruv Qo'llanmalari (Browser & External AI Guides)
+
+- 🌐 **[[30 Resources/Browser & Automation Guides/Browser Automation Operations Manual|Browser Automation Manual]]** — Avtonom brauzer operatsiyalari
+- 🧪 **[[30 Resources/Browser & Automation Guides/Google Labs & AI Tools Manual|Google Labs & Flow Manual]]** — Google Labs ekotizimini boshqarish
+- 🎬 **[[30 Resources/Browser & Automation Guides/Multimodal Story to Video Pipeline|Story to Video Pipeline]]** — Multimodal video montaj quvuri
+- 🔍 **[[30 Resources/Browser & Automation Guides/Web Scraping & Research Protocol|Web Scraping Protocol]]** — Defuddle orqali ma'lumot to'plash
+- 🤖 **[[30 Resources/External AI Integrations/External AI Fleet Integration|External AI Fleet Integration]]** — AI modellarining o'zaro hamkorligi
+- ⚡ **[[30 Resources/External AI Integrations/OpenAI Codex & OpenCode Manual|OpenAI Codex Manual]]** — Terminal orqali kod generatsiyasi
+- 🔄 **[[30 Resources/External AI Integrations/LLM Interoperability & Handoff Format|LLM Handoff Format]]** — Modellararo kontekst uzatish formati
+
 ## 📖 Foydali Qo'llanmalar va Tashqi Resurslar
 
 - **PARA Metodologiyasi**: Tiago Forte tomonidan yaratilgan Ikkinchi Miya tashkiliy modeli.

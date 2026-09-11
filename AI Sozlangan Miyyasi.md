@@ -114,6 +114,38 @@ Foydalanuvchining ayni paytda faol bo'lgan 5 ta asosiy loyihasi va ularning Gemi
 | **The_AI_Pipeline** | 30-Day AI Media Automation Course<br>Python, Markdown (60 ta UZ/EN video skriptlar) | `C:\Users\dilmu\.gemini\antigravity\scratch\The_AI_Pipeline` | `main` | [[The_AI_Pipeline]] |
 | **Orol Shahar Qirollik** | Web3 / Economic Simulation Game Monorepo<br>Express 5, Prisma 7, PostgreSQL, React 19, R3F | `C:\Users\dilmu\OneDrive\Desktop\game23v1` | `feature/v1-p3` | [[Orol Shahar Qirollik]] |
 | **Doctor A Med Clinic** | Healthcare Clinic Portal & Booking Platform<br>Next.js 16, Tailwind CSS v4, Prisma 5, SQLite | `C:\Users\dilmu\OneDrive\Desktop\DOCTOR A` | `feature/doctor-a-med-clinic-website` | [[Doctor A Med Clinic]] |
+| **AI Story & Media Engine** | Multimodal Video & Audio Pipeline<br>Google Flow, Vids, Imagen 3, MusicFX, FFmpeg | `D:\obsidian file\10 Projects\AI Story & Media Engine` | `main` | [[AI Story & Media Engine]] |
+| **Universal Multi-Agent Swarm** | Autonomous Multi-Agent Swarm Framework<br>Antigravity Swarm, Python 3.12, Node.js | `D:\obsidian file\10 Projects\Universal Multi-Agent Swarm Framework` | `main` | [[Universal Multi-Agent Swarm Framework]] |
+
+---
+
+## 🎨 Uslubiy Qo'llanmalar va Discovery Markazi (Style Guides & Discovery Hub)
+
+Foydalanuvchi bilan muloqot qilish, loyiha talablarini chuqur aniqlashtirish va veb-dizayn standartlari:
+
+| Qo'llanma Nomi | Asosiy Vazifasi va Qo'llanilishi | Havola |
+| :--- | :--- | :--- |
+| **Gemini Topics Style Guide** | 10 ta salomlashish uslubi, ~75 belgilik fe'lli takliflar va xotira bloklari | [[30 Resources/Style Guides/Gemini Topics Style Guide\|Gemini Topics Style Guide]] |
+| **Project Discovery Questionnaire** | Yangi loyiha boshlashda talablarni 100% aniqlashtiruvchi 15 ta savol | [[30 Resources/Style Guides/Project Discovery Questionnaire\|Project Discovery Questionnaire]] |
+| **UI/UX & Web Design Standards** | Tailwind v4, Three.js 3D, Material Clinical va zamonaviy veb standartlari | [[30 Resources/Style Guides/UI UX & Modern Web Design Standards\|UI UX & Web Standards]] |
+| **Prompt Engineering & Compression** | Kontekstni tejash, ma'lumot zichligini oshirish va samarali promptlar | [[30 Resources/Style Guides/Prompt Engineering & Context Compression\|Prompt Engineering Guide]] |
+
+---
+
+## 🌐 Brauzer Avtomatizatsiyasi va Tashqi AI Vositalari (Browser & External AI Tools)
+
+Foydalanuvchi nomidan internetda avtonom vazifalarni bajarish va multimodal kontent yaratish:
+
+| Qo'llanma / Vosita | Vazifasi va Imkoniyatlari | Havola |
+| :--- | :--- | :--- |
+| **Browser Automation Manual** | Brauzer orqali veb-sahifalarga kirish, elementlarni bosish va ma'lumot yig'ish | [[30 Resources/Browser & Automation Guides/Browser Automation Operations Manual\|Browser Automation Manual]] |
+| **Google Labs & AI Tools Manual** | Google Flow, Vids, Imagen 3, MusicFX va NotebookLM boshqaruv yo'riqnomasi | [[30 Resources/Browser & Automation Guides/Google Labs & AI Tools Manual\|Google Labs & Flow Manual]] |
+| **Story to Video Pipeline** | Hikoyadan ssenariy, rasmlar, animatsiyalar va yaxlit video montaj quvuri | [[30 Resources/Browser & Automation Guides/Multimodal Story to Video Pipeline\|Story to Video Pipeline]] |
+| **Web Scraping Protocol** | Defuddle va DevTools orqali internetdan toza faktik ma'lumot to'plash | [[30 Resources/Browser & Automation Guides/Web Scraping & Research Protocol\|Web Scraping Protocol]] |
+| **External AI Fleet Integration** | Gemini, Claude, OpenAI Codex va mahalliy modellarning o'zaro hamkorligi | [[30 Resources/External AI Integrations/External AI Fleet Integration\|External AI Fleet Integration]] |
+| **OpenAI Codex & OpenCode** | `codex.exe` va `opencode.ps1` orqali terminalda avtonom kod yozish | [[30 Resources/External AI Integrations/OpenAI Codex & OpenCode Manual\|OpenAI Codex Manual]] |
+| **LLM Handoff Format** | Turli AI modellari o'rtasida kontekstni yo'qotmasdan uzatish formati | [[30 Resources/External AI Integrations/LLM Interoperability & Handoff Format\|LLM Handoff Format]] |
+| **Autonomous Decision Protocol** | Foydalanuvchi dam olayotganda agentlarning mustaqil qaror qabul qilish chegaralari | [[20 Areas/Agent Profiles/Autonomous Decision Protocols\|Autonomous Decision Protocols]] |
 
 ---
 
