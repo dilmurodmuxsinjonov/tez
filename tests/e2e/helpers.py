@@ -49,6 +49,63 @@ AGENT_PROFILES = [
     "Concurrency & Sync Protocol"
 ]
 
+NEW_CLI_AGENTS = [
+    "Nous Hermes",
+    "GitHub Copilot",
+    "OpenCode CLI",
+    "Google Antigravity CLI",
+    "Ruflo Swarm"
+]
+
+ALL_AGENT_PROFILES = AGENT_PROFILES + NEW_CLI_AGENTS
+
+NEW_RESOURCES = [
+    "AI Agent Ecosystem Map",
+    "Free LLM Models Registry",
+    "Codex Skills Encyclopedia"
+]
+
+NEW_TEMPLATES = [
+    "New Agent Integration Template",
+    "Model Evaluation Template",
+    "Security Audit Template"
+]
+
+FREE_LLM_PROVIDERS = [
+    "OpenRouter",
+    "Groq",
+    "Google AI Studio",
+    "NVIDIA NIM",
+    "OpenCode Zen",
+    "GitHub Models",
+    "Cloudflare"
+]
+
+CODEX_CUSTOM_SKILLS = [
+    "chuqur_muhandislik",
+    "kontekst_muhit_tarixi",
+    "kontekst_psixologik_profil",
+    "kontekst_strategik_reja",
+    "loyihani_rejalashtirish",
+    "loyiha_infratuzilmasi_qoidalari",
+    "memor_shaxsiyati",
+    "oq_haker_muhiti",
+    "oq_haker_vositalari",
+    "veb_dasturlash",
+    "xavfsizlik_qoidalari",
+    "tashqi_ai_agentlar",
+    "review-agent",
+    "skill-creator"
+]
+
+ALL_NEW_NOTES = [
+    f"20 Areas/Agent Profiles/{a}.md" for a in NEW_CLI_AGENTS
+] + [
+    f"30 Resources/{r}.md" for r in NEW_RESOURCES
+] + [
+    f"50 Templates/{t}.md" for t in NEW_TEMPLATES
+]
+
 PARA_MOCS = [
     "00 Inbox",
     "10 Projects",

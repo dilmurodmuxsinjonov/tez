@@ -12,6 +12,8 @@ from tests.e2e.helpers import (
     ACTIVE_PROJECTS,
     AGENT_PROFILES,
     COMMUNICATION_STYLES,
+    NEW_CLI_AGENTS,
+    NEW_TEMPLATES,
     PARA_MOCS,
     VAULT_ROOT,
     extract_wikilinks,
@@ -328,6 +330,70 @@ class TestTier1ObsidianParamocsAndSkills(unittest.TestCase):
         for name in mocs:
             self.assertIn(name, self.master_content, f"Master brain does not index {name}")
             self.assertIn(name, self.dash_content, f"Dashboard does not index {name}")
+
+
+class TestTier1EcosystemAndFleetExpansion(unittest.TestCase):
+    """Category 6: AI Fleet, Ecosystem Map, Free LLMs, Skills Encyclopedia, and Templates."""
+
+    def test_tc111_new_cli_agent_profile_notes_exist(self):
+        """TC1.111: Checks that all 5 CLI agent profile notes exist in 20 Areas/Agent Profiles/."""
+        profiles_dir = VAULT_ROOT / "20 Areas" / "Agent Profiles"
+        self.assertTrue(profiles_dir.is_dir(), "Agent Profiles directory missing.")
+        for agent in NEW_CLI_AGENTS:
+            p = profiles_dir / f"{agent}.md"
+            self.assertTrue(p.is_file(), f"Agent profile '{agent}.md' does not exist in {profiles_dir}.")
+            content = p.read_text(encoding="utf-8")
+            self.assertGreater(len(content), 500, f"Profile '{agent}.md' content is too short.")
+            fm, _ = parse_frontmatter(content)
+            self.assertIsNotNone(fm, f"Frontmatter missing in '{agent}.md'.")
+            self.assertEqual(fm.get("status"), "active", f"Status must be active in '{agent}.md'.")
+            self.assertEqual(fm.get("type"), "agent-profile", f"Type must be agent-profile in '{agent}.md'.")
+
+    def test_tc112_ai_ecosystem_map_note_exists(self):
+        """TC1.112: Checks that 30 Resources/AI Agent Ecosystem Map.md exists and is substantial."""
+        eco_file = VAULT_ROOT / "30 Resources" / "AI Agent Ecosystem Map.md"
+        self.assertTrue(eco_file.is_file(), "AI Agent Ecosystem Map.md does not exist.")
+        content = eco_file.read_text(encoding="utf-8")
+        self.assertGreater(len(content), 1000, "AI Agent Ecosystem Map content is too short.")
+        fm, _ = parse_frontmatter(content)
+        self.assertIsNotNone(fm, "Frontmatter missing in AI Agent Ecosystem Map.md.")
+        self.assertEqual(fm.get("status"), "active")
+        self.assertIn("Codex", content, "Codex must be mentioned in Ecosystem Map.")
+        self.assertIn("/multt", content, "/multt multi-agent orchestration must be documented.")
+
+    def test_tc113_free_llm_models_registry_note_exists(self):
+        """TC1.113: Checks that 30 Resources/Free LLM Models Registry.md exists and is active."""
+        reg_file = VAULT_ROOT / "30 Resources" / "Free LLM Models Registry.md"
+        self.assertTrue(reg_file.is_file(), "Free LLM Models Registry.md does not exist.")
+        content = reg_file.read_text(encoding="utf-8")
+        self.assertGreater(len(content), 1000, "Free LLM Models Registry content is too short.")
+        fm, _ = parse_frontmatter(content)
+        self.assertIsNotNone(fm, "Frontmatter missing in Free LLM Models Registry.md.")
+        self.assertEqual(fm.get("status"), "active")
+
+    def test_tc114_codex_skills_encyclopedia_note_exists(self):
+        """TC1.114: Checks that 30 Resources/Codex Skills Encyclopedia.md exists and is active."""
+        skills_file = VAULT_ROOT / "30 Resources" / "Codex Skills Encyclopedia.md"
+        self.assertTrue(skills_file.is_file(), "Codex Skills Encyclopedia.md does not exist.")
+        content = skills_file.read_text(encoding="utf-8")
+        self.assertGreater(len(content), 1000, "Codex Skills Encyclopedia content is too short.")
+        fm, _ = parse_frontmatter(content)
+        self.assertIsNotNone(fm, "Frontmatter missing in Codex Skills Encyclopedia.md.")
+        self.assertEqual(fm.get("status"), "active")
+
+    def test_tc115_new_workflow_templates_exist(self):
+        """TC1.115: Checks that all 3 new workflow templates exist in 50 Templates/."""
+        tmpl_dir = VAULT_ROOT / "50 Templates"
+        self.assertTrue(tmpl_dir.is_dir(), "50 Templates directory does not exist.")
+        for tmpl in NEW_TEMPLATES:
+            p = tmpl_dir / f"{tmpl}.md"
+            self.assertTrue(p.is_file(), f"Template '{tmpl}.md' missing in {tmpl_dir}.")
+            content = p.read_text(encoding="utf-8")
+            self.assertGreater(len(content), 300, f"Template '{tmpl}.md' is too short.")
+            fm, _ = parse_frontmatter(content)
+            self.assertIsNotNone(fm, f"Frontmatter missing in '{tmpl}.md'.")
+            self.assertEqual(fm.get("type"), "template", f"Type must be template in '{tmpl}.md'.")
+            self.assertEqual(fm.get("status"), "active", f"Status must be active in '{tmpl}.md'.")
 
 
 if __name__ == "__main__":

@@ -14,7 +14,10 @@ from tests.e2e.concurrency_sim import ConcurrencyProtocolManager
 from tests.e2e.helpers import (
     APPROVED_ACTION_VERBS,
     COMMUNICATION_STYLES,
+    NEW_CLI_AGENTS,
+    NEW_TEMPLATES,
     VAULT_ROOT,
+    check_file_utf8_clean,
     check_visual_separation,
     extract_wikilinks,
     parse_frontmatter,
@@ -235,6 +238,158 @@ class TestTier4RealWorldWorkloads(unittest.TestCase):
         audit_text = self.mgr.audit_log.read_text(encoding="utf-8")
         self.assertIn("STALE_LOCK_BROKEN", audit_text)
         self.assertIn("antigravity_1", audit_text.lower())
+
+    def test_tc406_multt_multi_agent_orchestration_workflow(self):
+        """TC4.06: Simulate complete /multt multi-agent orchestration workflow and verify CLI roles."""
+        # 1. Read AI Agent Ecosystem Map
+        eco_path = VAULT_ROOT / "30 Resources" / "AI Agent Ecosystem Map.md"
+        self.assertTrue(eco_path.is_file(), "AI Agent Ecosystem Map.md missing.")
+        eco_content = eco_path.read_text(encoding="utf-8")
+
+        # Verify /multt command syntax documented
+        self.assertIn("/multt", eco_content)
+        self.assertIn("/multt status", eco_content)
+        self.assertIn("/multt off", eco_content)
+
+        # 2. Simulate User issuing /multt task: "Harden cryptographic vaults and run pen-test benchmark"
+        task = "Harden cryptographic vaults and run pen-test benchmark"
+
+        # 3. Master Orchestrator (Codex) decomposes task into specialized subagent assignments:
+        delegations = {
+            "Nous Hermes": {
+                "binary": r"C:\Users\dilmu\AppData\Local\hermes\bin\hermes.exe",
+                "invocation": 'hermes chat -q "research cryptographic vault zero-knowledge algorithms" --oneshot',
+                "role": "deep-researcher"
+            },
+            "GitHub Copilot": {
+                "binary": r"C:\Users\dilmu\AppData\Roaming\npm\copilot.ps1",
+                "invocation": 'copilot -p "verify git branch feature/crypto-vault and PR diff"',
+                "role": "git-lifecycle"
+            },
+            "OpenCode CLI": {
+                "binary": r"C:\Users\dilmu\AppData\Roaming\npm\opencode.ps1",
+                "invocation": 'opencode run "benchmark open-source crypto models under OpenCode Zen"',
+                "role": "open-models"
+            },
+            "Google Antigravity CLI": {
+                "binary": r"C:\Users\dilmu\AppData\Local\agy\bin\agy.exe",
+                "invocation": 'agy -p "audit monorepo cryptographic boundaries and dependencies"',
+                "role": "architecture"
+            },
+            "Ruflo Swarm": {
+                "binary": r"C:\Users\dilmu\AppData\Local\hermes\node\ruflo.ps1",
+                "invocation": 'ruflo memory search -q "cryptographic vault design history"',
+                "role": "vector-memory"
+            }
+        }
+
+        # 4. Verify each delegated agent's profile exists and documents the binary and command format
+        profiles_dir = VAULT_ROOT / "20 Areas" / "Agent Profiles"
+        for agent_name, dinfo in delegations.items():
+            profile_path = profiles_dir / f"{agent_name}.md"
+            self.assertTrue(profile_path.is_file(), f"Profile for {agent_name} missing.")
+            p_content = profile_path.read_text(encoding="utf-8")
+
+            # Verify binary or script is referenced
+            bin_name = Path(dinfo["binary"]).name.lower()
+            self.assertIn(bin_name, p_content.lower(), f"Binary {bin_name} not found in {agent_name}.md")
+
+            # Verify primary CLI command prefix is documented
+            cmd_prefix = dinfo["invocation"].split()[0]
+            self.assertIn(cmd_prefix.lower(), p_content.lower())
+
+        # 5. Simulate Concurrency Lock Acquisition during Multi-Agent Output Synthesis
+        lock_res = self.mgr.acquire_lock(
+            target_rel_path="30 Resources/AI Agent Ecosystem Map.md",
+            agent_name="Codex_Orchestrator",
+            agent_conv_id="multt-session-406",
+            purpose="Synthesizing multi-agent outputs from Hermes, Copilot, OpenCode, and Ruflo",
+            ttl_seconds=300
+        )
+        self.assertTrue(lock_res.success)
+
+        # 6. Release lock after successful multi-agent synthesis
+        rel_ok = self.mgr.release_lock("30 Resources/AI Agent Ecosystem Map.md", "Codex_Orchestrator")
+        self.assertTrue(rel_ok)
+
+    def test_tc407_end_to_end_agent_onboarding_scenario(self):
+        """TC4.07: Simulate end-to-end agent onboarding scenario using New Agent Integration Template."""
+        # 1. Read New Agent Integration Template
+        template_path = VAULT_ROOT / "50 Templates" / "New Agent Integration Template.md"
+        self.assertTrue(template_path.is_file(), "New Agent Integration Template.md missing.")
+        template_content = template_path.read_text(encoding="utf-8")
+
+        # Verify template schema and frontmatter
+        tfm, tbody = parse_frontmatter(template_content)
+        self.assertIsNotNone(tfm)
+        self.assertEqual(tfm.get("type"), "template")
+        self.assertEqual(tfm.get("status"), "active")
+        self.assertIn("aliases", tfm)
+
+        # 2. Instantiate new simulated agent profile note: "Ollama Local Engine"
+        sim_agent_name = "Ollama Local Engine"
+        sim_note_content = (
+            "---\n"
+            f'title: "🦙 {sim_agent_name} — Local Offline Inference Agent"\n'
+            'version: "1.0.0"\n'
+            'date: 2026-09-12\n'
+            'created: 2026-09-12\n'
+            'updated: 2026-09-12\n'
+            'status: active\n'
+            'type: agent-profile\n'
+            f'agent: "{sim_agent_name}"\n'
+            'role: local-offline-inferencer\n'
+            'tags:\n'
+            '  - agent-profile\n'
+            '  - ollama\n'
+            '  - offline-ai\n'
+            '  - cli\n'
+            '  - ai-fleet\n'
+            'language: "uz-UZ, en-US"\n'
+            '---\n\n'
+            f"# 🦙 {sim_agent_name} — Local Offline Inference Agent\n\n"
+            "## 🧭 Asosiy Boshqaruv Havolalari\n\n"
+            "- 🧠 [[AI Sozlangan Miyyasi]]\n"
+            "- 🗺️ [[30 Resources/AI Agent Ecosystem Map|AI Agent Ecosystem Map]]\n\n"
+            "## 1. 📋 Rol va Vazifasi\n\n"
+            "Mahalliy oflayn modellar bilan ishlash va maxfiy ma'lumotlarni tarmoqsiz tahlil qilish.\n\n"
+            "## 2. 🚀 Terminal va CLI Buyruqlari\n\n"
+            "```powershell\n"
+            "ollama run llama3.3:8b\n"
+            "```\n\n"
+            "## 3. 🔌 Imkoniyatlar va API Ulanishi\n\n"
+            "Localhost 11434 REST API orqali to'liq avtonom ishlash.\n\n"
+            "## 4. 💡 Foydalanish Holatlari\n\n"
+            "Maxfiy kod auditi va internetsiz sharoitda mantiqiy xulosalar.\n\n"
+            "## 5. 🛡️ Xavfsizlik va Protokol\n\n"
+            "Zero Trust va mahalliy xavfsizlik qoidalariga to'liq bo'ysunadi.\n"
+        )
+
+        # 3. Save instantiated note into simulated vault directory
+        sim_agent_file = self.sim_vault / "20 Areas" / "Agent Profiles" / f"{sim_agent_name}.md"
+        sim_agent_file.parent.mkdir(parents=True, exist_ok=True)
+        sim_agent_file.write_text(sim_note_content, encoding="utf-8")
+
+        # 4. Validate schema compatibility and vault invariants on the newly onboarded agent:
+        # A. Frontmatter validity
+        sim_fm, sim_body = parse_frontmatter(sim_note_content)
+        self.assertIsNotNone(sim_fm)
+        self.assertEqual(sim_fm.get("type"), "agent-profile")
+        self.assertEqual(sim_fm.get("status"), "active")
+        self.assertEqual(sim_fm.get("agent"), sim_agent_name)
+
+        # B. Backlink to Master Brain
+        sim_links = extract_wikilinks(sim_note_content)
+        sim_targets = [l["target"] for l in sim_links]
+        self.assertTrue(any("AI Sozlangan Miyyasi" in t for t in sim_targets))
+
+        # C. Required H2 sections count >= 4
+        h2s = [l for l in sim_note_content.splitlines() if l.startswith("## ")]
+        self.assertGreaterEqual(len(h2s), 4)
+
+        # D. UTF-8 cleanly encoded without BOM
+        is_clean, err = check_file_utf8_clean(sim_agent_file)
+        self.assertTrue(is_clean, f"Clean UTF-8 validation failed: {err}")
 
 
 if __name__ == "__main__":

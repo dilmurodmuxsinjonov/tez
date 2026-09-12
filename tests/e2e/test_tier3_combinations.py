@@ -11,6 +11,9 @@ import unittest
 from tests.e2e.helpers import (
     ACTIVE_PROJECTS,
     AGENT_PROFILES,
+    NEW_CLI_AGENTS,
+    NEW_RESOURCES,
+    NEW_TEMPLATES,
     PARA_MOCS,
     VAULT_ROOT,
     extract_wikilinks,
@@ -152,6 +155,71 @@ class TestTier3CrossFeatureCombinations(unittest.TestCase):
                 self.assertTrue(len(target) > 0, f"Empty wikilink in {note.name}")
                 # Must not contain Windows backslash inside link
                 self.assertNotIn("\\", target, f"Wikilink '{target}' in {note.name} contains backslash.")
+
+
+class TestTier3CrossFeatureEcosystemCombinations(unittest.TestCase):
+    """Tier 3: Pairwise cross-references between Master Brain, MOCs, Agent Fleet, and Resources."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.master_file = VAULT_ROOT / "AI Sozlangan Miyyasi.md"
+        with open(cls.master_file, "r", encoding="utf-8") as f:
+            cls.master_content = f.read()
+        cls.master_links = extract_wikilinks(cls.master_content)
+        cls.master_targets = {l["target"] for l in cls.master_links}
+
+    def test_tc306_master_brain_cross_references_all_new_agents(self):
+        """TC3.06: Asserts AI Sozlangan Miyyasi.md references all 5 CLI agents."""
+        for agent in NEW_CLI_AGENTS:
+            has_link = any(agent.lower() in t.lower() for t in self.master_targets)
+            self.assertTrue(
+                has_link,
+                f"Master Brain does not reference new CLI agent '{agent}'. Link targets: {self.master_targets}"
+            )
+
+    def test_tc307_master_brain_cross_references_all_new_resources(self):
+        """TC3.07: Asserts AI Sozlangan Miyyasi.md references all 3 new resources."""
+        for res in NEW_RESOURCES:
+            has_link = any(res.lower() in t.lower() for t in self.master_targets)
+            self.assertTrue(
+                has_link,
+                f"Master Brain does not reference resource '{res}'. Link targets: {self.master_targets}"
+            )
+
+    def test_tc308_master_brain_cross_references_all_new_templates(self):
+        """TC3.08: Asserts AI Sozlangan Miyyasi.md references all 3 new templates."""
+        for tmpl in NEW_TEMPLATES:
+            has_link = any(tmpl.lower() in t.lower() for t in self.master_targets)
+            self.assertTrue(
+                has_link,
+                f"Master Brain does not reference template '{tmpl}'. Link targets: {self.master_targets}"
+            )
+
+    def test_tc309_para_mocs_index_new_entities(self):
+        """TC3.09: Asserts 20 Areas and 30 Resources MOCs index the new agent and resource notes."""
+        # 20 Areas MOCs check
+        areas_content = ""
+        for p in [VAULT_ROOT / "20 Areas" / "20 Areas.md", VAULT_ROOT / "20 Areas" / "20 Areas MOC.md"]:
+            if p.is_file():
+                areas_content += p.read_text(encoding="utf-8") + "\n"
+        areas_links = {l["target"] for l in extract_wikilinks(areas_content)}
+        for agent in NEW_CLI_AGENTS:
+            self.assertTrue(
+                any(agent.lower() in t.lower() for t in areas_links),
+                f"20 Areas MOCs missing link to '{agent}'."
+            )
+
+        # 30 Resources MOCs check
+        res_content = ""
+        for p in [VAULT_ROOT / "30 Resources" / "30 Resources.md", VAULT_ROOT / "30 Resources" / "30 Resources MOC.md"]:
+            if p.is_file():
+                res_content += p.read_text(encoding="utf-8") + "\n"
+        res_links = {l["target"] for l in extract_wikilinks(res_content)}
+        for res in NEW_RESOURCES:
+            self.assertTrue(
+                any(res.lower() in t.lower() for t in res_links),
+                f"30 Resources MOCs missing link to '{res}'."
+            )
 
 
 if __name__ == "__main__":

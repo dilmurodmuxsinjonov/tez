@@ -22,13 +22,18 @@ from tests.e2e.test_tier1_features import (
     TestTier1AgentProfilesAndConcurrency,
     TestTier1GeminiTopicsMemoryAndProjects,
     TestTier1ObsidianParamocsAndSkills,
+    TestTier1EcosystemAndFleetExpansion,
 )
 from tests.e2e.test_tier2_boundaries import (
     TestTier2WikilinksAndUnicodeBoundaries,
     TestTier2SuggestedNextStepsBoundaries,
     TestTier2ConcurrencyAndLockingBoundaries,
+    TestTier2BoundaryEcosystemAndRegistry,
 )
-from tests.e2e.test_tier3_combinations import TestTier3CrossFeatureCombinations
+from tests.e2e.test_tier3_combinations import (
+    TestTier3CrossFeatureCombinations,
+    TestTier3CrossFeatureEcosystemCombinations,
+)
 from tests.e2e.test_tier4_workloads import TestTier4RealWorldWorkloads
 from tests.e2e.test_tier5_adversarial import (
     TestTier5ParaMocs,
@@ -39,6 +44,7 @@ from tests.e2e.test_tier5_adversarial import (
     TestAdversarialConcurrencyAndStaleLockRecovery,
     TestAdversarialVaultUtf8NoBomHygiene,
     TestAdversarialGeminiTopicsBoundaryConstraints,
+    TestAdversarialAIEcosystemAndFleetExpansion,
 )
 
 TIER_MAP = {
@@ -48,14 +54,17 @@ TIER_MAP = {
         TestTier1AgentProfilesAndConcurrency,
         TestTier1GeminiTopicsMemoryAndProjects,
         TestTier1ObsidianParamocsAndSkills,
+        TestTier1EcosystemAndFleetExpansion,
     ],
     "2": [
         TestTier2WikilinksAndUnicodeBoundaries,
         TestTier2SuggestedNextStepsBoundaries,
         TestTier2ConcurrencyAndLockingBoundaries,
+        TestTier2BoundaryEcosystemAndRegistry,
     ],
     "3": [
         TestTier3CrossFeatureCombinations,
+        TestTier3CrossFeatureEcosystemCombinations,
     ],
     "4": [
         TestTier4RealWorldWorkloads,
@@ -69,6 +78,7 @@ TIER_MAP = {
         TestAdversarialConcurrencyAndStaleLockRecovery,
         TestAdversarialVaultUtf8NoBomHygiene,
         TestAdversarialGeminiTopicsBoundaryConstraints,
+        TestAdversarialAIEcosystemAndFleetExpansion,
     ],
 }
 

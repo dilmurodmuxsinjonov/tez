@@ -22,6 +22,7 @@ from tests.e2e.concurrency_sim import ConcurrencyProtocolManager, LockResult
 from tests.e2e.helpers import (
     ACTIVE_PROJECTS,
     AGENT_PROFILES,
+    ALL_NEW_NOTES,
     APPROVED_ACTION_VERBS,
     COMMUNICATION_STYLES,
     PARA_MOCS,
@@ -831,6 +832,127 @@ class TestAdversarialGeminiTopicsBoundaryConstraints(unittest.TestCase):
             if not is_sep:
                 failures.append((p.name, f"Blank line count {count} < 5"))
         self.assertEqual(len(failures), 0, f"Visual separation boundary violations: {failures}")
+
+
+class TestAdversarialAIEcosystemAndFleetExpansion(unittest.TestCase):
+    """Adversarial Verification of Agent Fleet Expansion, Resource Registries, and Templates."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.md_files = get_all_vault_markdown_files(VAULT_ROOT)
+        cls.graph = build_vault_graph(VAULT_ROOT, cls.md_files)
+        cls.new_notes = ALL_NEW_NOTES
+
+    def test_adv108_zero_orphans_in_new_notes(self):
+        """ADV1.08: Zero incoming orphan check on all 11 newly created notes (in-degree >= 1)."""
+        in_links = self.graph["in_links"]
+        orphaned = []
+        for note_rel in self.new_notes:
+            inbound = in_links.get(note_rel, [])
+            if len(inbound) == 0:
+                orphaned.append(note_rel)
+        self.assertEqual(
+            len(orphaned),
+            0,
+            f"Found orphaned new notes with zero inbound links: {orphaned}"
+        )
+
+    def test_adv109_backlinks_to_master_brain_in_all_new_notes(self):
+        """ADV1.09: Every newly created note must contain an active wikilink back to [[AI Sozlangan Miyyasi]]."""
+        missing_backlinks = []
+        for note_rel in self.new_notes:
+            file_path = VAULT_ROOT / note_rel
+            self.assertTrue(file_path.is_file(), f"File {note_rel} does not exist.")
+            content = file_path.read_text(encoding="utf-8")
+            links = extract_wikilinks(content)
+            targets = [l["target"] for l in links]
+            if not any("AI Sozlangan Miyyasi" in t for t in targets):
+                missing_backlinks.append(note_rel)
+        self.assertEqual(
+            len(missing_backlinks),
+            0,
+            f"Notes missing backlink to AI Sozlangan Miyyasi: {missing_backlinks}"
+        )
+
+    def test_adv110_table_pipe_escaping_integrity(self):
+        """ADV1.10: Inside markdown tables, wikilinks with display aliases must use escaped pipes \\|."""
+        notes_to_audit = [
+            VAULT_ROOT / "AI Sozlangan Miyyasi.md",
+            VAULT_ROOT / "Dashboard.md"
+        ]
+        violations = []
+        for note in notes_to_audit:
+            if not note.exists():
+                continue
+            content = note.read_text(encoding="utf-8")
+            for line_idx, line in enumerate(content.splitlines(), start=1):
+                stripped = line.strip()
+                if stripped.startswith("|") and "[[" in stripped:
+                    bad_match = re.search(r"\[\[[^\]\r\n]*?[^\\]\|", stripped)
+                    if bad_match:
+                        violations.append((note.name, line_idx, stripped))
+        self.assertEqual(
+            len(violations),
+            0,
+            f"Found unescaped table pipe wikilinks: {violations}"
+        )
+
+    def test_adv111_frontmatter_date_format_and_tags_hygiene(self):
+        """ADV1.11: Frontmatter date format and tags hygiene audit across all new notes."""
+        hygiene_errors = []
+        for note_rel in self.new_notes:
+            file_path = VAULT_ROOT / note_rel
+            content = file_path.read_text(encoding="utf-8")
+            fm, _ = parse_frontmatter(content)
+            if not fm:
+                hygiene_errors.append((note_rel, "Missing YAML frontmatter"))
+                continue
+
+            # Check status
+            if fm.get("status") != "active":
+                hygiene_errors.append((note_rel, f"Status is not 'active': {fm.get('status')}"))
+
+            # Check date / created
+            date_val = str(fm.get("date") or fm.get("created") or "")
+            is_tmpl = "Templates" in note_rel
+            if is_tmpl:
+                if not (date_val == "{{date}}" or re.match(r"^\d{4}-\d{2}-\d{2}$", date_val)):
+                    hygiene_errors.append((note_rel, f"Invalid template date: {date_val}"))
+            else:
+                if not re.match(r"^\d{4}-\d{2}-\d{2}$", date_val):
+                    hygiene_errors.append((note_rel, f"Date '{date_val}' does not match YYYY-MM-DD"))
+
+            # Check tags
+            tags = fm.get("tags", [])
+            if not isinstance(tags, list) or len(tags) == 0:
+                hygiene_errors.append((note_rel, "Tags must be a non-empty list"))
+            else:
+                for tag in tags:
+                    if not re.match(r"^[a-zA-Z0-9_-]+$", str(tag)):
+                        hygiene_errors.append((note_rel, f"Invalid tag format: '{tag}'"))
+
+        self.assertEqual(
+            len(hygiene_errors),
+            0,
+            f"Frontmatter hygiene errors in new notes: {hygiene_errors}"
+        )
+
+    def test_adv112_no_broken_links_in_new_notes(self):
+        """ADV1.12: Outgoing wikilinks from all 11 new notes must resolve to existing files (0 broken links)."""
+        broken = [b for b in self.graph["broken_links"] if b[0] in self.new_notes]
+        self.assertEqual(
+            len(broken),
+            0,
+            f"Broken outgoing links found in new notes: {broken}"
+        )
+
+    def test_adv113_vault_contains_at_least_80_markdown_files(self):
+        """ADV1.13: Vault scale audit confirming at least 80 markdown files exist post-expansion."""
+        self.assertGreaterEqual(
+            len(self.md_files),
+            80,
+            f"Vault contains {len(self.md_files)} markdown files (< 80 threshold)."
+        )
 
 
 if __name__ == "__main__":

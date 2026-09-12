@@ -5,6 +5,7 @@ Tests edge cases, boundary limits, strict formatting, Unicode, and error handlin
 
 import os
 from pathlib import Path
+import re
 import tempfile
 import time
 import unittest
@@ -12,10 +13,15 @@ import unittest
 from tests.e2e.concurrency_sim import ConcurrencyProtocolManager
 from tests.e2e.helpers import (
     APPROVED_ACTION_VERBS,
+    CODEX_CUSTOM_SKILLS,
+    FREE_LLM_PROVIDERS,
+    NEW_CLI_AGENTS,
+    NEW_TEMPLATES,
     VAULT_ROOT,
     check_file_utf8_clean,
     check_visual_separation,
     extract_wikilinks,
+    parse_frontmatter,
     resolve_wikilink,
     validate_suggested_next_step,
 )
@@ -253,6 +259,83 @@ class TestTier2ConcurrencyAndLockingBoundaries(unittest.TestCase):
         self.assertEqual(dest.read_text(encoding="utf-8"), "Fresh validated state")
         temp_file = dest.with_name(f"{dest.name}.tmp.Agent_Y")
         self.assertFalse(temp_file.exists())
+
+
+class TestTier2BoundaryEcosystemAndRegistry(unittest.TestCase):
+    """Tier 2: Model Counts, Skills Coverage, Agent Profile Sections, and Template Schemas."""
+
+    def test_tc206_free_models_registry_minimum_count(self):
+        """TC2.06: Asserts at least 20 free models cataloged across 7 providers in Free LLM Models Registry."""
+        reg_file = VAULT_ROOT / "30 Resources" / "Free LLM Models Registry.md"
+        self.assertTrue(reg_file.is_file(), "Free LLM Models Registry.md missing.")
+        content = reg_file.read_text(encoding="utf-8")
+
+        # Count table rows with number or model entries in matrix
+        table_rows = [l for l in content.splitlines() if re.match(r"^\|\s*\d+\s*\|", l.strip())]
+        self.assertGreaterEqual(
+            len(table_rows),
+            20,
+            f"Expected at least 20 models cataloged, found {len(table_rows)}."
+        )
+
+        # Ensure all 7 free providers are present
+        for prov in FREE_LLM_PROVIDERS:
+            self.assertIn(prov, content, f"Provider '{prov}' missing from Free LLM Models Registry.")
+
+    def test_tc207_codex_skills_minimum_count(self):
+        """TC2.07: Asserts at least 14 custom & system skills cataloged in Codex Skills Encyclopedia."""
+        skills_file = VAULT_ROOT / "30 Resources" / "Codex Skills Encyclopedia.md"
+        self.assertTrue(skills_file.is_file(), "Codex Skills Encyclopedia.md missing.")
+        content = skills_file.read_text(encoding="utf-8")
+
+        # Count table rows with number in catalog table
+        table_rows = [l for l in content.splitlines() if re.match(r"^\|\s*\d+\s*\|", l.strip())]
+        self.assertGreaterEqual(
+            len(table_rows),
+            14,
+            f"Expected at least 14 skills cataloged, found {len(table_rows)}."
+        )
+
+        # Verify each skill identifier is documented
+        for skill in CODEX_CUSTOM_SKILLS:
+            self.assertIn(skill, content, f"Skill '{skill}' missing from Codex Skills Encyclopedia.")
+
+    def test_tc208_agent_profile_required_sections_boundary(self):
+        """TC2.08: Asserts each CLI agent profile has >= 4 key H2 sections."""
+        profiles_dir = VAULT_ROOT / "20 Areas" / "Agent Profiles"
+        for agent in NEW_CLI_AGENTS:
+            p = profiles_dir / f"{agent}.md"
+            self.assertTrue(p.is_file(), f"Profile {agent}.md missing.")
+            content = p.read_text(encoding="utf-8")
+            h2_sections = re.findall(r"^##\s+(.+)$", content, flags=re.MULTILINE)
+            self.assertGreaterEqual(
+                len(h2_sections),
+                4,
+                f"Profile '{agent}.md' has {len(h2_sections)} H2 sections (< 4 boundary)."
+            )
+
+    def test_tc209_template_frontmatter_schema_boundary(self):
+        """TC2.09: Asserts new templates have valid YAML frontmatter with tags and aliases."""
+        tmpl_dir = VAULT_ROOT / "50 Templates"
+        for tmpl in NEW_TEMPLATES:
+            p = tmpl_dir / f"{tmpl}.md"
+            self.assertTrue(p.is_file(), f"Template {tmpl}.md missing.")
+            content = p.read_text(encoding="utf-8")
+            fm, _ = parse_frontmatter(content)
+            self.assertIsNotNone(fm, f"Frontmatter missing in {tmpl}.md.")
+            self.assertEqual(fm.get("type"), "template")
+            self.assertEqual(fm.get("status"), "active")
+
+            # tags boundary
+            tags = fm.get("tags")
+            self.assertIsInstance(tags, list, f"'tags' must be a list in {tmpl}.md")
+            self.assertGreaterEqual(len(tags), 2, f"Expected >= 2 tags in {tmpl}.md, got {len(tags)}")
+            self.assertIn("template", tags, f"'template' tag missing in {tmpl}.md")
+
+            # aliases boundary
+            aliases = fm.get("aliases")
+            self.assertIsInstance(aliases, list, f"'aliases' must be a list in {tmpl}.md")
+            self.assertGreaterEqual(len(aliases), 1, f"Expected >= 1 alias in {tmpl}.md")
 
 
 if __name__ == "__main__":
