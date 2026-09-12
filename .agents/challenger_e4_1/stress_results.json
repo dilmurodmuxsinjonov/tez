@@ -1,0 +1,516 @@
+{
+  "verdict": "REJECT",
+  "critical_defects": [
+    "Markdown Table Syntax: 3 unescaped pipe wikilinks breaking table columns",
+    "YAML Syntax: 9 notes fail standard YAML safe_load parsing"
+  ],
+  "file_count": 82,
+  "encoding": {
+    "bom_files": [],
+    "utf8_decode_errors": [],
+    "mojibake_or_replacement": [],
+    "line_ending_stats": {
+      "LF": 33,
+      "CRLF": 49
+    }
+  },
+  "frontmatter": {
+    "missing_frontmatter": [
+      "00 Inbox/2026-06-13.md",
+      "50 Templates/Resource Template.md",
+      "ORIGINAL_REQUEST.md",
+      "TEST_INFRA.md",
+      "TEST_READY.md"
+    ],
+    "yaml_syntax_errors": [
+      [
+        "10 Projects/AI Story & Media Engine.md",
+        "while scanning a double-quoted scalar\n  in \"<unicode string>\", line 11, column 15:\n    project_path: \"D:\\obsidian file\\10 Projects\\AI ... \n                  ^\nfound unknown escape character 'o'\n  in \"<unicode string>\", line 11, column 19:\n    project_path: \"D:\\obsidian file\\10 Projects\\AI Sto ... \n                      ^"
+      ],
+      [
+        "10 Projects/Universal Multi-Agent Swarm Framework.md",
+        "while scanning a double-quoted scalar\n  in \"<unicode string>\", line 10, column 15:\n    project_path: \"D:\\obsidian file\\10 Projects\\Un ... \n                  ^\nfound unknown escape character 'o'\n  in \"<unicode string>\", line 10, column 19:\n    project_path: \"D:\\obsidian file\\10 Projects\\Univer ... \n                      ^"
+      ],
+      [
+        "50 Templates/Agent Profile Template.md",
+        "while constructing a mapping\n  in \"<unicode string>\", line 4, column 10:\n    created: {{date}}\n             ^\nfound unhashable key\n  in \"<unicode string>\", line 4, column 11:\n    created: {{date}}\n              ^"
+      ],
+      [
+        "50 Templates/Area Template.md",
+        "while constructing a mapping\n  in \"<unicode string>\", line 4, column 10:\n    created: {{date}}\n             ^\nfound unhashable key\n  in \"<unicode string>\", line 4, column 11:\n    created: {{date}}\n              ^"
+      ],
+      [
+        "50 Templates/Daily Note Template.md",
+        "while constructing a mapping\n  in \"<unicode string>\", line 3, column 10:\n    created: {{date}}\n             ^\nfound unhashable key\n  in \"<unicode string>\", line 3, column 11:\n    created: {{date}}\n              ^"
+      ],
+      [
+        "50 Templates/Model Evaluation Template.md",
+        "while constructing a mapping\n  in \"<unicode string>\", line 5, column 10:\n    created: {{date}}\n             ^\nfound unhashable key\n  in \"<unicode string>\", line 5, column 11:\n    created: {{date}}\n              ^"
+      ],
+      [
+        "50 Templates/New Agent Integration Template.md",
+        "while constructing a mapping\n  in \"<unicode string>\", line 5, column 10:\n    created: {{date}}\n             ^\nfound unhashable key\n  in \"<unicode string>\", line 5, column 11:\n    created: {{date}}\n              ^"
+      ],
+      [
+        "50 Templates/Project Template.md",
+        "while constructing a mapping\n  in \"<unicode string>\", line 4, column 10:\n    created: {{date}}\n             ^\nfound unhashable key\n  in \"<unicode string>\", line 4, column 11:\n    created: {{date}}\n              ^"
+      ],
+      [
+        "50 Templates/Security Audit Template.md",
+        "while constructing a mapping\n  in \"<unicode string>\", line 5, column 10:\n    created: {{date}}\n             ^\nfound unhashable key\n  in \"<unicode string>\", line 5, column 11:\n    created: {{date}}\n              ^"
+      ]
+    ],
+    "missing_tags": [],
+    "invalid_tags_format": [],
+    "missing_status": [
+      "00 Inbox/2026-09-12.md",
+      "30 Resources/Agent Skills/Skills Dashboard.md",
+      "Antigravity Chat History.md"
+    ],
+    "date_format_issues": [],
+    "parsed_count": 68
+  },
+  "table_pipes": [
+    {
+      "file": "20 Areas/20 Areas MOC.md",
+      "line": 49,
+      "wikilink": "[[20 Areas/Agent Profiles/Autonomous Decision Protocols|Autonomous Decision Protocols]]",
+      "inner": "20 Areas/Agent Profiles/Autonomous Decision Protocols|Autonomous Decision Protocols",
+      "full_line": "| **Autonomous Decision Protocols** | Foydalanuvchi oflayn paytida agentlarning mustaqil qaror qabul qilish chegaralari | Xavfsiz operatsiyalar, avtomatik testlash va o'zgarishlarni audit qilish qoidalari | [[20 Areas/Agent Profiles/Autonomous Decision Protocols|Autonomous Decision Protocols]] |"
+    },
+    {
+      "file": "20 Areas/20 Areas.md",
+      "line": 49,
+      "wikilink": "[[20 Areas/Agent Profiles/Autonomous Decision Protocols|Autonomous Decision Protocols]]",
+      "inner": "20 Areas/Agent Profiles/Autonomous Decision Protocols|Autonomous Decision Protocols",
+      "full_line": "| **Autonomous Decision Protocols** | Foydalanuvchi dam olayotganda agentlarning mustaqil qaror qabul qilish chegaralari | Xavfsiz operatsiyalar, avtomatik testlash va o'zgarishlarni audit qilish qoidalari | [[20 Areas/Agent Profiles/Autonomous Decision Protocols|Autonomous Decision Protocols]] |"
+    },
+    {
+      "file": "30 Resources/AI Agent Ecosystem Map.md",
+      "line": 193,
+      "wikilink": "[[30 Resources/Free LLM Models Registry|Free LLM Models Registry]]",
+      "inner": "30 Resources/Free LLM Models Registry|Free LLM Models Registry",
+      "full_line": "| **API Limit (Rate Limit / 429)** | `Rate limit exceeded` | OpenRouter yoki Groq limiti to'lganda, `[[30 Resources/Free LLM Models Registry|Free LLM Models Registry]]` bo'yicha zaxira bepul modelga yo'naltiriladi. |"
+    }
+  ],
+  "graph": {
+    "total_wikilinks": 621,
+    "broken_links": [],
+    "case_mismatches": [],
+    "anchor_failures": [],
+    "windows_backslashes": [],
+    "bracket_errors": [],
+    "self_links": [
+      [
+        "10 Projects/10 Projects MOC.md",
+        "10 Projects/10 Projects MOC"
+      ],
+      [
+        "40 Archives/40 Archives MOC.md",
+        "40 Archives/40 Archives MOC"
+      ]
+    ],
+    "orphans": [],
+    "pure_islands": [],
+    "dead_ends": [],
+    "distinct_in_degrees": {
+      "00 Inbox/00 Inbox MOC.md": 11,
+      "00 Inbox/00 Inbox.md": 5,
+      "00 Inbox/2026-06-13.md": 1,
+      "00 Inbox/2026-09-12.md": 3,
+      "10 Projects/10 Projects MOC.md": 6,
+      "10 Projects/10 Projects.md": 10,
+      "10 Projects/AI Story & Media Engine.md": 4,
+      "10 Projects/Doctor A Med Clinic.md": 3,
+      "10 Projects/MobCreatorWebApp.md": 3,
+      "10 Projects/NagoyaCastle.md": 3,
+      "10 Projects/Orol Shahar Qirollik.md": 3,
+      "10 Projects/The_AI_Pipeline.md": 4,
+      "10 Projects/Universal Multi-Agent Swarm Framework.md": 3,
+      "20 Areas/20 Areas MOC.md": 9,
+      "20 Areas/20 Areas.md": 19,
+      "20 Areas/Agent Profiles/Antigravity 1.md": 13,
+      "20 Areas/Agent Profiles/Antigravity 2.md": 13,
+      "20 Areas/Agent Profiles/Autonomous Decision Protocols.md": 4,
+      "20 Areas/Agent Profiles/Codex LLM Assistant.md": 14,
+      "20 Areas/Agent Profiles/Concurrency & Sync Protocol.md": 16,
+      "20 Areas/Agent Profiles/GitHub Copilot.md": 5,
+      "20 Areas/Agent Profiles/Google Antigravity CLI.md": 5,
+      "20 Areas/Agent Profiles/Nous Hermes.md": 6,
+      "20 Areas/Agent Profiles/OpenCode CLI.md": 6,
+      "20 Areas/Agent Profiles/Ruflo Swarm.md": 5,
+      "20 Areas/Browser Automation Playbook.md": 4,
+      "20 Areas/Development Workflow & CI-CD Standards.md": 3,
+      "20 Areas/Quality & Testing Standards.md": 3,
+      "2026-07-25.md": 1,
+      "2026-07-26.md": 1,
+      "2026-09-09.md": 1,
+      "30 Resources/30 Resources MOC.md": 4,
+      "30 Resources/30 Resources.md": 36,
+      "30 Resources/AI Agent Ecosystem Map.md": 14,
+      "30 Resources/AI Research/Autonomous Agent Memory Architecture.md": 4,
+      "30 Resources/AI Research/Google Labs & Next-Gen Generative Suite.md": 3,
+      "30 Resources/Agent Skills/Skills Dashboard.md": 14,
+      "30 Resources/Agent Skills/defuddle.md": 3,
+      "30 Resources/Agent Skills/git-workflow.md": 12,
+      "30 Resources/Agent Skills/json-canvas.md": 2,
+      "30 Resources/Agent Skills/obsidian-bases.md": 2,
+      "30 Resources/Agent Skills/obsidian-best-practices.md": 2,
+      "30 Resources/Agent Skills/obsidian-cli.md": 2,
+      "30 Resources/Agent Skills/obsidian-markdown.md": 2,
+      "30 Resources/Autonomous Agent Architectures.md": 4,
+      "30 Resources/Browser & Automation Guides/Advanced Agentic Browser Playbook.md": 3,
+      "30 Resources/Browser & Automation Guides/Browser Automation Operations Manual.md": 5,
+      "30 Resources/Browser & Automation Guides/Google Labs & AI Tools Manual.md": 5,
+      "30 Resources/Browser & Automation Guides/Multimodal Story to Video Pipeline.md": 6,
+      "30 Resources/Browser & Automation Guides/Web Scraping & Research Protocol.md": 3,
+      "30 Resources/Codex Skills Encyclopedia.md": 8,
+      "30 Resources/External AI Integrations/External AI Fleet Integration.md": 3,
+      "30 Resources/External AI Integrations/LLM Interoperability & Handoff Format.md": 3,
+      "30 Resources/External AI Integrations/OpenAI Codex & OpenCode Manual.md": 3,
+      "30 Resources/Free LLM Models Registry.md": 10,
+      "30 Resources/Learning & Knowledge Base.md": 3,
+      "30 Resources/Multimodal Generation Workflows.md": 4,
+      "30 Resources/Prompt Engineering/Master Production Prompts.md": 4,
+      "30 Resources/Style Guides/Gemini Topics Style Guide.md": 4,
+      "30 Resources/Style Guides/Project Discovery Questionnaire.md": 4,
+      "30 Resources/Style Guides/Prompt Engineering & Context Compression.md": 4,
+      "30 Resources/Style Guides/UI UX & Modern Web Design Standards.md": 3,
+      "30 Resources/Troubleshooting & Common Fixes.md": 3,
+      "40 Archives/40 Archives MOC.md": 8,
+      "40 Archives/40 Archives.md": 5,
+      "50 Templates/Agent Profile Template.md": 2,
+      "50 Templates/Area Template.md": 1,
+      "50 Templates/Daily Note Template.md": 11,
+      "50 Templates/Model Evaluation Template.md": 3,
+      "50 Templates/New Agent Integration Template.md": 3,
+      "50 Templates/Project Template.md": 11,
+      "50 Templates/Resource Template.md": 11,
+      "50 Templates/Security Audit Template.md": 3,
+      "AI Sozlangan Miyyasi.md": 80,
+      "Antigravity Chat History.md": 3,
+      "DILMUROD/2026-07-01.md": 4,
+      "DILMUROD/Welcome.md": 4,
+      "Dashboard.md": 23,
+      "ORIGINAL_REQUEST.md": 2,
+      "Salom.md": 3,
+      "TEST_INFRA.md": 2,
+      "TEST_READY.md": 2
+    },
+    "distinct_out_degrees": {
+      "00 Inbox/00 Inbox MOC.md": 25,
+      "00 Inbox/00 Inbox.md": 16,
+      "00 Inbox/2026-06-13.md": 2,
+      "00 Inbox/2026-09-12.md": 2,
+      "10 Projects/10 Projects MOC.md": 14,
+      "10 Projects/10 Projects.md": 14,
+      "10 Projects/AI Story & Media Engine.md": 2,
+      "10 Projects/Doctor A Med Clinic.md": 1,
+      "10 Projects/MobCreatorWebApp.md": 1,
+      "10 Projects/NagoyaCastle.md": 1,
+      "10 Projects/Orol Shahar Qirollik.md": 1,
+      "10 Projects/The_AI_Pipeline.md": 1,
+      "10 Projects/Universal Multi-Agent Swarm Framework.md": 2,
+      "20 Areas/20 Areas MOC.md": 19,
+      "20 Areas/20 Areas.md": 20,
+      "20 Areas/Agent Profiles/Antigravity 1.md": 6,
+      "20 Areas/Agent Profiles/Antigravity 2.md": 5,
+      "20 Areas/Agent Profiles/Autonomous Decision Protocols.md": 2,
+      "20 Areas/Agent Profiles/Codex LLM Assistant.md": 7,
+      "20 Areas/Agent Profiles/Concurrency & Sync Protocol.md": 5,
+      "20 Areas/Agent Profiles/GitHub Copilot.md": 10,
+      "20 Areas/Agent Profiles/Google Antigravity CLI.md": 10,
+      "20 Areas/Agent Profiles/Nous Hermes.md": 11,
+      "20 Areas/Agent Profiles/OpenCode CLI.md": 11,
+      "20 Areas/Agent Profiles/Ruflo Swarm.md": 10,
+      "20 Areas/Browser Automation Playbook.md": 8,
+      "20 Areas/Development Workflow & CI-CD Standards.md": 2,
+      "20 Areas/Quality & Testing Standards.md": 2,
+      "2026-07-25.md": 3,
+      "2026-07-26.md": 3,
+      "2026-09-09.md": 2,
+      "30 Resources/30 Resources MOC.md": 35,
+      "30 Resources/30 Resources.md": 36,
+      "30 Resources/AI Agent Ecosystem Map.md": 16,
+      "30 Resources/AI Research/Autonomous Agent Memory Architecture.md": 3,
+      "30 Resources/AI Research/Google Labs & Next-Gen Generative Suite.md": 3,
+      "30 Resources/Agent Skills/Skills Dashboard.md": 1,
+      "30 Resources/Agent Skills/defuddle.md": 2,
+      "30 Resources/Agent Skills/git-workflow.md": 2,
+      "30 Resources/Agent Skills/json-canvas.md": 2,
+      "30 Resources/Agent Skills/obsidian-bases.md": 2,
+      "30 Resources/Agent Skills/obsidian-best-practices.md": 2,
+      "30 Resources/Agent Skills/obsidian-cli.md": 2,
+      "30 Resources/Agent Skills/obsidian-markdown.md": 2,
+      "30 Resources/Autonomous Agent Architectures.md": 6,
+      "30 Resources/Browser & Automation Guides/Advanced Agentic Browser Playbook.md": 3,
+      "30 Resources/Browser & Automation Guides/Browser Automation Operations Manual.md": 2,
+      "30 Resources/Browser & Automation Guides/Google Labs & AI Tools Manual.md": 2,
+      "30 Resources/Browser & Automation Guides/Multimodal Story to Video Pipeline.md": 2,
+      "30 Resources/Browser & Automation Guides/Web Scraping & Research Protocol.md": 2,
+      "30 Resources/Codex Skills Encyclopedia.md": 9,
+      "30 Resources/External AI Integrations/External AI Fleet Integration.md": 2,
+      "30 Resources/External AI Integrations/LLM Interoperability & Handoff Format.md": 2,
+      "30 Resources/External AI Integrations/OpenAI Codex & OpenCode Manual.md": 2,
+      "30 Resources/Free LLM Models Registry.md": 9,
+      "30 Resources/Learning & Knowledge Base.md": 2,
+      "30 Resources/Multimodal Generation Workflows.md": 8,
+      "30 Resources/Prompt Engineering/Master Production Prompts.md": 3,
+      "30 Resources/Style Guides/Gemini Topics Style Guide.md": 2,
+      "30 Resources/Style Guides/Project Discovery Questionnaire.md": 2,
+      "30 Resources/Style Guides/Prompt Engineering & Context Compression.md": 2,
+      "30 Resources/Style Guides/UI UX & Modern Web Design Standards.md": 2,
+      "30 Resources/Troubleshooting & Common Fixes.md": 2,
+      "40 Archives/40 Archives MOC.md": 13,
+      "40 Archives/40 Archives.md": 13,
+      "50 Templates/Agent Profile Template.md": 1,
+      "50 Templates/Area Template.md": 2,
+      "50 Templates/Daily Note Template.md": 3,
+      "50 Templates/Model Evaluation Template.md": 4,
+      "50 Templates/New Agent Integration Template.md": 6,
+      "50 Templates/Project Template.md": 3,
+      "50 Templates/Resource Template.md": 2,
+      "50 Templates/Security Audit Template.md": 5,
+      "AI Sozlangan Miyyasi.md": 60,
+      "Antigravity Chat History.md": 2,
+      "DILMUROD/2026-07-01.md": 3,
+      "DILMUROD/Welcome.md": 2,
+      "Dashboard.md": 35,
+      "ORIGINAL_REQUEST.md": 2,
+      "Salom.md": 2,
+      "TEST_INFRA.md": 2,
+      "TEST_READY.md": 2
+    }
+  },
+  "topology": {
+    "component_count": 1,
+    "components": [
+      [
+        "00 Inbox/00 Inbox MOC.md",
+        "00 Inbox/00 Inbox.md",
+        "00 Inbox/2026-06-13.md",
+        "00 Inbox/2026-09-12.md",
+        "10 Projects/10 Projects MOC.md",
+        "10 Projects/10 Projects.md",
+        "10 Projects/AI Story & Media Engine.md",
+        "10 Projects/Doctor A Med Clinic.md",
+        "10 Projects/MobCreatorWebApp.md",
+        "10 Projects/NagoyaCastle.md",
+        "10 Projects/Orol Shahar Qirollik.md",
+        "10 Projects/The_AI_Pipeline.md",
+        "10 Projects/Universal Multi-Agent Swarm Framework.md",
+        "20 Areas/20 Areas MOC.md",
+        "20 Areas/20 Areas.md",
+        "20 Areas/Agent Profiles/Antigravity 1.md",
+        "20 Areas/Agent Profiles/Antigravity 2.md",
+        "20 Areas/Agent Profiles/Autonomous Decision Protocols.md",
+        "20 Areas/Agent Profiles/Codex LLM Assistant.md",
+        "20 Areas/Agent Profiles/Concurrency & Sync Protocol.md",
+        "20 Areas/Agent Profiles/GitHub Copilot.md",
+        "20 Areas/Agent Profiles/Google Antigravity CLI.md",
+        "20 Areas/Agent Profiles/Nous Hermes.md",
+        "20 Areas/Agent Profiles/OpenCode CLI.md",
+        "20 Areas/Agent Profiles/Ruflo Swarm.md",
+        "20 Areas/Browser Automation Playbook.md",
+        "20 Areas/Development Workflow & CI-CD Standards.md",
+        "20 Areas/Quality & Testing Standards.md",
+        "2026-07-25.md",
+        "2026-07-26.md",
+        "2026-09-09.md",
+        "30 Resources/30 Resources MOC.md",
+        "30 Resources/30 Resources.md",
+        "30 Resources/AI Agent Ecosystem Map.md",
+        "30 Resources/AI Research/Autonomous Agent Memory Architecture.md",
+        "30 Resources/AI Research/Google Labs & Next-Gen Generative Suite.md",
+        "30 Resources/Agent Skills/Skills Dashboard.md",
+        "30 Resources/Agent Skills/Skills Database.base",
+        "30 Resources/Agent Skills/defuddle.md",
+        "30 Resources/Agent Skills/git-workflow.md",
+        "30 Resources/Agent Skills/json-canvas.md",
+        "30 Resources/Agent Skills/obsidian-bases.md",
+        "30 Resources/Agent Skills/obsidian-best-practices.md",
+        "30 Resources/Agent Skills/obsidian-cli.md",
+        "30 Resources/Agent Skills/obsidian-markdown.md",
+        "30 Resources/Autonomous Agent Architectures.md",
+        "30 Resources/Browser & Automation Guides/Advanced Agentic Browser Playbook.md",
+        "30 Resources/Browser & Automation Guides/Browser Automation Operations Manual.md",
+        "30 Resources/Browser & Automation Guides/Google Labs & AI Tools Manual.md",
+        "30 Resources/Browser & Automation Guides/Multimodal Story to Video Pipeline.md",
+        "30 Resources/Browser & Automation Guides/Web Scraping & Research Protocol.md",
+        "30 Resources/Codex Skills Encyclopedia.md",
+        "30 Resources/External AI Integrations/External AI Fleet Integration.md",
+        "30 Resources/External AI Integrations/LLM Interoperability & Handoff Format.md",
+        "30 Resources/External AI Integrations/OpenAI Codex & OpenCode Manual.md",
+        "30 Resources/Free LLM Models Registry.md",
+        "30 Resources/Learning & Knowledge Base.md",
+        "30 Resources/Multimodal Generation Workflows.md",
+        "30 Resources/Prompt Engineering/Master Production Prompts.md",
+        "30 Resources/Style Guides/Gemini Topics Style Guide.md",
+        "30 Resources/Style Guides/Project Discovery Questionnaire.md",
+        "30 Resources/Style Guides/Prompt Engineering & Context Compression.md",
+        "30 Resources/Style Guides/UI UX & Modern Web Design Standards.md",
+        "30 Resources/Troubleshooting & Common Fixes.md",
+        "40 Archives/40 Archives MOC.md",
+        "40 Archives/40 Archives.md",
+        "50 Templates/Agent Profile Template.md",
+        "50 Templates/Area Template.md",
+        "50 Templates/Daily Note Template.md",
+        "50 Templates/Model Evaluation Template.md",
+        "50 Templates/New Agent Integration Template.md",
+        "50 Templates/Project Template.md",
+        "50 Templates/Resource Template.md",
+        "50 Templates/Security Audit Template.md",
+        "AI Sozlangan Miyyasi.md",
+        "Antigravity Chat History.md",
+        "DILMUROD/2026-07-01.md",
+        "DILMUROD/Welcome.md",
+        "Dashboard.md",
+        "ORIGINAL_REQUEST.md",
+        "Salom.md",
+        "TEST_INFRA.md",
+        "TEST_READY.md"
+      ]
+    ],
+    "is_single_connected_component": true,
+    "largest_component_size": 83,
+    "undirected_diameter": 3,
+    "diameter_endpoints": [
+      "00 Inbox/2026-06-13.md",
+      "30 Resources/Agent Skills/Skills Database.base"
+    ],
+    "undirected_radius": 2,
+    "avg_path_undirected": 1.8977372906259182,
+    "master_reachable_count": 83,
+    "master_unreachable_count": 0,
+    "master_unreachable_nodes": [],
+    "scc_count": 3,
+    "largest_scc_size": 81,
+    "articulation_points": [],
+    "top_in_hubs": [
+      [
+        "AI Sozlangan Miyyasi.md",
+        80
+      ],
+      [
+        "30 Resources/30 Resources.md",
+        36
+      ],
+      [
+        "Dashboard.md",
+        23
+      ],
+      [
+        "20 Areas/20 Areas.md",
+        19
+      ],
+      [
+        "20 Areas/Agent Profiles/Concurrency & Sync Protocol.md",
+        16
+      ],
+      [
+        "20 Areas/Agent Profiles/Codex LLM Assistant.md",
+        14
+      ],
+      [
+        "30 Resources/AI Agent Ecosystem Map.md",
+        14
+      ],
+      [
+        "30 Resources/Agent Skills/Skills Dashboard.md",
+        14
+      ],
+      [
+        "20 Areas/Agent Profiles/Antigravity 1.md",
+        13
+      ],
+      [
+        "20 Areas/Agent Profiles/Antigravity 2.md",
+        13
+      ]
+    ],
+    "top_out_hubs": [
+      [
+        "AI Sozlangan Miyyasi.md",
+        60
+      ],
+      [
+        "30 Resources/30 Resources.md",
+        36
+      ],
+      [
+        "30 Resources/30 Resources MOC.md",
+        35
+      ],
+      [
+        "Dashboard.md",
+        35
+      ],
+      [
+        "00 Inbox/00 Inbox MOC.md",
+        25
+      ],
+      [
+        "20 Areas/20 Areas.md",
+        20
+      ],
+      [
+        "20 Areas/20 Areas MOC.md",
+        19
+      ],
+      [
+        "00 Inbox/00 Inbox.md",
+        16
+      ],
+      [
+        "30 Resources/AI Agent Ecosystem Map.md",
+        16
+      ],
+      [
+        "10 Projects/10 Projects MOC.md",
+        14
+      ]
+    ],
+    "top_total_hubs": [
+      [
+        "AI Sozlangan Miyyasi.md",
+        140
+      ],
+      [
+        "30 Resources/30 Resources.md",
+        72
+      ],
+      [
+        "Dashboard.md",
+        58
+      ],
+      [
+        "20 Areas/20 Areas.md",
+        39
+      ],
+      [
+        "30 Resources/30 Resources MOC.md",
+        39
+      ],
+      [
+        "00 Inbox/00 Inbox MOC.md",
+        36
+      ],
+      [
+        "30 Resources/AI Agent Ecosystem Map.md",
+        30
+      ],
+      [
+        "20 Areas/20 Areas MOC.md",
+        28
+      ],
+      [
+        "10 Projects/10 Projects.md",
+        24
+      ],
+      [
+        "00 Inbox/00 Inbox.md",
+        21
+      ]
+    ]
+  }
+}
