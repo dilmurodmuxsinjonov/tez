@@ -3,7 +3,7 @@ title: "🤖 Yangi Agent Integratsiyasi Shabloni (New Agent Integration Template
 type: template
 template-type: agent-integration
 status: active
-created: {{date}}
+created: "{{date}}"
 aliases:
   - "New Agent Integration"
   - "New Agent Integration Template"

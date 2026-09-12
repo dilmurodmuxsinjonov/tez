@@ -190,7 +190,7 @@ ishga tushiradi (subshell/async)          asosiy tizim kodini yozishda
 | Nosozlik Holati | Alomat / Xatolik | Avtomatik Qayta Tiklash Chorasi |
 | :--- | :--- | :--- |
 | **CLI Binar topilmadi** | `CommandNotFoundException` | Codex darhol o'zining ichki sintez mexanizmiga o'tadi va foydalanuvchiga binar yetishmovchiligini xabar qiladi. |
-| **API Limit (Rate Limit / 429)** | `Rate limit exceeded` | OpenRouter yoki Groq limiti to'lganda, `[[30 Resources/Free LLM Models Registry|Free LLM Models Registry]]` bo'yicha zaxira bepul modelga yo'naltiriladi. |
+| **API Limit (Rate Limit / 429)** | `Rate limit exceeded` | OpenRouter yoki Groq limiti to'lganda, `[[30 Resources/Free LLM Models Registry\|Free LLM Models Registry]]` bo'yicha zaxira bepul modelga yo'naltiriladi. |
 | **Jarayon qotib qolishi (Timeout)** | 120s dan ortiq sukunat | Subshell jarayoni to'xtatiladi (`Stop-Process`), vaqtinchalik ishchi daraxt tozalanadi va vazifani Codex o'zi bajaradi. |
 | **Git Merge to'qnashuvi** | Git conflict markers | Qaytarish (`git merge --abort`), toza holatni tiklash va o'zgarishlarni ketma-ket qo'lda birlashtirish. |
 

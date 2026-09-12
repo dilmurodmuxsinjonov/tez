@@ -9,7 +9,7 @@ tags:
   - google-flow
   - google-vids
   - multimodal
-project_path: "D:\obsidian file\10 Projects\AI Story & Media Engine"
+project_path: 'D:\obsidian file\10 Projects\AI Story & Media Engine'
 tech_stack: "Google Flow, Google Vids, Imagen 3, MusicFX, FFmpeg, Python"
 created: 2026-09-12
 updated: 2026-09-12

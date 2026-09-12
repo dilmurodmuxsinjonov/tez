@@ -2,7 +2,7 @@
 title: "🚀 Loyiha: <Nom>"
 type: project-memory
 status: active
-created: {{date}}
+created: "{{date}}"
 tags:
   - project
   - gemini-topics

@@ -2,7 +2,7 @@
 title: "🤖 Agent: <Nom>"
 type: agent-profile
 status: active
-created: {{date}}
+created: "{{date}}"
 tags:
   - agent-profile
   - ai-agent

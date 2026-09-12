@@ -1,3 +1,14 @@
+---
+tags:
+  - template
+  - resource
+type: template
+status: active
+created: "{{date}}"
+aliases:
+  - "Resource Template"
+---
+
 # 📚 Resurs: 
 
 ---

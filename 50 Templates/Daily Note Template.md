@@ -1,7 +1,7 @@
 ---
 title: "📅 {{date}} — Kunlik Qayd"
 type: daily-note
-created: {{date}}
+created: "{{date}}"
 tags:
   - daily-note
   - inbox

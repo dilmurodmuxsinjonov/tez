@@ -8,7 +8,7 @@ tags:
   - swarm
   - teamwork
   - orchestrator
-project_path: "D:\obsidian file\10 Projects\Universal Multi-Agent Swarm Framework"
+project_path: 'D:\obsidian file\10 Projects\Universal Multi-Agent Swarm Framework'
 tech_stack: "Antigravity Swarm, Python 3.12, Node.js, PowerShell, Git"
 created: 2026-09-12
 updated: 2026-09-12

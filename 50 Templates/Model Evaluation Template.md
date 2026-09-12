@@ -3,7 +3,7 @@ title: "⚖️ Model Baholash Shabloni (Model Evaluation Template)"
 type: template
 template-type: model-evaluation
 status: active
-created: {{date}}
+created: "{{date}}"
 aliases:
   - "Model Evaluation"
   - "Model Evaluation Template"

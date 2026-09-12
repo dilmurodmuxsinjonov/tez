@@ -46,7 +46,7 @@ Ushbu MOC foydalanuvchining shaxsiy va texnologik mas'uliyat sohalarini, xususan
 | **Google Antigravity CLI** | Korporativ tizimlar arxitektori va monorepo auditori (`agy.exe`, DeepMind) | Monorepo tuzilmasi tahlili, asinxron to'qnashuvlar tekshiruvi, ADR validatsiyasi | [[Google Antigravity CLI]] |
 | **Ruflo Swarm** | Ko'p agentli to'dalar koordinatori va HNSW vektor xotira dvigateli (`ruflo.ps1` v3.38.23) | 15-agentli to'da topologiyasi, AgentDB semantik xotira qidiruvi, 35+ MCP plaginlari integratsiyasi | [[Ruflo Swarm]] |
 | **Concurrency & Sync Protocol** | Ko'p agentli hamkorlikda fayllarni qulflash va to'qnashuvlarning oldini olish protokoli | `.agents/locks/<hash>.lock` qulflash tizimi, 300s TTL, ikki bosqichli atomik saqlash (temp-rename) | [[Concurrency & Sync Protocol]] |
-| **Autonomous Decision Protocols** | Foydalanuvchi dam olayotganda agentlarning mustaqil qaror qabul qilish chegaralari | Xavfsiz operatsiyalar, avtomatik testlash va o'zgarishlarni audit qilish qoidalari | [[20 Areas/Agent Profiles/Autonomous Decision Protocols|Autonomous Decision Protocols]] |
+| **Autonomous Decision Protocols** | Foydalanuvchi dam olayotganda agentlarning mustaqil qaror qabul qilish chegaralari | Xavfsiz operatsiyalar, avtomatik testlash va o'zgarishlarni audit qilish qoidalari | [[20 Areas/Agent Profiles/Autonomous Decision Protocols\|Autonomous Decision Protocols]] |
 
 ---
 

@@ -3,7 +3,7 @@ title: "🛡️ Xavfsizlik Auditi Shabloni (Security Audit Template)"
 type: template
 template-type: security-audit
 status: active
-created: {{date}}
+created: "{{date}}"
 aliases:
   - "Security Audit"
   - "Security Audit Template"

@@ -2,7 +2,7 @@
 title: "🛡️ Soha: <Nom>"
 type: area
 status: active
-created: {{date}}
+created: "{{date}}"
 tags:
   - area
   - responsibility
