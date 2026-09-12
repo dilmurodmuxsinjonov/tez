@@ -106,6 +106,7 @@ copilot -p "Review unstaged files" --allow-tool='shell(git:*)' --deny-tool='shel
 
 - Bosh Boshqaruv Markazi: [[AI Sozlangan Miyyasi]]
 - Asosiy Boshqaruv Paneli: [[Dashboard]]
+- Ekotizim Xaritasi: [[30 Resources/AI Agent Ecosystem Map|AI Agent Ecosystem Map]]
 - Bosh Tizim Arxitektori: [[Antigravity 1]]
 - Sandbox Sinovchi Agent: [[Antigravity 2]]
 - Kod Generatsiyasi Dvigateli: [[Codex LLM Assistant]]

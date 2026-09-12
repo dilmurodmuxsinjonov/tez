@@ -26,10 +26,23 @@ Ushbu MOC foydalanuvchi **Dilmurod Muhsinjanov**ning barcha texnik resurslari, e
 - 🧠 **[[AI Sozlangan Miyyasi|🧠 AI Sozlangan Miyyasi — Universal AI Second Brain]]** (Bosh Markaz)
 - 📊 **[[Dashboard|Mening Ikkinchi Miyyam (Dashboard)]]**
 - 📚 **[[30 Resources/30 Resources|📚 30 Resources Asosiy Qaydnomasi]]**
+- 🗺️ **[[30 Resources/AI Agent Ecosystem Map|🗺️ AI Agent Ecosystem Map (Ekotizim Xaritasi)]]**
+- 🌐 **[[30 Resources/Free LLM Models Registry|🌐 Free LLM Models Registry (Bepul Modellar)]]**
+- 📚 **[[30 Resources/Codex Skills Encyclopedia|📚 Codex Skills Encyclopedia (Ko'nikmalar Qomusi)]]**
 - 🎛️ **[[30 Resources/Agent Skills/Skills Dashboard|Agent Ko'nikmalari Boshqaruv Paneli (Skills Dashboard)]]**
 - 📑 **[[50 Templates/Resource Template|Resurs Shabloni (Resource Template)]]**
 - 📋 **[[50 Templates/Project Template|Loyiha Shabloni (Project Template)]]**
 - 📅 **[[50 Templates/Daily Note Template|Kunlik Qayd Shabloni (Daily Note Template)]]**
+
+---
+
+## 🗺️ Master Resurs Qo'llanmalari (Master Resource Guides)
+
+| Resurs Nomi | Qamrovi va Asosiy Vazifasi | Fayl Havolasi |
+| :--- | :--- | :--- |
+| **AI Agent Ecosystem Map** | Ko'p agentli arxitektura, CLI vositalari va /multt koordinatsiya protokoli | [[30 Resources/AI Agent Ecosystem Map\|AI Agent Ecosystem Map]] |
+| **Free LLM Models Registry** | 7 ta provayder orqali 22+ bepul LLM modellari, rate limitlar va API kalitlar | [[30 Resources/Free LLM Models Registry\|Free LLM Models Registry]] |
+| **Codex Skills Encyclopedia** | Foydalanuvchining 14 ta tizimli ko'nikmasi, xavfsizlik va muhandislik qoidalari | [[30 Resources/Codex Skills Encyclopedia\|Codex Skills Encyclopedia]] |
 
 ---
 

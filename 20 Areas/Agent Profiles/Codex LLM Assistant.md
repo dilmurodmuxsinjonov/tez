@@ -106,6 +106,8 @@ Codex foydalanuvchining global Git qoidalarini istisnosiz avtomatik tarzda bajar
 ## 🔗 Aloqador Bog'lanishlar (Related Links)
 
 - Bosh Boshqaruv Markazi: [[AI Sozlangan Miyyasi]]
+- Ekotizim Xaritasi: [[30 Resources/AI Agent Ecosystem Map|AI Agent Ecosystem Map]]
+- Codex Ko'nikmalar Qomusi: [[30 Resources/Codex Skills Encyclopedia|Codex Skills Encyclopedia]]
 - Bosh Tizim Arxitektori: [[Antigravity 1]]
 - Sandbox Sinovchi Agent: [[Antigravity 2]]
 - Fayllarni Qulflash va Sinxronizatsiya: [[Concurrency & Sync Protocol]]

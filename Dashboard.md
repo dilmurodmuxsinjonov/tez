@@ -35,6 +35,9 @@ tags:
 ## 📅 Kunlik Rejalar & Aloqa
 
 - [[50 Templates/Daily Note Template|📅 Kunlik qayd shabloni]]
+- [[50 Templates/New Agent Integration Template|🤖 Yangi Agent Integratsiyasi Shabloni]]
+- [[50 Templates/Model Evaluation Template|⚖️ Model Baholash Shabloni]]
+- [[50 Templates/Security Audit Template|🛡️ Xavfsizlik Auditi Shabloni]]
 - [[Antigravity Chat History|🤖 Antigravity Chat Tarixi]]
 - [[30 Resources/Agent Skills/Skills Dashboard|🤖 Agent Ko'nikmalari & Tizim Boshqaruvi]]
 - [[30 Resources/Agent Skills/git-workflow|⚖️ Git Ish Tartibi (RULE[user_global])]]
@@ -44,6 +47,8 @@ tags:
 ## 🚀 Faol Loyihalar va Agentlar Markazi
 
 - [[AI Sozlangan Miyyasi#🤖 AI Agentlar Floti Indeksi (AI Agent Fleet Index)|🤖 AI Agentlar Floti Indeksi]]
+- [[Nous Hermes|🤖 Nous Hermes (Chuqur Tadqiqot)]] • [[GitHub Copilot|🐙 GitHub Copilot (Git & PR)]] • [[OpenCode CLI|⚡ OpenCode CLI (OSS Modellar)]]
+- [[Google Antigravity CLI|🌌 Google Antigravity CLI (Arxitektura)]] • [[Ruflo Swarm|🐝 Ruflo Swarm (Swarm & Xotira)]]
 - [[AI Sozlangan Miyyasi#🗂️ Faol Loyihalar Markazi (Active Projects Hub)|🗂️ Faol Loyihalar Markazi]]
 - [[AI Sozlangan Miyyasi#🎨 Uslubiy Qo'llanmalar va Discovery Markazi (Style Guides & Discovery Hub)|🎨 Uslubiy Qo'llanmalar & Discovery]]
 - [[AI Sozlangan Miyyasi#🌐 Brauzer Avtomatizatsiyasi va Tashqi AI Vositalari (Browser & External AI Tools)|🌐 Brauzer & Tashqi AI Vositalari]]
@@ -53,6 +58,9 @@ tags:
 
 ## 🛠️ Tezkor Qo'llanmalar & Ilg'or Tadqiqotlar (Quick Guides & Frontier Research)
 
+- [[30 Resources/AI Agent Ecosystem Map|🗺️ AI Agent Ekotizim Xaritasi va /multt Protokoli]]
+- [[30 Resources/Free LLM Models Registry|🌐 Bepul LLM Modellar Registri (22+ Modellar)]]
+- [[30 Resources/Codex Skills Encyclopedia|📚 Codex Ko'nikmalar Qomusi (14 ta Ko'nikma)]]
 - [[Autonomous Agent Architectures|🧠 Avtonom Agent Arxitekturalari (Memory & MCP)]]
 - [[Browser Automation Playbook|🌐 Avtonom Brauzer Playbooki (Accessibility Tree & CDP)]]
 - [[Multimodal Generation Workflows|🎬 Multimodal Generatsiya Quvurlari (Google Labs & FFmpeg)]]

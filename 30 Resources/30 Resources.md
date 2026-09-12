@@ -25,10 +25,21 @@ Ushbu MOC foydalanuvchining barcha ma'lumot resurslari, o'quv qo'llanmalari va A
 - 🧠 **[[AI Sozlangan Miyyasi|🧠 AI Sozlangan Miyyasi — Universal AI Second Brain]]** (Bosh Markaz)
 - 📊 **[[Dashboard|Mening Ikkinchi Miyyam (Dashboard)]]**
 - 🗺️ **[[30 Resources/30 Resources MOC|📚 30 Resources MOC (To'liq Xarita)]]**
+- 🗺️ **[[30 Resources/AI Agent Ecosystem Map|🗺️ AI Agent Ecosystem Map]]**
+- 🌐 **[[30 Resources/Free LLM Models Registry|🌐 Free LLM Models Registry]]**
+- 📚 **[[30 Resources/Codex Skills Encyclopedia|📚 Codex Skills Encyclopedia]]**
 - 🎛️ **[[30 Resources/Agent Skills/Skills Dashboard|Agent Ko'nikmalari (Skills Dashboard)]]**
 - 📑 **[[50 Templates/Resource Template|Resurs Shabloni]]**
 - 📋 **[[50 Templates/Project Template|Loyiha Shabloni]]**
 - 📅 **[[50 Templates/Daily Note Template|Kunlik Qayd Shabloni]]**
+
+---
+
+## 🗺️ Master Resurs Qo'llanmalari (Master Resource Guides)
+
+- 🗺️ **[[30 Resources/AI Agent Ecosystem Map|🗺️ AI Agent Ecosystem Map]]** — Ko'p agentli ekotizim arxitekturasi va /multt koordinatsiya protokoli
+- 🌐 **[[30 Resources/Free LLM Models Registry|🌐 Free LLM Models Registry]]** — 7 ta provayder bo'yicha 22+ bepul LLM modellari, limitlar va kalitlar katalogi
+- 📚 **[[30 Resources/Codex Skills Encyclopedia|📚 Codex Skills Encyclopedia]]** — Foydalanuvchining 14 ta maxsus va tizimli ko'nikmalari, direktivalari va qoidalari
 
 ---
 

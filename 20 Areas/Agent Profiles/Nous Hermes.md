@@ -111,6 +111,8 @@ hermes dashboard
 
 - Bosh Boshqaruv Markazi: [[AI Sozlangan Miyyasi]]
 - Asosiy Boshqaruv Paneli: [[Dashboard]]
+- Ekotizim Xaritasi: [[30 Resources/AI Agent Ecosystem Map|AI Agent Ecosystem Map]]
+- Bepul Modellar Registri: [[30 Resources/Free LLM Models Registry|Free LLM Models Registry]]
 - Bosh Tizim Arxitektori: [[Antigravity 1]]
 - Sandbox Sinovchi Agent: [[Antigravity 2]]
 - Kod Generatsiyasi Dvigateli: [[Codex LLM Assistant]]

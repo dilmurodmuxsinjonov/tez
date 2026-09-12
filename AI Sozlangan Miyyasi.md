@@ -86,7 +86,12 @@ Tizimdagi barcha skriptlar, kompilyatsiya jarayonlari va sinovlar foydalanuvchi 
 | **PowerShell** | `5.1.26100.9444 Desktop` | `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` | Windows tizim buyruqlari, avtomatlashtirish, jarayonlarni boshqarish |
 | **Git** | `2.54.0.windows.1` | `C:\Program Files\Git\cmd\git.exe` | Versiyalar nazorati, GitHub sinxronizatsiyasi, avtomatik lifecycle |
 | **Obsidian** | Electron Desktop App | `D:\obsidian me\Obsidian.exe` | Ikkinchi miyya vizual interfeysi, bilimlar grafigi, Bases va Canvas |
-| **Codex CLI / OpenCode** | `codex.exe` & `opencode.ps1` | `C:\Users\dilmu\AppData\Local\Programs\OpenAI\Codex\bin\codex.exe`<br>`C:\Users\dilmu\AppData\Roaming\npm\opencode.ps1` | Avtonom kod generatsiyasi, CLI refaktoring va avtomatik testlash |
+| **Codex CLI** | `codex.exe` | `C:\Users\dilmu\AppData\Local\Programs\OpenAI\Codex\bin\codex.exe` | Master Orchestrator, tizim arxitekturasi, /multt koordinatsiyasi va chuqur kod sintezi |
+| **Nous Hermes CLI** | `hermes.exe` | `C:\Users\dilmu\AppData\Local\hermes\bin\hermes.exe` | Chuqur tadqiqot, mustaqil mantiqiy tahlil va ikkinchi fikr (OpenRouter) |
+| **GitHub Copilot CLI** | `copilot.ps1` | `C:\Users\dilmu\AppData\Roaming\npm\copilot.ps1` | Git/GitHub operatsiyalari, PR auditi va repozitoriy tekshiruvi |
+| **OpenCode CLI** | `opencode.ps1` | `C:\Users\dilmu\AppData\Roaming\npm\opencode.ps1` | Ochiq kodli modellar sinovi (Nemotron, MiMo, Qwen) va nol xarajatli refaktoring |
+| **Google Antigravity CLI** | `agy.exe` | `C:\Users\dilmu\AppData\Local\agy\bin\agy.exe` | Katta monorepo kod bazalari tahlili va chuqur arxitektura debugging |
+| **Ruflo Swarm CLI** | `ruflo.ps1` | `C:\Users\dilmu\AppData\Local\hermes\node\ruflo.ps1` | 15-agentli ko'p agentli swarm klasteri (v3.38.23) va AgentDB HNSW vektor xotirasi |
 
 ---
 
@@ -99,6 +104,11 @@ Vault va foydalanuvchi loyihalarida birgalikda ish olib boruvchi AI agentlar pro
 | **Antigravity 1** | Bosh tizim arxitektori, foydalanuvchi bilan asosiy muloqotchi (Primary Google Account: `dilmurodmuhsinjanov910@gmail.com`) | Vault markaziy xotirasini boshqarish, loyihalar holatini yangilash, vazifalarni taqsimlash | [[Antigravity 1]] |
 | **Antigravity 2** | Izolyatsiyalangan tadqiqotchi va sandbox sinovchi (Secondary Google Account, mustaqil brauzer profili) | Katta hisoblashlar, mustaqil testlar, tadqiqot qaydlari; asosiy xotiraga faqat tekshirilgan xulosalarni kiritish | [[Antigravity 2]] |
 | **Codex LLM Assistant** | Avtonom kod generatsiyasi va refaktoring dvigateli (`codex.exe`, `opencode.ps1`) | Loyiha kod bazalarida to'g'ridan-to'g'ri ishlash, testlarni yurgizish, sintaksis va kontraktlarga qat'iy rioya qilish | [[Codex LLM Assistant]] |
+| **Nous Hermes** | Chuqur tadqiqotchi va mustaqil tahlilchi (OpenRouter Free) | Tashqi tadqiqotlar, nazariy tahlil va arxitektura bo'yicha ikkinchi fikr (second opinion) | [[Nous Hermes]] |
+| **GitHub Copilot** | Git va GitHub ixtisoslashgan yordamchisi (`copilot.ps1`) | Repozitoriylar auditi, PR tekshiruvlari va Git buyruqlari integratsiyasi | [[GitHub Copilot]] |
+| **OpenCode CLI** | Ochiq kodli LLM modellar sinovchisi va refaktorer (`opencode.ps1`) | Ochiq vaznli modellar (Nemotron, MiMo, Qwen) sinovi va tejamkor AST refaktoring | [[OpenCode CLI]] |
+| **Google Antigravity CLI** | Tizimli arxitektura muhandisi va monorepo auditori (`agy.exe`) | Murakkab tizim tahlili, yuqori parallellik va chuqur debugging | [[Google Antigravity CLI]] |
+| **Ruflo Swarm** | Ko'p agentli swarm klasteri va semantik vektor xotira (`ruflo.ps1`) | 15-agentli ierarxik to'r (mesh), AgentDB HNSW vektor qidiruv va 35+ MCP integratsiyasi | [[Ruflo Swarm]] |
 | **Concurrency & Sync Protocol** | Ko'p agentli hamkorlikda fayllarni qulflash va to'qnashuvlarning oldini olish protokoli | `.agents/locks/<hash>.lock` qulflash tizimi, 300s TTL, ikki bosqichli atomik saqlash (temp-rename) | [[Concurrency & Sync Protocol]] |
 
 ---
@@ -153,6 +163,9 @@ Foydalanuvchi nomidan internetda avtonom vazifalarni bajarish va multimodal kont
 | **Next-Gen Generative Suite** | Google Flow, Veo, Imagen 3 va MusicFX prompt muhandisligi | [[30 Resources/AI Research/Google Labs & Next-Gen Generative Suite\|Next-Gen Generative Suite]] |
 | **Advanced Browser Playbook** | Accessibility Tree va CDP orqali avtonom brauzer operatsiyalari | [[30 Resources/Browser & Automation Guides/Advanced Agentic Browser Playbook\|Advanced Browser Playbook]] |
 | **Master Production Prompts** | Rasm, video va kod generatsiyasi uchun sinovdan o'tgan andozalar | [[30 Resources/Prompt Engineering/Master Production Prompts\|Master Production Prompts]] |
+| **AI Agent Ecosystem Map** | Ko'p agentli ekotizim arxitekturasi va /multt koordinatsiya protokoli | [[30 Resources/AI Agent Ecosystem Map\|AI Agent Ecosystem Map]] |
+| **Free LLM Models Registry** | 7 ta provayder bo'yicha 22+ bepul LLM modellari, limitlar va kalitlar katalogi | [[30 Resources/Free LLM Models Registry\|Free LLM Models Registry]] |
+| **Codex Skills Encyclopedia** | Foydalanuvchining 14 ta maxsus va tizimli ko'nikmalari, direktivalari va qoidalari | [[30 Resources/Codex Skills Encyclopedia\|Codex Skills Encyclopedia]] |
 
 ---
 
@@ -173,6 +186,9 @@ Ushbu vault Tiago Fortening **PARA** (Projects, Areas, Resources, Archives) meto
 | 📑 **Resource Template** | Yangi resurslar va o'rganilgan mavzular uchun shablon | [[50 Templates/Resource Template\|Resource Template]] |
 | 🤖 **Agent Profile Template** | Yangi AI agent profili ochish uchun standart shablon | [[50 Templates/Agent Profile Template\|Agent Profile Template]] |
 | 🛡️ **Area Template** | Yangi mas'uliyat sohasi yaratish uchun standart shablon | [[50 Templates/Area Template\|Area Template]] |
+| 🤖 **New Agent Integration** | Yangi AI agent CLI vositasini tizimga qo'shish shabloni | [[50 Templates/New Agent Integration Template\|New Agent Integration]] |
+| ⚖️ **Model Evaluation** | Yangi LLM modellarini empirik baholash va benchmark shabloni | [[50 Templates/Model Evaluation Template\|Model Evaluation]] |
+| 🛡️ **Security Audit** | White-Hat kiberxavfsizlik va zaifliklarni tekshirish shabloni | [[50 Templates/Security Audit Template\|Security Audit]] |
 
 ---
 

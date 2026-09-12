@@ -36,6 +36,7 @@ Ushbu MOC Tiago Fortening **PARA** (Projects, Areas, Resources, Archives) metodo
 
 Quyida foydalanuvchining tizimga kiritilgan kunlik yozuvlari va dastlabki xom materiallari jamlangan:
 
+- 📅 **[[00 Inbox/2026-09-12|2026-09-12 Kunlik Qaydi]]** — Eng so'nggi kunlik qayd va faoliyat
 - 📅 **[[00 Inbox/2026-06-13|2026-06-13 Kunlik Qaydi]]** — Dastlabki yozuvlar va rejalar
 - 📅 **[[2026-07-25|2026-07-25 Kunlik Qaydi]]** — Orol Shahar va MobCreator rejalari
 - 📅 **[[2026-07-26|2026-07-26 Kunlik Qaydi]]** — Texnik tahlil va kod sinovlari
