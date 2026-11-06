@@ -57,7 +57,7 @@ class TestTier1MasterBrainEntrypoint(unittest.TestCase):
         """TC1.03: Verify user identity anchor and natural language policy."""
         self.assertIn("Dilmurod Muhsinjanov", self.content, "User name missing.")
         self.assertIn("dilmurodmuhsinjanov910@gmail.com", self.content, "User email missing.")
-        self.assertIn("dilmurodmuhsinjanov910-byte", self.content, "User GitHub handle missing.")
+        self.assertIn("dilmurodmuxsinjonov", self.content, "User GitHub handle missing.")
         # Language policy: Uzbek for conversational, English for code
         self.assertTrue("O'zbek" in self.content or "uz-UZ" in self.content, "Uzbek language policy missing.")
         self.assertTrue("English" in self.content or "en-US" in self.content, "English technical policy missing.")
