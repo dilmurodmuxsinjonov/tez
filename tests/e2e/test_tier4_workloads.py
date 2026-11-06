@@ -51,7 +51,7 @@ class TestTier4RealWorldWorkloads(unittest.TestCase):
 
         # 2. Extract User Persona
         self.assertIn("Dilmurod Muhsinjanov", body)
-        self.assertIn("dilmurodmuhsinjanov910-byte", body)
+        self.assertIn("dilmurodmuxsinjonov", body)
 
         # 3. Verify Git Workflow
         self.assertIn("<RULE[user_global]>", body)
