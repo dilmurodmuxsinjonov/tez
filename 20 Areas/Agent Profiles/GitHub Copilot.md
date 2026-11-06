@@ -33,7 +33,7 @@ Ushbu profil **GitHub Copilot CLI** (`copilot.ps1`) avtonom versiyalar nazorati 
 | **Agent Nomi** | GitHub Copilot CLI (`copilot`) | Git va GitHub avtomatizatsiyasi mutaxassisi |
 | **Bosh Mas'uliyati** | Git Lifecycle Automation, PR Review & Repo Hygiene | Versiyalar nazorati va tarmoqlarni boshqarish |
 | **CLI Skripti** | `C:\Users\dilmu\AppData\Roaming\npm\copilot.ps1` | Rasmiy Node.js asosidagi CLI skripti |
-| **GitHub Foydalanuvchisi** | `dilmurodmuhsinjanov910-byte` | Autentifikatsiyadan o'tgan GitHub akkaunti |
+| **GitHub Foydalanuvchisi** | `dilmurodmuxsinjonov` | Autentifikatsiyadan o'tgan GitHub akkaunti |
 | **Node.js Muhiti** | `C:\Users\dilmu\AppData\Local\hermes\node\node.exe` (v22.23.2) | Mahalliy Node.js dasturiy muhiti |
 | **Tizim Qobig'i** | Windows PowerShell 5.1 / 7.x | Asosiy buyruqlar satri qobig'i |
 | **Muloqot Tili** | O'zbek tili (Lotin), English (US) | Ikki tilli professional hisobotlar |
@@ -89,7 +89,7 @@ copilot -p "Review unstaged files" --allow-tool='shell(git:*)' --deny-tool='shel
 
 ## ⚠️ Xatoliklarni Boshqarish va Autentifikatsiya (Error Handling & Auth)
 
-- **GitHub Token Holatini Tekshirish**: Seans boshlanishida `gh auth status` orqali `dilmurodmuhsinjanov910-byte` akkauntining faolligi va token muddati tekshiriladi.
+- **GitHub Token Holatini Tekshirish**: Seans boshlanishida `gh auth status` orqali `dilmurodmuxsinjonov` akkauntining faolligi va token muddati tekshiriladi.
 - **Merge Conflict Diagnostikasi**: To'qnashuv yuzaga kelganda, zararlangan fayllarni aniqlab, ikki tomonlama farqni tahlil qiladi va xavfsiz birlashtirish strategiyasini taklif etadi.
 - **Ruxsatlar Sandboxing**: Shell buyruqlari xavfli bo'lmasligi uchun `--deny-tool` yordamida destruktiv buyruqlar (masalan, `git push --force`) cheklanadi.
 
