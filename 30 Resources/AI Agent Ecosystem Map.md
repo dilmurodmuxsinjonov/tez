@@ -83,7 +83,7 @@ Foydalanuvchi **Dilmurod Muhsinjanov**ning ko'p agentli sun'iy intellekt ekotizi
 | :--- | :--- | :--- | :--- | :--- |
 | **OpenAI Codex** | `C:\Users\dilmu\AppData\Local\Programs\OpenAI\Codex\bin\codex.exe` | `gpt-6-astra` (priority tier) | Bosh tizim koordinatori, arxitektura rejalashtirish, kod sintezi | [[Codex LLM Assistant]] |
 | **Nous Hermes** | `C:\Users\dilmu\AppData\Local\hermes\bin\hermes.exe` | OpenRouter Free (`openrouter/free`) | Chuqur tadqiqot, mustaqil tahlil, ikkinchi fikr (second opinion) | [[Nous Hermes]] |
-| **GitHub Copilot** | `C:\Users\dilmu\AppData\Roaming\npm\copilot.ps1` | GitHub User (`dilmurodmuhsinjanov910-byte`) | Git lifecycle operatsiyalari, PR auditi, repozitoriy tekshiruvi | [[GitHub Copilot]] |
+| **GitHub Copilot** | `C:\Users\dilmu\AppData\Roaming\npm\copilot.ps1` | GitHub User (`dilmurodmuxsinjonov`) | Git lifecycle operatsiyalari, PR auditi, repozitoriy tekshiruvi | [[GitHub Copilot]] |
 | **OpenCode CLI** | `C:\Users\dilmu\AppData\Roaming\npm\opencode.ps1` | OpenCode Zen (Nemotron, MiMo, Qwen) | Ochiq kodli modellar sinovi, nol xarajatli refaktoring, unit testlar | [[OpenCode CLI]] |
 | **Google Antigravity CLI** | `C:\Users\dilmu\AppData\Local\agy\bin\agy.exe` | Google DeepMind (`dilmurodmuhsinjanov910@gmail.com`) | Chuqur arxitektura tekshiruvi, monorepo tahlili, kompleks debugging | [[Google Antigravity CLI]] |
 | **Ruflo Swarm** | `C:\Users\dilmu\AppData\Local\hermes\node\ruflo.ps1` | Local AgentDB + Vector Bridge | Ko'p agentli swarm klasteri, HNSW semantik qidiruv, 35+ MCP integratsiyasi | [[Ruflo Swarm]] |
