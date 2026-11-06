@@ -39,7 +39,7 @@ Verifies the presence, schema compliance, and content integrity of all features 
 - **Category 1 (Master Brain Entrypoint)**:
   - Valid YAML frontmatter (`tags`, `type: master-brain`, `updated`, `status: active`).
   - Universal AI Startup Directive (5 startup steps, 4 write-back steps).
-  - User identity anchor (`dilmurodmuhsinjanov910-byte`, Uzbek for interaction, English for code).
+  - User identity anchor (`dilmurodmuxsinjonov`, Uzbek for interaction, English for code).
   - Agent Fleet table linking to all 4 agent notes.
   - Active Projects table linking to all 5 project notes.
 - **Category 2 (Git Workflow & Toolchain)**:
