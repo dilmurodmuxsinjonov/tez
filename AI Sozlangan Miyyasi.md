@@ -43,7 +43,7 @@ Ushbu hujjat foydalanuvchi **Dilmurod Muhsinjanov**ning barcha sun'iy intellekt 
 | :--- | :--- | :--- |
 | **Foydalanuvchi** | Dilmurod Muhsinjanov | Tizim egasi va bosh loyiha rahbari |
 | **Email / Google Account** | `dilmurodmuhsinjanov910@gmail.com` | Antigravity 1 va asosiy servislar uchun asosiy hisob |
-| **GitHub profili** | `dilmurodmuhsinjanov910-byte` | Barcha loyihalar va repozitoriylar egasi |
+| **GitHub profili** | `dilmurodmuxsinjonov` | Barcha loyihalar va repozitoriylar egasi |
 | **Muloqot tili** | O'zbek tili (Lotin alifbosida) | Tabiiy, do'stona, hurmatli, ravon va hamkorlik ruhiyati |
 | **Texnik hujjatlar va kod** | English (US) | Xalqaro standartlar, toza kod, aniq tiplashtirish va testlar |
 | **Falsafa va Tamoyil** | Getting Things Done & Second Brain | Haqiqiy va mustahkam yechimlar; feyk yoki soxta ko'rinishlarga yo'l qo'yilmaydi |
